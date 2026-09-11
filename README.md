@@ -68,11 +68,12 @@ Mod/          published — the junction into RimWorld/Mods points here
   About/
   Patches/
   Textures/
+Art/          full-resolution sources for the banner and the icon
 ```
 
-Everything outside `Mod/` — this file, the changelog, the attribution — stays out of the Steam
-upload by construction. `SteamUGC.SetItemContent` takes the junction's target directory as it
-stands on disk, with no filtering.
+Everything outside `Mod/` — this file, the changelog, the attribution, the art sources — stays out
+of the Steam upload by construction. `SteamUGC.SetItemContent` takes the junction's target
+directory as it stands on disk, with no filtering.
 
 ## Credit and removal
 
@@ -81,8 +82,9 @@ in `About.xml`, no linked repository, and nothing in the body of the Steam descr
 under the usual convention for abandoned mods — full credit, a link to the original, removal on
 request. If purpleyam would rather this did not exist, say so and it comes down.
 
-See [ATTRIBUTION.md](ATTRIBUTION.md) for what was taken and what was changed, [LICENSE](LICENSE)
-for what the MIT grant does and does not cover, and [CHANGELOG.md](CHANGELOG.md).
+See [TESTING.md](TESTING.md) for what the game has to settle, [ATTRIBUTION.md](ATTRIBUTION.md) for
+what was taken and what was changed, [LICENSE](LICENSE) for what the MIT grant does and does not
+cover, and [CHANGELOG.md](CHANGELOG.md).
 
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
 direction and in-game testing.

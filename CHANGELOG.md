@@ -6,6 +6,16 @@ All notable changes to this mod are documented here.
 
 First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.
 
+### Added
+
+- `About/Preview.png`, 896x504, and `About/ModIcon.png`, 128x128. Both are the port's own art,
+  drawn for it rather than cropped from the coats it patches. Full-resolution sources are kept
+  under `Art/`, outside `Mod/`, so they are never published: the uploader takes the junction's
+  target directory as it stands on disk, with no filtering.
+  The icon is a 128 px crop of a 1254x1254 render, which weighed 1.5 MB on its own — against
+  0.16 MB of textures. The crop is tighter than the render because the icon is drawn at 32 px in
+  the mod list, where the full composition read as a coloured blur.
+
 ### Fixed
 
 - `PatchOperationFindMod`: `ReGrowth: Extinct Animals (Continued)` added to the `<mods>` list of

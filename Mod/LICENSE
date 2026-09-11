@@ -29,6 +29,8 @@ The MIT licence above covers only what the 1.6 port added:
   - the rewritten patch file: the fourth mod name in the guard, the merge of
     the two operations that share a defName, the per-operation success flag,
     and the removal of a commented-out draft
+  - the showcase art: About/Preview.png, About/ModIcon.png and their
+    full-resolution sources under Art/, all drawn for this port
   - the packaging and the documentation
 
 IT DOES NOT COVER THE ORIGINAL MOD. The seven dodo coats, their chances and
