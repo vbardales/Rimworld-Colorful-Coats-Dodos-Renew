@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <packageId>nelim.colorfulcoats.hlxdodo</packageId>
+  <name>Colorful Coats - Dodos! 1.6</name>
+  <author>purpleyam - 1.6 port: nelim</author>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <url>https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew</url>
+  <incompatibleWith>
+    <li>purpleyam.colorfulcoats.hlxdodo</li>
+  </incompatibleWith>
+  <loadAfter>
+    <li>Mlie.ReGrowthExtinctAnimals</li>
+    <li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
+    <li>ReGrowth2.ExtinctAnimals</li>
+  </loadAfter>
+  <description>Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight birds in ten come out of the egg in a colour of their own, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs, same everything.
+
+Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 21 textures. Safe to add to a save in progress, and safe to remove from one.
+
+NEEDS THE DODO
+
+This does nothing on its own. It needs whichever release of Helixien's Extinct Animals you run, and the one that works on 1.6 is:
+
+ReGrowth: Extinct Animals (Continued), by Mlie - https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791
+
+The older releases are still recognised if you are on an older game.
+
+I am not the author of this mod. The textures and the whole idea are purpleyam's - all I did was make it find its target again on 1.6. Credit goes to them; mistakes in the port are mine.
+
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651 - declares 1.4 and nothing further.
+
+WHAT WAS BROKEN, AND WHY IT WOULD HAVE BEEN SILENT
+
+The patch is guarded by PatchOperationFindMod, which matches on a mod's display NAME, not on its packageId. purpleyam listed the three names the Extinct Animals pack had gone by. Since then Mlie picked it up and republished it as "ReGrowth: Extinct Animals (Continued)" - a fourth name, matching none of the three.
+
+An unmatched PatchOperationFindMod is not an error. It is the whole point of the operation: no match, nothing happens, no log line, no warning. So on 1.6 this mod would have installed cleanly, sat in the mod list, thrown nothing at all, and produced brown dodos forever. The new name is now in the list, and the old ones are kept beside it, because they are what a player on an older game still has.
+
+WHAT ELSE CHANGED
+
+Nothing that a dodo can see. The two operations that patch the same defName were merged into one, so that having two of those releases active at once can no longer apply the coats twice to the same bird; each operation now reports success whether or not it found its target, so one missing animal can no longer stop the ones after it; and a commented-out draft that pointed at texture paths this mod does not ship was deleted. The colours, the 0.8 chance and the 21 textures are untouched.
+
+CREDIT AND REMOVAL
+
+purpleyam declared no licence: no file in the mod, nothing in its About.xml, no linked repository, and nothing in the body of the description on its Steam page. It is republished here under the usual convention for abandoned mods - full credit, a link to the original, and removal on request. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
+
+Source, changelog and attribution: https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew
+
+The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to purpleyam for the coats, to Helixien for the dodo and to Mlie for keeping it alive.
+
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+</ModMetaData>
