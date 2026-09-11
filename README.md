@@ -1,4 +1,4 @@
-# Colorful Coats - Dodos! 1.6
+# Colorful Coats - Dodos! Renew
 
 Port of **purpleyam's Colorful Coats - Dodos!** to RimWorld 1.6.
 

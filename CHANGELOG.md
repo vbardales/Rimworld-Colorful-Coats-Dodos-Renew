@@ -29,7 +29,7 @@ First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.
   `PatchOperationSequence` stops at the first operation that returns false rather than skipping
   it, so a future rename would have cost every animal after it its coats. Nothing changes today;
   purpleyam already wrote the Vanilla Animals Expanded mod this way.
-- `packageId` changed from `purpleyam.colorfulcoats.hlxdodo` to `nelim.colorfulcoats.hlxdodo`.
+- `packageId` changed from `purpleyam.colorfulcoats.hlxdodo` to `nelim.colorfulcoats.dodosrenew`.
 - `<supportedVersions>` set to 1.6.
 - `<loadAfter>` given `Mlie.ReGrowthExtinctAnimals` alongside the two old identifiers.
 - `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.
