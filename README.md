@@ -21,12 +21,14 @@ nothing else.
 
 ## What it needs
 
-Whichever release of Helixien's Extinct Animals you run. The one that works on 1.6:
+This RimWorld 1.6 build requires:
 
 **ReGrowth: Extinct Animals (Continued)**, by Mlie —
 https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791
 
-The three older releases are still recognised for anyone on an older game.
+The required package is `Mlie.ReGrowthExtinctAnimals`; load this mod after it.
+The patch retains historical display-name guards, but older releases are not
+alternatives to this dependency. This build declares support only for RimWorld 1.6.
 
 ## What was broken, and why it would have been silent
 
@@ -48,7 +50,7 @@ That is the failure mode worth naming, because it does not look like a failure.
 
 The fix is one line: the new name joins the `<mods>` list of the operation that patches
 `RG_Dodo`. The old names stay beside it — `PatchOperationFindMod` takes as many as you give it,
-and a player on an older game still has one of them.
+as historical matching data; they do not extend this build's declared compatibility.
 
 ## What else changed
 

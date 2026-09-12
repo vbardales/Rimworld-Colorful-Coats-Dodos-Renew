@@ -12,7 +12,7 @@ maintainer:   Codex, current repository task
 visibility:   silent
 github_visibility: public
 detached:     yes
-stage:        l10n
+stage:        done
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -26,11 +26,10 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:
 workshop:
 remaining:
-  - defect: README and About describe dependency alternatives despite mandatory Continued metadata
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392
-updated:      2026-09-13, final source link corrected; stage advanced to l10n
+updated:      2026-09-13, dependency prose aligned and static checks passed; stage advanced to done
 ---
 
 # Colorful Coats - Dodos! Renew — status
@@ -376,3 +375,28 @@ unverified and `tested_on` stays empty. Historical audit results above are retai
 
 This change affects only About description text and STATUS.md. No Steam update,
 commit or game test was performed, and existing local changes were preserved.
+
+## Dependency documentation correction — 2026-09-13
+
+At the user's request, first committed the preceding audit, attribution, source-link
+and dependency-scenario changes as
+`4e8b9a1b2402c4a120524fdbbcde413f3538c909`.
+Then updated README.md and Mod/About/About.xml to state that this 1.6 build requires
+`Mlie.ReGrowthExtinctAnimals` and loads after it. Both documents now distinguish
+historical name guards from supported dependency alternatives, including the
+explanation of the original guard fix. No gameplay patch or dependency declaration
+was changed by this follow-up.
+
+Re-executed `pwsh -NoProfile -File scripts/Check-Mod.ps1 -TargetPath 'C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/3602926791' -Brief`:
+exit 0, all four checks passed with no warnings. Also parsed the delivered About XML,
+asserted the required packageId and final source-link match, and checked whitespace
+with `git diff --check`. All passed on the current working tree based on that commit.
+
+The dependency documentation defect is resolved. With the earlier independent
+settings/localization validations and written scenarios retained, and automated/XML
+checks rerun successfully, the cumulative stage advances from `l10n` through
+`preTest` to `done`. This means ready for final in-game validation, not `tested`.
+The remaining game scenarios and unsupported testing/save-safety claims remain
+explicitly unverified; `tested_on` stays empty. No game run or push was performed.
+This follow-up changes README.md, Mod/About/About.xml and STATUS.md and is not yet
+committed. Historical audit entries above describe their original snapshots.

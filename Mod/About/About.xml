@@ -31,11 +31,11 @@ Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a singl
 
 NEEDS THE DODO
 
-This does nothing on its own. It needs whichever release of Helixien's Extinct Animals you run, and the one that works on 1.6 is:
+This RimWorld 1.6 build requires:
 
 ReGrowth: Extinct Animals (Continued), by Mlie - https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791
 
-The older releases are still recognised if you are on an older game.
+The required package is Mlie.ReGrowthExtinctAnimals; load this mod after it. Historical display-name guards remain in the patch, but older releases are not alternatives to this dependency. This build supports only RimWorld 1.6.
 
 I am not the author of this mod. The textures and the whole idea are purpleyam's - all I did was make it find its target again on 1.6. Credit goes to them; mistakes in the port are mine.
 
@@ -45,7 +45,7 @@ WHAT WAS BROKEN, AND WHY IT WOULD HAVE BEEN SILENT
 
 The patch is guarded by PatchOperationFindMod, which matches on a mod's display NAME, not on its packageId. purpleyam listed the three names the Extinct Animals pack had gone by. Since then Mlie picked it up and republished it as "ReGrowth: Extinct Animals (Continued)" - a fourth name, matching none of the three.
 
-An unmatched PatchOperationFindMod is not an error. It is the whole point of the operation: no match, nothing happens, no log line, no warning. So on 1.6 this mod would have installed cleanly, sat in the mod list, thrown nothing at all, and produced brown dodos forever. The new name is now in the list, and the old ones are kept beside it, because they are what a player on an older game still has.
+An unmatched PatchOperationFindMod is not an error. It is the whole point of the operation: no match, nothing happens, no log line, no warning. So on 1.6 this mod would have installed cleanly, sat in the mod list, thrown nothing at all, and produced brown dodos forever. The new name is now in the list, and the old ones remain as historical matching data; they do not extend this build's declared compatibility.
 
 WHAT ELSE CHANGED
 
