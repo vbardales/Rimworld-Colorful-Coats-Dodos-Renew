@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <packageId>nelim.colorfulcoats.dodosrenew</packageId>
-  <name>Colorful Coats - Dodos! Renew</name>
+  <name>Colorful Coats - Dodos! Renew (unofficial)</name>
   <author>purpleyam - 1.6 port: nelim</author>
   <supportedVersions>
     <li>1.6</li>
@@ -15,7 +15,9 @@
     <li>ReGrowth.BOTR.ExtinctAnimalsPack</li>
     <li>ReGrowth2.ExtinctAnimals</li>
   </loadAfter>
-  <description>Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight birds in ten come out of the egg in a colour of their own, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs, same everything.
+  <description>UNOFFICIAL. This mod is published without the original author's explicit consent. If the original author contacts me to request its removal, I undertake to take it down promptly.
+
+Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight birds in ten come out of the egg in a colour of their own, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs, same everything.
 
 Texture patch only. No DLC, no Harmony, no assembly, no def of its own - a single XML patch and 21 textures. Safe to add to a save in progress, and safe to remove from one.
 

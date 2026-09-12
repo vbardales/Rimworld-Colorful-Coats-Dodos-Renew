@@ -9,6 +9,31 @@ nothing at all: `PatchOperationFindMod` matches on a mod's display **name**, and
 matches nothing skips its `match` branch, returns true, and logs no line. The mod installs, loads,
 sits in the list looking healthy, and produces brown dodos forever. Only birds on screen settle it.
 
+## What a script settles first
+
+Four of the things written below are about files rather than about birds, and a file can be read
+without starting the game:
+
+```bash
+pwsh -File scripts/Check-Mod.ps1
+```
+
+It answers, against the copy of Extinct Animals installed on this machine: whether each
+operation's xpath finds its `PawnKindDef`; whether the `<name>` that pack displays **today** is in
+the `<mods>` of the operation that patches it; whether every `texPath` has its rotations on disk
+and no PNG sits in `Textures/` unreferenced; and whether `<name>`, `<packageId>` and the folder
+name agree. Publication suffixes `(unofficial)` and `(prohibited)` are ignored only for the
+folder comparison. `-Brief` prints only what is wrong; the exit code is 1 on any failure.
+
+The name comparison is case-sensitive, because `HasActiveModWithName` is: disassembled against
+1.6's `Assembly-CSharp.dll`, its body is `ModMetaData.Name == name`, `String::op_Equality`, with
+no `ToLower` and no `StringComparison`. A guard reading `Extinct animals` is as unreachable as one
+reading a different name entirely, and the script fails on it.
+
+**A clean run is scenario A's first half, not its answer.** The script can confirm that the guard
+names the installed pack and that the def is where the xpath looks, and still be describing twenty
+brown dodos: whether the coats reach the screen is settled below, in the game.
+
 ## Load order
 
 ```
@@ -115,7 +140,7 @@ twice. Two blocks could, and did, leaving the def with two `alternateGraphics` l
 
 ## H — the mod list entry itself
 
-- The name reads `Colorful Coats - Dodos! Renew`.
+- The name reads `Colorful Coats - Dodos! Renew (unofficial)`.
 - The icon is drawn at about 32 px there. The mascot's face should be readable at that size; it is
   the reason the icon is a tighter crop of its source than the full render under `Art/`.
 - The Workshop banner is `About/Preview.png`, 896x504, and says `Renew` rather than `1.6`.

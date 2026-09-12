@@ -18,10 +18,12 @@ title_suffix: (unofficial), already present
 github_description: present
 dependencies: to check
 showcase:     complete
+static_checks: passed, 2026-09-12, installed Mlie ReGrowth Extinct Animals target
 tested_on:
 workshop:
 remaining:
-  - unverified: never seen running
+  - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
+  - unverified: dependency declaration policy, guarded target listed only in loadAfter
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392
 updated:      2026-09-12, verified by repository maintainer
 ---
@@ -145,4 +147,16 @@ Firecrawl CLI was unavailable; web search and a direct HTTP fetch were used inst
 - Visually checked at 896 × 504 and 268 px wide (`Art/preview-268.png`): title and version
   identifiable, reduced `Renew` readable, blue rule visible and distinct from the golden
   secondary ink, no clipping or overlap. Summary is intended for full-size reading.
-- Local assets only; nothing published. In-game test status is unchanged.
+- Preview committed and pushed to GitHub in `86393b0`; no Steam publication performed.
+  In-game test status is unchanged.
+
+## Technical validation — 2026-09-12
+
+`scripts/Check-Mod.ps1 -TargetPath 'C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/3602926791'`
+passed all four checks with no warnings: RG_Dodo xpath resolves, display-name guard matches,
+all 21 textures resolve without orphans, and name/packageId/folder agree.
+The checker ignores only trailing `(unofficial)` / `(prohibited)` for folder identity and
+reads an explicit target directly without scanning sibling Workshop folders.
+This is static validation, not a game run: stage remains `preTest`, with `tested_on` empty.
+`dependencies: to check` remains because the required animal pack is only in `loadAfter`;
+TESTING.md documents this as deliberate for the guarded no-op behavior without a target.

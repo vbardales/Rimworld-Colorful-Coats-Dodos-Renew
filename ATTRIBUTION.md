@@ -3,14 +3,16 @@
 A 1.6 port of **Colorful Coats - Dodos!**, by **purpleyam**
 ([2388053651](https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651)).
 
-## Status: public
+## Permission category: silent
 
-The source mod is **dead** — it declares 1.4 and nothing further — and **no licence is declared
-anywhere**, checked at the four places one could be: no `LICENSE` file in the mod, no mention in
-its `About.xml`, no linked repository (`<url>` is absent entirely), and nothing in the body of
-the description on its Steam page. That last check is the one that matters: it is the one that
-was skipped once on たたら製鉄, whose ban on redistribution turned out to be a sentence in its
-description and nowhere else.
+Rechecked on 2026-09-12: no licence or redistribution permission was found in the installed
+original files, its `About.xml`, or the live Steam description. No explicit refusal was found
+there either. The original has no repository URL and declares versions through 1.4; that version
+limit alone does not establish abandonment. `silent` records the absence of a declared grant
+in these checked sources, not permission to redistribute. See `STATUS.md` for the audit scope.
+
+The original Steam description credits **Erin for the base texture**; purpleyam supplies the
+colour variants. No separate licence for that underlying texture was established in this audit.
 
 This is the usual convention for ports on the RimWorld Workshop: republished with **credit by
 name** and **removal on request, without argument**. The `<author>` field reads
