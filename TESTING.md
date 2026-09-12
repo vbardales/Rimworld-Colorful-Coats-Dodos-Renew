@@ -41,8 +41,9 @@ Mlie.ReGrowthExtinctAnimals     ReGrowth: Extinct Animals (Continued)   36029267
 nelim.colorfulcoats.dodosrenew  this mod                                             after it
 ```
 
-The target is **not** declared as a dependency, and deliberately so: the patch is guarded, so the
-mod is harmless without it. `<loadAfter>` names the three identifiers the pack has shipped under.
+The Continued target is explicitly declared in `modDependencies` for the delivered 1.6 mod.
+`<loadAfter>` names the three identifiers the pack has shipped under. Without the required
+target, the mod list should report a missing dependency; the guarded XML remains inert.
 
 `purpleyam.colorfulcoats.hlxdodo` — the original — is named in `<incompatibleWith>` and must stay
 off.
@@ -135,8 +136,8 @@ twice. Two blocks could, and did, leaving the def with two `alternateGraphics` l
 ## G — the mod alone, with no Extinct Animals at all
 
 - Enable this mod with the pack switched off entirely.
-- It must load, do nothing, and say nothing. That is the intended behaviour of a guarded patch and
-  the reason this mod declares no dependency.
+- The mod list must report the missing Continued dependency. If loading is forced for this
+  diagnostic scenario, the guarded patch must remain inert and produce no patch failure.
 
 ## H — the mod list entry itself
 

@@ -7,6 +7,14 @@
     <li>1.6</li>
   </supportedVersions>
   <url>https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew</url>
+  <modDependencies>
+    <li>
+      <packageId>Mlie.ReGrowthExtinctAnimals</packageId>
+      <displayName>ReGrowth: Extinct Animals (Continued)</displayName>
+      <steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791</steamWorkshopUrl>
+      <downloadUrl>https://github.com/emipa606/ReGrowthExtinctAnimals</downloadUrl>
+    </li>
+  </modDependencies>
   <incompatibleWith>
     <li>purpleyam.colorfulcoats.hlxdodo</li>
   </incompatibleWith>
@@ -47,9 +55,9 @@ CREDIT AND REMOVAL
 
 purpleyam declared no licence: no file in the mod, nothing in its About.xml, no linked repository, and nothing in the body of the description on its Steam page. It is republished here under the usual convention for abandoned mods - full credit, a link to the original, and removal on request. If purpleyam would rather this port did not exist, say so and it comes down: no argument, no delay.
 
-Source, changelog and attribution: https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew
-
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human direction and in-game testing. Thanks to purpleyam for the coats, to Helixien for the dodo and to Mlie for keeping it alive.
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.</description>
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+
+[url=https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew]Source code on GitHub[/url]</description>
 </ModMetaData>
