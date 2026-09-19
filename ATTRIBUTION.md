@@ -16,7 +16,7 @@ colour variants. No separate licence for that underlying texture was established
 
 This is the usual convention for ports on the RimWorld Workshop: republished with **credit by
 name** and **removal on request, without argument**. The `<author>` field reads
-`purpleyam - 1.6 port: nelim`, and the removal clause is in the description.
+`purpleyam - 1.6 adapted by Nelim`, and the removal clause is in the description.
 
 purpleyam published four mods under the *Colorful Coats* name. Three are ported, each in its own
 repository; the fourth is not, for the reason given at the end of this file.
