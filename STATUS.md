@@ -8,7 +8,7 @@ packageId:    nelim.colorfulcoats.dodosrenew
 repo:         Rimworld-Colorful-Coats-Dodos-Renew
 remote:       https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew.git
 local_path:   C:/Users/nelim/Documents/rimworld/ColorfulCoatsDodosRenew
-maintainer:   Codex, current repository task
+maintainer:   Claude (Sonnet 5), current repository task
 visibility:   silent
 github_visibility: public
 detached:     yes
@@ -24,12 +24,23 @@ dependencies: declared
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
 tested_on:
-workshop:
+workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
-session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392
-updated:      2026-09-13, dependency prose aligned and static checks passed; stage advanced to done
+  - unverified: no Tests/Pickle Gherkin suite exists for this mod. AUDIT.md's preTest -> done
+    criterion calls for one written (execution not required at that gate); this mod's manual
+    TESTING.md scenarios A-H have stood in for it so far, which is a real gap against the
+    letter of that criterion, not yet corrected. Its scope, if written, would be exactly what
+    only a running game shows here: coat-colour distribution on spawn, overrideGraphicIndex
+    surviving a save/reload, and the add/remove-mid-save behaviour.
+  - defect: none found this pass beyond the above
+session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
+              no Pickle ticket, no TicketDispatcher registration
+updated:      2026-09-28, audit re-applied at HEAD 5a41762: DDS caches purged from Mod/ and
+              gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
+              CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
+              at done, tested still unreached
 ---
 
 # Colorful Coats - Dodos! Renew — status
@@ -400,3 +411,61 @@ The remaining game scenarios and unsupported testing/save-safety claims remain
 explicitly unverified; `tested_on` stays empty. No game run or push was performed.
 This follow-up changes README.md, Mod/About/About.xml and STATUS.md and is not yet
 committed. Historical audit entries above describe their original snapshots.
+
+## Re-audit and housekeeping — 2026-09-28
+
+Applied `../AUDIT.md` (fingerprint `e85f1285099d…`) against HEAD `c8b2acd`, then the working
+tree. Between the previous entry and today, three commits not covered by any prior audit
+entry had already landed (`1713e41`, then `570eece`, `284276f`, `c8b2acd`): the checker,
+dependency alignment, and crediting the work as an adaptation rather than a port in the
+licence copyright line and `About.xml`'s `<author>`. Read and found consistent with the
+existing licence/attribution findings above; no defect.
+
+**Working-tree findings, all resolved this pass:**
+
+- `Mod/Textures/.../Dodo/*.dds` — 21 BC7 DDS files, dated 2026-09-23, sitting next to the PNGs
+  they were compressed from. Never declared shipped anywhere in this repository, and `Mod/` is
+  published exactly as it sits on disk: left alone, these would have gone to Steam as 21
+  uncredited extra files. Deleted; `*.dds` added to `.gitignore`. Commit `82365ce`.
+- `Mod/About/PublishedFileId.txt` — present, untracked, holding `3806766249`. This confirms a
+  0.1.0 pre-publication happened outside this session. Per `AUDIT.md` §11 this is committed
+  immediately (losing it would create a second Workshop item on the next upload) with a
+  matching `CHANGELOG.md` entry: the file's own first section is renamed `Unreleased` (the
+  `1.0.0` tag arrives only with the `published` state) and a new `## [0.1.0] — 2026-09-23`
+  section records the pre-publication. Commit `5a41762`, pushed.
+- `Art/ModIcon.ico`, `Art/Preview.ico` — untracked, matching the desktop-icon convention
+  `AUDIT.md` describes as local-only and outside published content. Left untracked and
+  unmodified: no rule requires committing them, and generating or replacing either is the
+  mod owner's action alone, not an audit's.
+
+**Settings and localization gates — not re-run, and why that is sound.** `AGENTS.md` requires
+verifying both before `preTest`. `Mod/Patches/ColorfulCoats_HlxDodo.xml` still hashes to
+`3229f81d3345…`, byte-identical to what the 2026-09-13 audit read when it established
+`settings_audit: not_applicable` and zero owned in-game strings. Only `About.xml` prose and
+credits changed since, which that audit already treats as outside the in-game translation
+gate. Nothing warrants reopening either gate.
+
+**Original mod's own repository — checked, none found, confirming the 2026-09-12 finding.**
+purpleyam's *Colorful Coats - Dodos!* (Steam item `2388053651`) still declares no repository
+URL in `About.xml` or its Steam description, and the profile-wide sweep recorded above found
+none anywhere else public. There is no upstream repository to open a pull request against;
+this stays a one-way, no-contact port under the `silent` classification already recorded.
+
+**Evidence on disk — nothing to prune.** No `Tests/Pickle/Evidence/`, `evidence/`, or
+`pickle-reports-archive/` exists under this repository; this mod has never run a Pickle suite.
+Nothing was deleted because nothing of that kind exists yet.
+
+**Doc-reading log started** at `docs/PROTOCOLS-READ.md`: which shared protocol was opened this
+pass, its fingerprint, and which linked documents were not reopened and why, so the next pass
+checks a fingerprint before re-reading a document that has not moved.
+
+### Gate re-check against AUDIT.md's cumulative sequence
+
+No transition result changes. `preTest -> done` remains the last one whose criteria are met;
+`done -> tested` remains unmet, for the same two reasons already on record (no executed A-H,
+no game logs) plus the Pickle-suite gap named above, which is new to this pass and belongs to
+the same transition rather than a later one. `stage` is retained at `done`.
+
+Nothing here constitutes a game run, a Steam action beyond the commit of an already-created
+item's ID, a settings/translation change, or new art. `git push` was performed for the two
+commits above; nothing else was pushed.
