@@ -2,9 +2,11 @@
 
 All notable changes to this mod are documented here.
 
-## [1.0.0] — 2026-09-05
+## [Unreleased]
 
-First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.
+Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6. The `1.0.0` tag and GitHub
+release arrive together with the `published` state — the Workshop item going public — not with
+this file alone; until then this section holds what a `1.0.0` will contain.
 
 ### Added
 
@@ -70,3 +72,13 @@ First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.
   unconditionally. ReGrowth 2 has no dodo of its own, so there is exactly one source for the def.
 - All 7 `texPath` values resolve to shipped textures; no shipped texture is unreferenced.
 - Neither the Continued release nor ReGrowth 2 already defines `alternateGraphics` on `RG_Dodo`.
+
+## [0.1.0] — 2026-09-23
+
+Pre-publication. Creates the Workshop item so its `PublishedFileId` exists, nothing more: the
+item is private, as Steam creates every item, and this is not a claim that the mod is tested or
+public.
+
+### Added
+
+- `About/PublishedFileId.txt`, holding `3806766249`.
