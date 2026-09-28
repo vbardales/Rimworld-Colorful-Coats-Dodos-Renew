@@ -43,3 +43,7 @@ PROMPT_*.md
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Pickle reports live on disk, not in git: captures and Player.log grow without limit.
+# A one-line summary per run goes in docs/runs/ instead.
+Tests/Pickle/Evidence/

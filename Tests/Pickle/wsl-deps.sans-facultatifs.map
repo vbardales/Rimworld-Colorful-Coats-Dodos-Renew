@@ -1,0 +1,6 @@
+# Minimal pass: the mod, its one hard dependency (ReGrowth: Extinct Animals (Continued)) and the
+# dependency that pack itself needs. The staging copies only the main mod's direct dependencies,
+# so Vanilla Expanded Framework is named here. This mod has no optional integration.
+OskarPotocki.VanillaFactionsExpanded.Core 2023507013
+nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
+nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod

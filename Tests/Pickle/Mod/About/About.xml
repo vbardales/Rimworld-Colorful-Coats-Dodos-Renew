@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>Colorful Coats - Dodos! Renew - Pickle tests</name>
+  <author>Nelim</author>
+  <packageId>nelim.colorfulcoats.dodos.pickletests</packageId>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>In-game functional tests for Colorful Coats - Dodos! Renew, run by Pickle. Development only: never published.
+
+Features only, no assembly: every step used is Pickle's own or one of Nelim's Pickle Tools.</description>
+  <modDependencies>
+    <li>
+      <packageId>nelim.colorfulcoats.dodos</packageId>
+      <displayName>Colorful Coats - Dodos! Renew (unofficial)</displayName>
+    </li>
+    <li>
+      <packageId>rimworks.pickle</packageId>
+      <displayName>Pickle</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3791648678</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>nelim.colorfulcoats.dodos</li>
+    <li>rimworks.pickle</li>
+  </loadAfter>
+</ModMetaData>
