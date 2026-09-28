@@ -4,7 +4,7 @@ localization: not_applicable
 translation_en: not_applicable
 translation_fr: not_applicable
 mod:          Colorful Coats - Dodos! Renew (unofficial)
-packageId:    nelim.colorfulcoats.dodosrenew
+packageId:    nelim.colorfulcoats.dodos
 repo:         Rimworld-Colorful-Coats-Dodos-Renew
 remote:       https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew.git
 local_path:   C:/Users/nelim/Documents/rimworld/ColorfulCoatsDodosRenew

@@ -41,7 +41,11 @@ this file alone; until then this section holds what a `1.0.0` will contain.
   `PatchOperationSequence` stops at the first operation that returns false rather than skipping
   it, so a future rename would have cost every animal after it its coats. Nothing changes today;
   purpleyam already wrote the Vanilla Animals Expanded mod this way.
-- `packageId` changed from `purpleyam.colorfulcoats.hlxdodo` to `nelim.colorfulcoats.dodosrenew`.
+- `packageId` changed from `purpleyam.colorfulcoats.hlxdodo` to `nelim.colorfulcoats.dodos`.
+  Briefly `nelim.colorfulcoats.dodosrenew` in this same unreleased history; dropped the `renew`
+  segment to match the sibling ports that also carry a `Renew` folder and repository name
+  without it in the `packageId` (`nelim.colorfulcoats.catsanddogs`, `nelim.colorfulcoats.megafauna`).
+  Not yet released under any identifier, so there is nothing to migrate a save away from.
 - `<supportedVersions>` set to 1.6.
 - `<loadAfter>` given `Mlie.ReGrowthExtinctAnimals` alongside the two old identifiers.
 - `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.

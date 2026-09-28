@@ -37,8 +37,8 @@ brown dodos: whether the coats reach the screen is settled below, in the game.
 ## Load order
 
 ```
-Mlie.ReGrowthExtinctAnimals     ReGrowth: Extinct Animals (Continued)   3602926791   the target
-nelim.colorfulcoats.dodosrenew  this mod                                             after it
+Mlie.ReGrowthExtinctAnimals  ReGrowth: Extinct Animals (Continued)   3602926791   the target
+nelim.colorfulcoats.dodos    this mod                                             after it
 ```
 
 The Continued target is explicitly declared in `modDependencies` for the delivered 1.6 mod.

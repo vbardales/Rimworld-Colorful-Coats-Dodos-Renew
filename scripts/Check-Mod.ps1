@@ -412,12 +412,21 @@ else { Write-Bad "`"$MyName`" donne $nName, le dossier $FolderName donne $nFolde
 if ($MyPackageId -cne $MyPackageId.ToLowerInvariant()) {
     Write-Warn "packageId avec des majuscules : $MyPackageId"
 }
+# Le dossier et le depot d'un port porte le suffixe "Renew" par convention de la famille de
+# mods ; le packageId, lui, ne le reprend pas forcement. Deux des trois ports Colorful Coats
+# deja publies (CatsAndDogs, Megafauna) ont un packageId sans "renew" alors que leur dossier
+# et leur depot le portent : ce n'est donc pas une identite manquante, c'est le motif etabli.
+$nFolderNoRenew = $nFolder -replace 'renew$', ''
+
 $seg = @($MyPackageId -split '\.')
 if ($seg.Count -lt 2) {
     Write-Bad "packageId sans auteur : $MyPackageId"
 } else {
     $nId = Get-Squashed (($seg[1..($seg.Count - 1)]) -join '')
     if ($nId -eq $nFolder) { Write-Ok "$MyPackageId, auteur $($seg[0]) mis a part" }
+    elseif ($nFolderNoRenew -and $nId -eq $nFolderNoRenew) {
+        Write-Ok "$MyPackageId, auteur $($seg[0]) mis a part, dossier prive de son suffixe Renew (convention de la famille)"
+    }
     else { Write-Bad "$MyPackageId donne $nId apres l'auteur, le dossier donne $nFolder" }
 }
 
