@@ -34,6 +34,7 @@ remaining:
     Pawn.overrideGraphicIndex (which no renderer reads). Tests/Pickle/Check-Steps.ps1 resolves every step offline. TESTING.md D and E (add/remove mid-save) cannot be automated in
     this harness (one mod set per launch) and stay unverified. Since the coat is computed from the bird id and stored nowhere,
     birds already in a save will change colour when the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not.
+    Request 20260928-095757-346-b506 keeps its old label (b1f0a80 + 9b1a8f0) but stages the working tree at its turn: Dodos c47a57d + PickleTools e4358c6.
     The incompatibility pass for purpleyam.colorfulcoats.hlxdodo is pending. See Tests/Pickle/README.md
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
