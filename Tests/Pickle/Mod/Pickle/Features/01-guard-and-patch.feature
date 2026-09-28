@@ -12,7 +12,9 @@ Feature: the coats reach the dodo's definition
     Then def "RG_Dodo" of type "PawnKindDef" exists
 
   Scenario: this mod's patch, and not another's, changed the dodo
-    Then def "RG_Dodo" was patched by mod "nelim.colorfulcoats.dodos"
+    # The step takes the mod display name, as the game reports it: not the packageId.
+    Then def "RG_Dodo" was patched by mod "Colorful Coats - Dodos! Renew (unofficial)"
 
   Scenario: the patch really applied, with the documented chance
-    Then def "RG_Dodo" field "alternateGraphicChance" is "0.8"
+    # "RG_Dodo" is a ThingDef and a PawnKindDef, so Pickle's own field step refuses it: name the kind.
+    Then Nelim's Pickle Tools: the pawn kind "RG_Dodo" keeps 7 alternate graphics at a chance of "0.8"

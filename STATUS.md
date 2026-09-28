@@ -28,7 +28,7 @@ workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet
 remaining:
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
-  - unverified: Tests/Pickle written 2026-09-28, never run: guard fired, patch attributed, 21 textures answered by this mod,
+  - partly verified: Tests/Pickle first run 2026-09-28 (docs/runs/2026-09-28.txt): 27 of 29 passed, 2 test-side failures fixed, rerun pending. Written: guard fired, patch attributed, 21 textures answered by this mod,
     clean load, coats on spawn (B, @review capture), coat survives reload (C). The last two use the shared
     PickleTools/CoatSteps, compiled but never played; corrected 2026-09-28 to read PawnGraphicUtils.GetGraphicIndex, not
     Pawn.overrideGraphicIndex (which no renderer reads). Tests/Pickle/Check-Steps.ps1 resolves every step offline. TESTING.md D and E (add/remove mid-save) cannot be automated in
