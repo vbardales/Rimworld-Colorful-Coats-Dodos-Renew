@@ -36,6 +36,7 @@ remaining:
     birds already in a save will change colour when the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not.
     Request 20260928-095757-346-b506 keeps its old label (b1f0a80 + 9b1a8f0) but stages the working tree at its turn: Dodos c47a57d + PickleTools e4358c6.
     The incompatibility pass for purpleyam.colorfulcoats.hlxdodo is pending. See Tests/Pickle/README.md
+  - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
               no Pickle ticket, no TicketDispatcher registration
