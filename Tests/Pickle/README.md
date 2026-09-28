@@ -9,10 +9,14 @@ Kept in Gherkin because only a running game answers it: that the guard matched (
 mod), that the game's content holders serve the 21 textures and no other mod took the path, and that the load is
 clean. Everything a file can prove stays in `scripts/Check-Mod.ps1`.
 
-**Not written yet**, and needing local C# steps because no built-in step spawns an animal or reads which coat it
-drew: TESTING.md B (seven coats visible, `@review`), C (`Pawn.overrideGraphicIndex` survives save and reload),
-D and E (add or remove the mod mid-save). A, F and G are covered here or by the pass matrix below. Until those are
-written and run, `done -> tested` stays unmet.
+**Spawn and reload** (`04-`, `05-`) use `PickleTools/CoatSteps`, shared with the other Colorful Coats ports: TESTING.md B
+(different coats among spawned adults, one `@review` capture) and C (`Pawn.overrideGraphicIndex` survives save and reload).
+Those steps compile but have never run.
+
+**Not automatable here:** D and E (add or remove the mod in a save that already exists). They need two launches of one
+save with different mod sets, and the harness stages one set per launch. They are also the game's reading of a saved index
+against a list that changed, which the mod declares nothing about. They stay unverified, and the About and README claim
+"safe to add or remove" stays a claim until someone plays them. Until the rest is run, `done -> tested` stays unmet.
 
 ## Pass matrix
 
