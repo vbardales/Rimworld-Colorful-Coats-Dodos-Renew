@@ -18,6 +18,7 @@ licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
 visibility_checked: 2026-09-12, original files and live Steam description
 licence_at:   LICENSE, Mod/LICENSE, Mod/About/About.xml, ATTRIBUTION.md
+upstream_mod_remotes: N/A
 title_suffix: (unofficial), already present
 github_description: present
 dependencies: declared
