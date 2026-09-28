@@ -24,19 +24,24 @@ github_description: present
 dependencies: declared
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
-tested_on:
+tested_on:    2026-09-28, Tests/Pickle minimal pass only (29/29); manual scenarios A-H not human-played, D/E not automatable,
+              incompatibility pass (F) unwritten
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
-  - partly verified: Tests/Pickle first run 2026-09-28 (docs/runs/2026-09-28.txt): 27 of 29 passed, 2 test-side failures fixed, rerun pending. Written: guard fired, patch attributed, 21 textures answered by this mod,
-    clean load, coats on spawn (B, @review capture), coat survives reload (C). The last two use the shared
-    PickleTools/CoatSteps, compiled but never played; corrected 2026-09-28 to read PawnGraphicUtils.GetGraphicIndex, not
-    Pawn.overrideGraphicIndex (which no renderer reads). Tests/Pickle/Check-Steps.ps1 resolves every step offline. TESTING.md D and E (add/remove mid-save) cannot be automated in
-    this harness (one mod set per launch) and stay unverified. Since the coat is computed from the bird id and stored nowhere,
-    birds already in a save will change colour when the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not.
-    Request 20260928-095757-346-b506 keeps its old label (b1f0a80 + 9b1a8f0) but stages the working tree at its turn: Dodos c47a57d + PickleTools e4358c6.
-    The incompatibility pass for purpleyam.colorfulcoats.hlxdodo is pending. See Tests/Pickle/README.md
+  - verified: Tests/Pickle minimal pass, request 1193, 2026-09-28 (docs/runs/2026-09-28.txt): 29 of 29 passed, exitReason
+    passed. Guard fired, patch attributed, def type asserted (7 alternate graphics, chance 0.8), 21 textures answered by
+    this mod, clean load, coats on spawn (B), drawn texture matches the coat index, coat survives reload (C). The
+    @review capture (Tests/Pickle/Evidence/2026-09-28-minimal-rerun/screenshots) was opened: ten dodos, several
+    distinct coats, small and dim under a mountain roof - readable but not gallery-quality. First run (b506, 27/29)
+    had two test-side failures, both fixed; that evidence pruned, this run's kept. Staged: Dodos acc24a4 + PickleTools
+    09f9c0e.
+  - unverified: TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
+    Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
+    the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not (see decision below).
+  - unverified: the incompatibility pass for purpleyam.colorfulcoats.hlxdodo (TESTING.md F) is not written. See
+    Tests/Pickle/README.md
   - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
