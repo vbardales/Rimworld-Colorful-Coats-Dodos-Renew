@@ -28,12 +28,11 @@ workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet
 remaining:
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
-  - unverified: no Tests/Pickle Gherkin suite exists for this mod. AUDIT.md's preTest -> done
-    criterion calls for one written (execution not required at that gate); this mod's manual
-    TESTING.md scenarios A-H have stood in for it so far, which is a real gap against the
-    letter of that criterion, not yet corrected. Its scope, if written, would be exactly what
-    only a running game shows here: coat-colour distribution on spawn, overrideGraphicIndex
-    surviving a save/reload, and the add/remove-mid-save behaviour.
+  - unverified: Tests/Pickle written 2026-09-28 (guard fired, patch attributed, 21 textures answered
+    by this mod, clean load; built-in and PickleTools steps only), never run. Still unwritten, needing
+    local C# steps: coat distribution on spawn (TESTING.md B, @review), overrideGraphicIndex across
+    save/reload (C), add/remove mid-save (D, E). The incompatibility pass for
+    purpleyam.colorfulcoats.hlxdodo is pending. See Tests/Pickle/README.md
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
               no Pickle ticket, no TicketDispatcher registration
