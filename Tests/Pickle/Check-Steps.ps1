@@ -131,10 +131,19 @@ foreach ($feature in $features) {
     catch { Write-Host "SYNTAX $($feature.Name): $($_.Exception.Message)" -ForegroundColor Red; $bad++; continue }
     $text = [IO.File]::ReadAllLines($feature.FullName)
     $plain = @($text | Where-Object { $_ -match '^\s*Scenario:' }).Count
-    $outlines = @($text | Where-Object { $_ -match '^\s*Scenario Outline:' }).Count
-    $rows = @($text | Where-Object { $_ -match '^\s*\|' }).Count
+    # Rows only inside an Examples: table, so a data table on a plain Scenario step (a `|`-prefixed
+    # argument, not an outline) is never counted here.
+    $inExamples = $false
+    $exampleRows = 0
+    $exampleHeaders = 0
+    foreach ($raw in $text) {
+        $t = $raw.Trim()
+        if ($t -match '^Examples:') { $inExamples = $true; $exampleHeaders++; continue }
+        if ($t -match '^(Scenario|Scenario Outline|Feature|Background):') { $inExamples = $false; continue }
+        if ($inExamples -and $t.StartsWith('|')) { $exampleRows++ }
+    }
     # Each Examples table has one header row; a scenario outline plays once per remaining row.
-    $scenarios += $plain + $rows - $outlines
+    $scenarios += $plain + $exampleRows - $exampleHeaders
     foreach ($raw in $text) {
         $line = $raw.Trim()
         if ($line.StartsWith('@')) { foreach ($t in ($line -split '\s+')) { [void]$tags.Add($t) } }
@@ -166,11 +175,16 @@ foreach ($c in ($compiled | Where-Object { $_.Origin -eq 'local' -and -not $_.Us
 }
 
 # A defName shared by two def types (an animal is a ThingDef and a PawnKindDef of the same name:
-# SCPug, akaNEKO_Persian, AEXP_Beagle) makes Pickle's own "def X field/stat/is defined by/was patched" steps refuse to run: the
-# first run failed three scenarios on exactly that. Say which type with a local step instead.
+# RG_Dodo, SCPug, akaNEKO_Persian, AEXP_Beagle) makes Pickle's own "def X field/stat" steps refuse to
+# run: this mod's first Pickle run failed on exactly that ("field" on RG_Dodo). "was patched by mod"
+# is NOT in this list: the same run's "def RG_Dodo was patched by mod ..." step passed cleanly against
+# this shared name, so it is not ambiguous the way "field" and "stat" are. Say which type with a local
+# step instead for the ones that are.
 $shared = @{}
 $ws = 'C:\Program Files (x86)\Steam\steamapps\workshop\content\294100'
-$defRoots = @("$ws\3549460027\Defs", "$ws\3682940618\1.6\Defs", "$ws\2871933948\1.6\Defs")
+# The mod's own dependency, ReGrowth: Extinct Animals (Continued), 3602926791 - see wsl-ids.map. RG_Dodo
+# is both a ThingDef and a PawnKindDef there, which is the exact collision this check exists to catch.
+$defRoots = @("$ws\3602926791\1.6\Defs")
 foreach ($dr in $defRoots) {
     foreach ($xf in Get-ChildItem $dr -Recurse -Filter *.xml -ErrorAction SilentlyContinue | Where-Object { $_.FullName -like '*\Defs\*' }) {
         try { $doc = [xml](Get-Content $xf.FullName -Raw) } catch { continue }
@@ -182,7 +196,7 @@ foreach ($dr in $defRoots) {
 }
 foreach ($feature in $features) {
     foreach ($raw in [IO.File]::ReadAllLines($feature.FullName)) {
-        if ($raw.Trim() -match '^(?:Given|When|Then|And|But)\s+def "([^"]+)" (field|stat|raw stat|is defined by|was patched|costs)\b') {
+        if ($raw.Trim() -match '^(?:Given|When|Then|And|But)\s+def "([^"]+)" (field|stat|raw stat)\b') {
             $name = $Matches[1]
             if ($shared.ContainsKey($name) -and $shared[$name].Count -gt 1) {
                 Write-Host "SHARED NAME $($feature.Name): Pickle's def step on '$name', which is $($shared[$name] -join ' and ') - use a local step" -ForegroundColor Red; $bad++
