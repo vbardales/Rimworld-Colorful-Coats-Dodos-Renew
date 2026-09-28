@@ -29,9 +29,11 @@ remaining:
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
   - unverified: Tests/Pickle written 2026-09-28, never run: guard fired, patch attributed, 21 textures answered by this mod,
-    clean load, coats on spawn (B, @review capture), coat survives reload (C). The last two use the new shared
-    PickleTools/CoatSteps, compiled but never played. TESTING.md D and E (add/remove mid-save) cannot be automated in
-    this harness (one mod set per launch) and stay unverified with the About/README "safe to add or remove" claim.
+    clean load, coats on spawn (B, @review capture), coat survives reload (C). The last two use the shared
+    PickleTools/CoatSteps, compiled but never played; corrected 2026-09-28 to read PawnGraphicUtils.GetGraphicIndex, not
+    Pawn.overrideGraphicIndex (which no renderer reads). Tests/Pickle/Check-Steps.ps1 resolves every step offline. TESTING.md D and E (add/remove mid-save) cannot be automated in
+    this harness (one mod set per launch) and stay unverified. Since the coat is computed from the bird id and stored nowhere,
+    birds already in a save will change colour when the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not.
     The incompatibility pass for purpleyam.colorfulcoats.hlxdodo is pending. See Tests/Pickle/README.md
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,

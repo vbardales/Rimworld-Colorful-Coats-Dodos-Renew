@@ -1,8 +1,8 @@
 @requires:nelim.pickletools.coatsteps
 Feature: a dodo keeps its own coat across a save and reload
 
-  # TESTING.md scenario C. Pawn.overrideGraphicIndex is what records the coat and it goes into the
-  # save. A coat that moved to another bird, or was drawn again, would reshuffle the pen on every load.
+  # TESTING.md scenario C. The coat is computed from the pawn id and the kind, not stored, so it comes back only while
+  # the id and the alternateGraphics list are unchanged. A coat that moved to another bird would reshuffle the pen.
 
   Background:
     Given the save "test-colony" is loaded

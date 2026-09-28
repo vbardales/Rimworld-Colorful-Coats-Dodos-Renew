@@ -12,7 +12,6 @@ Feature: dodos hatch in more than one colour
   Scenario: thirty adult dodos show several different coats
     Given Nelim's Pickle Tools: 30 adult animals of kind "RG_Dodo" are spawned
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
-    And Nelim's Pickle Tools: every animal of kind "RG_Dodo" has a coat within its kind's alternate graphics
     And no errors were logged
 
   # Not an assertion: the capture is for a person to open. The camera is wherever the fixture leaves it, and

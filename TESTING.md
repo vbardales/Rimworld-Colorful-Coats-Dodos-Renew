@@ -91,35 +91,36 @@ no `_west` exists, so a west-facing dodo showing its far side reversed is correc
 
 ## C — the coat is per-animal and survives a reload
 
-`Verse.Pawn.overrideGraphicIndex`, a `Nullable<int>`, is what records which entry of
-`alternateGraphics` a pawn drew, and it goes into the save under that same name. Verified by
-reflection against 1.6's `Assembly-CSharp.dll`, and the label is present in the assembly's string
-heap.
+Corrected 2026-09-28. This section used to say `Pawn.overrideGraphicIndex` records the coat and goes
+into the save. That was wrong: it is declared on `Thing`, nothing in the renderer reads it, and it stays
+null for an ordinary animal. The coat is computed each time the bird is drawn, by
+`PawnGraphicUtils.TryGetAlternate`, from the pawn's `thingIDNumber` and the kind's
+`alternateGraphicChance`; `PawnGraphicUtils.GetGraphicIndex(pawn)` returns it, `-1` for the original
+graphic. Decompiled from 1.6's `Assembly-CSharp.dll` by the Megafauna session, not established here.
 
 - Save with several coloured dodos in view, quit to the menu, load again.
-- Each bird keeps **its own** coat. A coat that jumps to a different animal means the index is
-  being re-rolled rather than read back, which would also mean every reload reshuffles the pen.
+- Each bird keeps **its own** coat. Nothing is saved, so this holds exactly as long as the bird's id
+  and the `alternateGraphics` list are unchanged. A coat that moved to another bird would mean the
+  ids were reassigned.
 
 ## D — added to a save in progress
 
-The README says this is safe. What "safe" means here is worth pinning down, because the index is
-stored per animal: a dodo generated before the mod was added has **no** index, and no index means
-the coat it hatched with.
+Rewritten 2026-09-28. Because the coat is computed from the id and not stored, a dodo generated
+before the mod was added is **not** protected by having no stored index: on the first load with the
+mod it draws a coat like any other, with the chance of 0.8.
 
 - Add the mod to a running colony that already has dodos.
-- Expect the dodos already in the save to stay exactly as they were, and **new** ones — spawned,
-  hatched, or arriving with a caravan — to draw from the seven.
-- If the birds already in the pen change colour on load, that is still not a fault, but it
-  contradicts what was just written above and is worth reporting.
+- Expect roughly eight in ten of the existing birds to change colour on load, and new ones to draw
+  from the seven as well. A bird that changes is the mod working, not a fault.
+- The README's "safe to add to a save in progress" is true in that nothing breaks, but it is not
+  "existing birds stay as they were": that second claim is false and should not be made.
 
 ## E — removed from a save in progress
 
-The other half of the same claim, and the half that cannot be checked offline. Saved indices now
-point into a list the def no longer has.
+Nothing is saved, so removing the mod leaves nothing that points into a list the def no longer has.
 
 - Remove the mod, load the same save.
-- The dodos go back to brown, and nothing in the log names `overrideGraphicIndex`,
-  `alternateGraphic`, or `RG_Dodo`.
+- The dodos go back to brown, and nothing in the log names `alternateGraphic` or `RG_Dodo`.
 
 ## F — two Extinct Animals releases enabled at once
 

@@ -6,7 +6,7 @@ Feature: the 21 coat textures are served by this mod
   # path under Textures without extension; Graphic_Multi asks for the three rotations below.
 
   Scenario Outline: <coat> facing <rotation> is answered by this mod
-    Then the texture "Things/Pawn/Animal/ReGrowth/Dodo/ExtinctDodo<coat>_<rotation>" is answered by the mod "nelim.colorfulcoats.dodos"
+    Then Nelim's Pickle Tools: the texture "Things/Pawn/Animal/ReGrowth/Dodo/ExtinctDodo<coat>_<rotation>" is answered by the mod "nelim.colorfulcoats.dodos"
 
     Examples:
       | coat | rotation |

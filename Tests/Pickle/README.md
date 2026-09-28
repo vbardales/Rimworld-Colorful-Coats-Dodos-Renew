@@ -10,7 +10,7 @@ mod), that the game's content holders serve the 21 textures and no other mod too
 clean. Everything a file can prove stays in `scripts/Check-Mod.ps1`.
 
 **Spawn and reload** (`04-`, `05-`) use `PickleTools/CoatSteps`, shared with the other Colorful Coats ports: TESTING.md B
-(different coats among spawned adults, one `@review` capture) and C (`Pawn.overrideGraphicIndex` survives save and reload).
+(different coats among spawned adults, one `@review` capture) and C (the coat the renderer draws survives save and reload).
 Those steps compile but have never run.
 
 **Not automatable here:** D and E (add or remove the mod in a save that already exists). They need two launches of one
