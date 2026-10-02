@@ -1,3 +1,4 @@
+@requires:nelim.pickletools.screenshotmode
 @requires:nelim.pickletools.coatsteps
 Feature: Workshop gallery captures
 

@@ -14,7 +14,7 @@ Feature: the declared incompatibility with purpleyam's original, observed
     And mod "nelim.colorfulcoats.dodos" is loaded
 
   Scenario: a coat texture is shipped twice
-    Then Nelim's Pickle Tools: the texture "Things/Pawn/Animal/ReGrowth/Dodo/ExtinctDodoA_south" is shipped by at least 2 running mod(s)
+    Then Nelim's Pickle Tools: the texture "Things/Pawn/Animal/ReGrowth/Dodo/ExtinctDodoA_south" is shipped by at least 2 running mods
 
   Scenario: this mod's patch still applies
     Then def "RG_Dodo" was patched by mod "Colorful Coats - Dodos! Renew (unofficial)"
