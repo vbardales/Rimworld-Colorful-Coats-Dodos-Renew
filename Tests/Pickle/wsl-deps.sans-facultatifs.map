@@ -6,3 +6,5 @@ nelim.pickletools.textureowner path:PickleTools/TextureOwner/Mod
 nelim.pickletools.loadaudit path:PickleTools/LoadAudit/Mod
 nelim.pickletools.coatsteps path:PickleTools/CoatSteps/Mod
 nelim.pickletools.screenshotmode path:PickleTools/ScreenshotMode/Mod
+nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
+nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod

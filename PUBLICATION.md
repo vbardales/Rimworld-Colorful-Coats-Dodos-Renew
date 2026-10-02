@@ -77,8 +77,8 @@ change. Steam shows the first image large. `Art/Gallery/0-preview.png` is byte-i
 | # | File | Shows | Status |
 |---|---|---|---|
 | 0 | `Art/Gallery/0-preview.png` | The Preview itself | in place |
-| 1 | `gallery-1-flock` | 14 dodos, at least four coats in one frame: the whole point | not run, not opened |
-| 2 | `gallery-2-group` | 7 dodos, each coat readable | not run, not opened |
+| 1 | `gallery-1-flock` | 14 dodos in a staged keeper yard at midday (gravel, two lamps, a fire), at least four coats in one frame | staged 2026-10-02, not run, not opened |
+| 2 | `gallery-2-group` | The same yard, closer, 7 dodos, each coat readable | staged 2026-10-02, not run, not opened |
 
 The only capture so far (`04-coats-on-spawn`, 2026-09-28) was judged small and dim under a mountain roof, not
 gallery quality. The gallery scenarios do not fix that: the scene is whatever tile the test colony sits on. If the
