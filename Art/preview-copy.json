@@ -35,7 +35,6 @@
     "file": "ModIcon-source.png",
     "corner": "bottom-left",
     "width": 180,
-    "radius": 48,
     "outline": false,
     "veil": "radial",
     "veilSize": 275,
