@@ -45,7 +45,9 @@ this file alone; until then this section holds what a `1.0.0` will contain.
   Briefly `nelim.colorfulcoats.dodosrenew` in this same unreleased history; dropped the `renew`
   segment to match the sibling ports that also carry a `Renew` folder and repository name
   without it in the `packageId` (`nelim.colorfulcoats.catsanddogs`, `nelim.colorfulcoats.megafauna`).
-  Not yet released under any identifier, so there is nothing to migrate a save away from.
+  The private `0.1.0` pre-publication item was created while the manifest still read
+  `nelim.colorfulcoats.dodosrenew`; it has no public subscribers, so there is no save to migrate
+  away from it, but the Workshop item and its `PublishedFileId.txt` stay as they are.
 - `<supportedVersions>` set to 1.6.
 - `<loadAfter>` given `Mlie.ReGrowthExtinctAnimals` alongside the two old identifiers.
 - `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.
@@ -86,3 +88,7 @@ public.
 ### Added
 
 - `About/PublishedFileId.txt`, holding `3806766249`.
+
+The `Mod/` sent with this version is the tree at commit `5a41762`. Its manifest carried
+`packageId` `nelim.colorfulcoats.dodosrenew`, and its `Preview.png` and `ModIcon.png` are the
+earlier versions; all three changed afterwards (see `[Unreleased]`).

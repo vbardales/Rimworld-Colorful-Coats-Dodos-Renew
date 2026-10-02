@@ -13,6 +13,7 @@ visibility:   silent
 github_visibility: public
 detached:     yes
 stage:        done
+workflow_stage: done
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -33,7 +34,7 @@ remaining:
   - verified: Tests/Pickle minimal pass, request 1193, 2026-09-28 (docs/runs/2026-09-28.txt): 29 of 29 passed, exitReason
     passed. Guard fired, patch attributed, def type asserted (7 alternate graphics, chance 0.8), 21 textures answered by
     this mod, clean load, coats on spawn (B), drawn texture matches the coat index, coat survives reload (C). The
-    @review capture (Tests/Pickle/Evidence/2026-09-28-minimal-rerun/screenshots) was opened: ten dodos, several
+    @review capture (Tests/Pickle/Evidence/2026-09-28-minimal-rerun/screenshots/manual--dodo-coats--step0.jpg, minified 2026-10-02 from the 1920x1080 PNG) was opened: ten dodos, several
     distinct coats, small and dim under a mountain roof - readable but not gallery-quality. First run (b506, 27/29)
     had two test-side failures, both fixed; that evidence pruned, this run's kept. Staged: Dodos acc24a4 + PickleTools
     09f9c0e.
@@ -42,11 +43,21 @@ remaining:
     the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not (see decision below).
   - unverified: the incompatibility pass for purpleyam.colorfulcoats.hlxdodo (TESTING.md F) is not written. See
     Tests/Pickle/README.md
+  - unverified: AUDIT.md 2026-10-02 added three conditions to done -> tested. (1) No @wip scenario: met, none exists.
+    (2) Every conditional scenario has run: the F incompatibility pass is unwritten, so not met. No feature carries a
+    mod-level @requires; the existing ones name PickleTools companions, all staged in the minimal pass. (3) No manual
+    test left to validate: A-C are covered by Pickle; D and E must be played or listed as not applicable with a reason;
+    F as above; G (no pack) and H (mod list entry) are not covered by a run.
   - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
               no Pickle ticket, no TicketDispatcher registration
-updated:      2026-09-28, audit re-applied at HEAD 5a41762: DDS caches purged from Mod/ and
+updated:      2026-10-02, AUDIT.md re-applied at HEAD 160ae02 (no stage change, workflow_stage field added,
+              session title colorfulcoats.dodos / done): CHANGELOG 0.1.0 entry corrected (the sent tree carried
+              packageId dodosrenew), evidence minified (Tests/Pickle/README.md, "Evidence to keep"), upstream
+              remote rechecked (still none for purpleyam's Dodos; N/A stands), docs read logged in
+              docs/PROTOCOLS-READ.md, no .dds in git or history. Nothing launched.
+              Earlier: 2026-09-28, audit re-applied at HEAD 5a41762: DDS caches purged from Mod/ and
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
