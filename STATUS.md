@@ -41,10 +41,10 @@ remaining:
   - unverified: TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
     the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not (see decision below).
-  - unverified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo: written 2026-10-02 (06-incompat-hlxdodo.feature, wsl-deps.incompat-hlxdodo.map), never run, steps not checked by Check-Steps.ps1 (needs a Pickle dll path). Observed: the original patches nothing (patch fully commented out) and ships the same 21 PNGs byte for byte. See
+  - verified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo (06-incompat-hlxdodo.feature, wsl-deps.incompat-hlxdodo.map), played 2026-10-02: e03f (3 of 4 green, the fourth fixed) and 53da (1/1, exitReason passed). Observed: the original patches nothing and ships the same 21 PNGs byte for byte; with it loaded this mod still patches RG_Dodo and logs no error. See
     Tests/Pickle/README.md
   - unverified: AUDIT.md 2026-10-02 added three conditions to done -> tested. (1) No @wip scenario: met, none exists.
-    (2) Every conditional scenario has run: the F incompatibility pass is unwritten, so not met. No feature carries a
+    (2) Every conditional scenario has run: F incompatibility pass played 2026-10-02, met; the gallery @requires scenarios (07) are pending ticket c05a. No feature carries a
     mod-level @requires; the existing ones name PickleTools companions, all staged in the minimal pass. (3) No manual
     test left to validate: A-C are covered by Pickle; D and E must be played or listed as not applicable with a reason;
     F as above. Decided 2026-10-02 (Virginie): G and H not applicable (engine behaviour), D and E applicable as owner-played
