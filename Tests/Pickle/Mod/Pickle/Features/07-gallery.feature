@@ -7,7 +7,7 @@ Feature: Workshop gallery captures
   # Staged photographs, not assertions (rule of 2026-10-02, PickleTools/docs/STAGING.md): a person opens each image.
   #
   # The story of the series: a dodo keeper's yard at midday. The birds hatched in more colours than the pen was
-  # built for, so the keeper swept a gravel yard, put a lamp at each end and a fire at the back, and let the flock
+  # built for, so the keeper swept a gravel yard, put a torch at each end, a pot of green at the back corners and a fire at the back, and let the flock
   # out to be counted. Every image shares that set; the decor is placed, photographed, and taken away again by the
   # StageDecor step (which also runs after every scenario).
   #
@@ -22,10 +22,14 @@ Feature: Workshop gallery captures
     And I set the weather to "Clear"
     And Nelim's Pickle Tools: the roof is removed from (112, 112) to (138, 138)
     And Nelim's Pickle Tools: I lay the floor "Gravel" from (118, 118) to (132, 132)
-    And Nelim's Pickle Tools: I place the decor "StandingLamp" at (118, 125)
-    And Nelim's Pickle Tools: I place the decor "StandingLamp" at (132, 125)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (118, 125)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (132, 125)
     And Nelim's Pickle Tools: I place the decor "Campfire" at (125, 132)
     And Nelim's Pickle Tools: the decor "Campfire" at (125, 132) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (118, 125) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (132, 125) is lit
+    And Nelim's Pickle Tools: I place the decor "PlantPot" at (120, 131)
+    And Nelim's Pickle Tools: I place the decor "PlantPot" at (130, 131)
 
   # Image 1: the whole flock in the yard, many coats in one frame.
   @review @gallery

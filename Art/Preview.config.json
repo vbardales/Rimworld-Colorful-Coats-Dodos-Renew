@@ -2,10 +2,23 @@
   "title": "Colorful Coats - Dodos! Renew (unofficial)",
   "titleSize": 42,
   "titleParts": [
-    { "text": "Colorful Coats", "scale": 1 },
-    { "break": true },
-    { "text": "Dodos!", "scale": 1 },
-    { "text": "Renew", "scale": 0.65, "font": "ui", "color": "secondary" }
+    {
+      "text": "Colorful Coats",
+      "scale": 1
+    },
+    {
+      "break": true
+    },
+    {
+      "text": "Dodos!",
+      "scale": 1
+    },
+    {
+      "text": "Renew",
+      "scale": 0.65,
+      "font": "ui",
+      "color": "secondary"
+    }
   ],
   "suffix": "",
   "tag": "(unofficial)",
@@ -15,7 +28,7 @@
   ],
   "layout": "panel",
   "panelAnchor": "top-left",
-  "backgroundFile": "Preview.png",
+  "backgroundFile": "Preview-source.png",
   "backgroundPosition": "center",
   "backgroundSize": "cover",
   "echo": {
@@ -40,5 +53,12 @@
     "veilSize": 275,
     "veilLeft": -55,
     "veilBottom": -61
+  },
+  "palette": {
+    "veil": "#594C39",
+    "inkPrimary": "#F2ECE1",
+    "inkSecondary": "#F4C978",
+    "accent": "#639DEB",
+    "badgeInk": "#17120E"
   }
 }

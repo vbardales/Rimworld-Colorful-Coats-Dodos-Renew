@@ -158,6 +158,10 @@ Firecrawl CLI was unavailable; web search and a direct HTTP fetch were used inst
 ## Preview overlay — 2026-09-12
 
 - Final output: `Mod/About/Preview.png`, 896 × 504, 341,177 bytes (under 900 KB).
+- Superseded 2026-10-02: `Art/Preview.png`, `Art/preview.html`, `Art/render-preview.cjs`, `Art/compose-preview.cjs`,
+  `Art/preview-palette.json` and the other generated intermediates were removed. The source is
+  `Art/Preview-source.png`; copy, layout and palette are in `Art/Preview.config.json` (see the
+  2026-10-02 migration section below). The paragraph below is the 2026-09-12 record as it was.
 - Text-free illustration: `Art/Preview.png`, copied unchanged from `Art/Preview-source.png`.
   No illustration replacement or generation; the original source remains available at that path.
 - Composition and layout parameters: `Art/preview.html`; reproducible capture and contrast
@@ -490,3 +494,8 @@ the same transition rather than a later one. `stage` is retained at `done`.
 Nothing here constitutes a game run, a Steam action beyond the commit of an already-created
 item's ID, a settings/translation change, or new art. `git push` was performed for the two
 commits above; nothing else was pushed.
+
+
+## Preview source migration — 2026-10-02
+
+Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
