@@ -1,0 +1,20 @@
+{
+  "templateStamp": "82de20b8aa50",
+  "workshopId": "3806766249",
+  "packageId": "nelim.colorfulcoats.dodos",
+  "releaseTitle": "Colorful Coats - Dodos! Renew {version}",
+  "requirePaths": [
+    "Patches"
+  ],
+  "forbidPaths": [
+    "Assemblies"
+  ],
+  "previewFile": "About/Preview.png",
+  "galleryDir": "Art/Gallery",
+  "aboutFromDescription": true,
+  "description": {
+    "file": "PUBLICATION.md",
+    "format": "markdown",
+    "heading": "^## Steam description$"
+  }
+}
