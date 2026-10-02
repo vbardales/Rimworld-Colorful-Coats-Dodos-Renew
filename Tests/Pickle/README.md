@@ -26,7 +26,7 @@ as not applicable with a reason.
 |---|---|---|
 | Minimal | `wsl-deps.sans-facultatifs.map` | green, 29/29, 2026-09-28 (request 1193) |
 | Optional integration | none: the mod has no optional gameplay integration | not applicable |
-| Declared incompatibility `purpleyam.colorfulcoats.hlxdodo` (Workshop 2388053651) | `wsl-deps.incompat-hlxdodo.map`, not written | pending: stage the original, observe its symptom, then assert it |
+| Declared incompatibility `purpleyam.colorfulcoats.hlxdodo` (Workshop 2388053651) | `wsl-deps.incompat-hlxdodo.map`, `06-incompat-hlxdodo.feature` | written 2026-10-02, not run; asserts a shared texture path, patch still applied, no errors |
 | DLC absent | none: no DLC is referenced | not applicable |
 | English and French | none: the mod owns no in-game text (STATUS.md, 2026-09-13) | not applicable |
 | Restart sequence | none until the save scenarios exist | pending |

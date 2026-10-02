@@ -41,7 +41,7 @@ remaining:
   - unverified: TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
     the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not (see decision below).
-  - unverified: the incompatibility pass for purpleyam.colorfulcoats.hlxdodo (TESTING.md F) is not written. See
+  - unverified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo: written 2026-10-02 (06-incompat-hlxdodo.feature, wsl-deps.incompat-hlxdodo.map), never run, steps not checked by Check-Steps.ps1 (needs a Pickle dll path). Observed: the original patches nothing (patch fully commented out) and ships the same 21 PNGs byte for byte. See
     Tests/Pickle/README.md
   - unverified: AUDIT.md 2026-10-02 added three conditions to done -> tested. (1) No @wip scenario: met, none exists.
     (2) Every conditional scenario has run: the F incompatibility pass is unwritten, so not met. No feature carries a
