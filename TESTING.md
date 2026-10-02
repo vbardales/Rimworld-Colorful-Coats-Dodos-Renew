@@ -105,6 +105,10 @@ graphic. Decompiled from 1.6's `Assembly-CSharp.dll` by the Megafauna session, n
 
 ## D — added to a save in progress
 
+**Applicable, played by the owner** (Virginie, 2026-10-02): not automatable, so a user-controlled check. Load
+the save without the mod and count the coloured dodos (none expected), add the mod, load again, count how many
+changed colour, and record both counts here with the date. Expected: about 8 in 10 of the existing birds.
+
 Rewritten 2026-09-28. Because the coat is computed from the id and not stored, a dodo generated
 before the mod was added is **not** protected by having no stored index: on the first load with the
 mod it draws a coat like any other, with the chance of 0.8.
@@ -116,6 +120,10 @@ mod it draws a coat like any other, with the chance of 0.8.
   "existing birds stay as they were": that second claim is false and should not be made.
 
 ## E — removed from a save in progress
+
+**Applicable, played by the owner** (Virginie, 2026-10-02), same form as D: load with the mod and count the
+coloured dodos, remove the mod, reload, and confirm every dodo is brown and the log names neither
+`alternateGraphic` nor `RG_Dodo`. Record the counts here with the date.
 
 Nothing is saved, so removing the mod leaves nothing that points into a list the def no longer has.
 
@@ -136,11 +144,18 @@ twice. Two blocks could, and did, leaving the def with two `alternateGraphics` l
 
 ## G — the mod alone, with no Extinct Animals at all
 
+**Not applicable** (Virginie, 2026-10-02): what the game does with a missing hard dependency is the
+game's behaviour, not the mod's (AUDIT.md, "On ne teste pas le jeu"). The mod answers for what it
+declares, and `About.xml` declares the dependency. The text below is kept as the original intent only.
+
 - Enable this mod with the pack switched off entirely.
 - The mod list must report the missing Continued dependency. If loading is forced for this
   diagnostic scenario, the guarded patch must remain inert and produce no patch failure.
 
 ## H — the mod list entry itself
+
+**Not applicable** (Virginie, 2026-10-02): the game draws the mod list entry. The name, icon and Preview are
+files, checked offline (`Check-Mod.ps1`, size and dimensions).
 
 - The name reads `Colorful Coats - Dodos! Renew (unofficial)`.
 - The icon is drawn at about 32 px there. The mascot's face should be readable at that size; it is

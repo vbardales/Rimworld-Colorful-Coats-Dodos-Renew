@@ -47,7 +47,8 @@ remaining:
     (2) Every conditional scenario has run: the F incompatibility pass is unwritten, so not met. No feature carries a
     mod-level @requires; the existing ones name PickleTools companions, all staged in the minimal pass. (3) No manual
     test left to validate: A-C are covered by Pickle; D and E must be played or listed as not applicable with a reason;
-    F as above; G (no pack) and H (mod list entry) are not covered by a run.
+    F as above. Decided 2026-10-02 (Virginie): G and H not applicable (engine behaviour), D and E applicable as owner-played
+    checks (counts before and after), recorded in TESTING.md.
   - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
 session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
