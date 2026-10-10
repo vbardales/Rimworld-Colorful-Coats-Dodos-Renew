@@ -38,15 +38,17 @@ Feature: Workshop gallery captures
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
     When game speed is paused
     And Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (118, 118) to (132, 132) filling 85 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (118, 118) to (132, 132) filling 50 percent of the screen
     And I take a screenshot "gallery-1-flock"
 
-  # Image 2: the same yard, closer, seven birds, so each coat reads on its own.
+  # Image 2: the same yard, closer, seven birds, so each coat reads on its own. The game bounds the camera root size at 11
+  # (cannot zoom nearer), so the tightest frame is an 11-cell square at 50 percent; first play (2026-10-10) asked for 8 and 15
+  # cells at 80 and 85 percent and read back 11.
   @review @gallery
   Scenario: a few birds up close, each coat readable
     Given Nelim's Pickle Tools: 7 adult animals of kind "RG_Dodo" are spawned around (125, 125)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
     And Nelim's Pickle Tools: developer mode is turned off for the capture
-    And Nelim's Pickle Tools: I frame the cells (121, 121) to (129, 129) filling 80 percent of the screen
+    And Nelim's Pickle Tools: I frame the cells (120, 120) to (130, 130) filling 50 percent of the screen
     And I take a screenshot "gallery-2-group"
