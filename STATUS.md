@@ -66,7 +66,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
 protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
 ---
 
-# Colorful Coats - Dodos! Renew — status
+# Colorful Coats - Dodos! Renew: status
 
 Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
 root, never inside `Mod/`, so Steam never receives it.
@@ -91,15 +91,15 @@ Game validation is recorded separately in `tested_on` and the relevant `remainin
 Its absence does not block the `done` stage.
 The tracking fields use these conventions:
 
-- **`stage`** — the exact state name from the user's cumulative workflow; see the
+- **`stage`**, the exact state name from the user's cumulative workflow; see the
   sequence and interpretation in the latest audit below.
-- **`tested_on`** — the date of the last run in game. Empty means never.
-- **`dependencies`** — `declared` when every mod this one needs is named in the About's
+- **`tested_on`**, the date of the last run in game. Empty means never.
+- **`dependencies`**, `declared` when every mod this one needs is named in the About's
   `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
   declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
   2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
   the class it injects belongs to a mod that was not declared and not loaded.
-- **`remaining`** — what is left, in three kinds: `feature` for something missing from a first
+- **`remaining`**, what is left, in three kinds: `feature` for something missing from a first
   release, `defect` for a known fault left unfixed, `unverified` for what could not be checked.
   The line already there is true of nearly the whole repository; replace it once it stops being.
 
@@ -110,7 +110,7 @@ has no declared licence according to the repository attribution. The MIT licence
 additions does not change that category. `licence` retains the same classification for compatibility.
 `github_visibility` separately records whether the GitHub repository is public or private.
 
-## Visibility recheck — 2026-09-12
+## Visibility recheck: 2026-09-12
 
 `visibility: silent` retained after checking:
 
@@ -157,7 +157,7 @@ Scope covers these public Steam pages as retrieved on 2026-09-12, not deleted/pr
 or private correspondence; no message was sent to the author.
 Firecrawl CLI was unavailable; web search and a direct HTTP fetch were used instead.
 
-## Preview overlay — 2026-09-12
+## Preview overlay: 2026-09-12
 
 - Final output: `Mod/About/Preview.png`, 896 × 504, 341,177 bytes (under 900 KB).
 - Superseded 2026-10-02: `Art/Preview.png`, `Art/preview.html`, `Art/render-preview.cjs`, `Art/compose-preview.cjs`,
@@ -194,7 +194,7 @@ Firecrawl CLI was unavailable; web search and a direct HTTP fetch were used inst
 - Preview committed and pushed to GitHub in `86393b0`; no Steam publication performed.
   In-game test status is unchanged.
 
-## Translation audit — 2026-09-13
+## Translation audit: 2026-09-13
 
 Applied the translation gate in the shared `../PUBLISHING.md` and
 `../TRANSLATIONS.md` to the working tree based on commit
@@ -231,7 +231,7 @@ Repeat this inventory after changes to patches, Defs, UI code or language resour
 Reset affected translation fields to `unchecked` until revalidation; any newly owned
 in-game text requires English and French coverage and separate runtime checks.
 
-## Technical validation — 2026-09-12
+## Technical validation: 2026-09-12
 
 `scripts/Check-Mod.ps1 -TargetPath 'C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/3602926791'`
 passed all four checks with no warnings: RG_Dodo xpath resolves, display-name guard matches,
@@ -244,7 +244,7 @@ This is static validation, not a game run; `tested_on` remains empty, independen
 GitHub links verified against the installed target metadata. The existing load order is retained.
 Historical guards remain in the patch, but the delivered 1.6 mod requires the Continued release.
 
-## Cumulative workflow audit — 2026-09-13
+## Cumulative workflow audit: 2026-09-13
 
 Audited at approximately 01:48 CEST, against HEAD
 `1713e41be5f04a53d004bd47bac5b4f92afef418` and the actual working tree.
@@ -377,7 +377,7 @@ bug. Optional editorial cleanup: the checker contains French comments despite th
 shared English convention, and TESTING scenario H's banner wording could explicitly
 distinguish the Renew title from its separate 1.6 badge. These do not block the next gate.
 
-## Attribution correction — 2026-09-13
+## Attribution correction: 2026-09-13
 
 At the user's request, copied the reviewed root ATTRIBUTION.md to Mod/ATTRIBUTION.md.
 The distributed copy now includes Erin's base-texture credit and the qualified
@@ -396,7 +396,7 @@ request. Existing About.xml and TESTING.md edits were preserved; no game tests,
 publication or commit were performed. Document equality and `git diff --check`
 were verified; this documentation-only correction requires no gameplay regression run.
 
-## Description source link correction — 2026-09-13
+## Description source link correction: 2026-09-13
 
 Replaced the raw source URL paragraph in Mod/About/About.xml with the required
 Steam-formatted `Source code on GitHub` link at the very end of the description,
@@ -414,7 +414,7 @@ unverified and `tested_on` stays empty. Historical audit results above are retai
 This change affects only About description text and STATUS.md. No Steam update,
 commit or game test was performed, and existing local changes were preserved.
 
-## Dependency documentation correction — 2026-09-13
+## Dependency documentation correction: 2026-09-13
 
 At the user's request, first committed the preceding audit, attribution, source-link
 and dependency-scenario changes as
@@ -439,7 +439,7 @@ explicitly unverified; `tested_on` stays empty. No game run or push was performe
 This follow-up changes README.md, Mod/About/About.xml and STATUS.md and is not yet
 committed. Historical audit entries above describe their original snapshots.
 
-## Re-audit and housekeeping — 2026-09-28
+## Re-audit and housekeeping: 2026-09-28
 
 Applied `../AUDIT.md` (fingerprint `e85f1285099d…`) against HEAD `c8b2acd`, then the working
 tree. Between the previous entry and today, three commits not covered by any prior audit
@@ -450,35 +450,35 @@ existing licence/attribution findings above; no defect.
 
 **Working-tree findings, all resolved this pass:**
 
-- `Mod/Textures/.../Dodo/*.dds` — 21 BC7 DDS files, dated 2026-09-23, sitting next to the PNGs
+- `Mod/Textures/.../Dodo/*.dds`, 21 BC7 DDS files, dated 2026-09-23, sitting next to the PNGs
   they were compressed from. Never declared shipped anywhere in this repository, and `Mod/` is
   published exactly as it sits on disk: left alone, these would have gone to Steam as 21
   uncredited extra files. Deleted; `*.dds` added to `.gitignore`. Commit `82365ce`.
-- `Mod/About/PublishedFileId.txt` — present, untracked, holding `3806766249`. This confirms a
+- `Mod/About/PublishedFileId.txt`, present, untracked, holding `3806766249`. This confirms a
   0.1.0 pre-publication happened outside this session. Per `AUDIT.md` §11 this is committed
   immediately (losing it would create a second Workshop item on the next upload) with a
   matching `CHANGELOG.md` entry: the file's own first section is renamed `Unreleased` (the
-  `1.0.0` tag arrives only with the `published` state) and a new `## [0.1.0] — 2026-09-23`
+  `1.0.0` tag arrives only with the `published` state) and a new `## [0.1.0] - 2026-09-23`
   section records the pre-publication. Commit `5a41762`, pushed.
-- `Art/ModIcon.ico`, `Art/Preview.ico` — untracked, matching the desktop-icon convention
+- `Art/ModIcon.ico`, `Art/Preview.ico`, untracked, matching the desktop-icon convention
   `AUDIT.md` describes as local-only and outside published content. Left untracked and
   unmodified: no rule requires committing them, and generating or replacing either is the
   mod owner's action alone, not an audit's.
 
-**Settings and localization gates — not re-run, and why that is sound.** `AGENTS.md` requires
+**Settings and localization gates, not re-run, and why that is sound.** `AGENTS.md` requires
 verifying both before `preTest`. `Mod/Patches/ColorfulCoats_HlxDodo.xml` still hashes to
 `3229f81d3345…`, byte-identical to what the 2026-09-13 audit read when it established
 `settings_audit: not_applicable` and zero owned in-game strings. Only `About.xml` prose and
 credits changed since, which that audit already treats as outside the in-game translation
 gate. Nothing warrants reopening either gate.
 
-**Original mod's own repository — checked, none found, confirming the 2026-09-12 finding.**
+**Original mod's own repository, checked, none found, confirming the 2026-09-12 finding.**
 purpleyam's *Colorful Coats - Dodos!* (Steam item `2388053651`) still declares no repository
 URL in `About.xml` or its Steam description, and the profile-wide sweep recorded above found
 none anywhere else public. There is no upstream repository to open a pull request against;
 this stays a one-way, no-contact port under the `silent` classification already recorded.
 
-**Evidence on disk — nothing to prune.** No `Tests/Pickle/Evidence/`, `evidence/`, or
+**Evidence on disk, nothing to prune.** No `Tests/Pickle/Evidence/`, `evidence/`, or
 `pickle-reports-archive/` exists under this repository; this mod has never run a Pickle suite.
 Nothing was deleted because nothing of that kind exists yet.
 
@@ -498,7 +498,7 @@ item's ID, a settings/translation change, or new art. `git push` was performed f
 commits above; nothing else was pushed.
 
 
-## Preview source migration — 2026-10-02
+## Preview source migration: 2026-10-02
 
 Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
 
@@ -516,3 +516,7 @@ Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
 **Working-tree changes found and handled:** `Art/ModIcon-source.png` (owner's, 2026-10-04) is newer than `Mod/About/ModIcon.png` (2026-10-02): derivative stale. Source left untouched. Regenerated `Mod/About/ModIcon.png`, `Art/ModIcon.ico` (`deliverModIcon`) and `Mod/About/Preview.png`, `Art/Gallery/0-preview.png`, `Art/Preview.ico` (`Render-Preview.cjs`). Reserve: `ModIcon.png` is 35 KB, over the 20 to 30 KB guide, standard tool output, not retouched; the owner decides. `social_preview_sha256` absent: the GitHub social preview upload belongs to `mountPreview` (10.f).
 
 **Lint:** `Check-Status.ps1` had 0 error and 4 warnings at entry (retired `stage`, old vocabulary, `protocols_read_sha` missing, `visibility: silent` not public or private). `silent` is this mod's documented licence category; the linter reads it as public or private, which is `github_visibility` here. Left as is.
+
+## Gallery run 2026-10-10 (ticket 5d40)
+
+2/2 scenarios passed (`Tests/Pickle/Evidence/2026-10-10-gallery2`). The framing now holds (camera root size 11), but both captures show the full UI, small dodos on a bare yard: they are test proof, not gallery images. 07-gallery stays open: next step is a scene with decor, a tighter crop and the UI hidden (GALLERY.md). Em dashes removed from README, ATTRIBUTION, CHANGELOG, TESTING and STATUS.

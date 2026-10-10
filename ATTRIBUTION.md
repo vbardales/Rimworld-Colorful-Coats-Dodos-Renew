@@ -1,4 +1,4 @@
-# Colorful Coats - Dodos! — attribution
+# Colorful Coats - Dodos!: attribution
 
 A 1.6 port of **Colorful Coats - Dodos!**, by **purpleyam**
 ([2388053651](https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651)).
@@ -24,7 +24,7 @@ repository; the fourth is not, for the reason given at the end of this file.
 ## What was carried over
 
 Everything the mod contained, which is one patch file and 21 textures. There is no `Defs`
-folder, no assembly and no C# — the mod does one thing and does it in XML.
+folder, no assembly and no C#, the mod does one thing and does it in XML.
 
 | | |
 |---|---|
@@ -54,7 +54,7 @@ for each bird as it is generated. That is the entire mod.
 ## The one thing that was broken
 
 The patch is guarded by `PatchOperationFindMod`. That operation matches on a mod's **display
-name**, not on its `packageId` — `Verse.ModLister.HasActiveModWithName(string)`, which is what
+name**, not on its `packageId`, `Verse.ModLister.HasActiveModWithName(string)`, which is what
 the operation calls, takes a name and compares it to the names of the active mods.
 
 purpleyam listed the three names the Extinct Animals pack had gone by:
@@ -69,7 +69,7 @@ Mlie has since picked the mod up and republished it, and the 1.6 release is call
 fourth name, and it matches none of the three.
 
 **An unmatched `PatchOperationFindMod` is not a failure.** No match means the `match` branch is
-skipped and the operation returns true — no log line, no warning, nothing on screen. The mod
+skipped and the operation returns true, no log line, no warning, nothing on screen. The mod
 would have installed, loaded, and produced brown dodos forever, with no way for a player to tell
 that anything was wrong.
 
@@ -98,7 +98,7 @@ operation per branch this changes nothing today; it means a future rename cannot
 animal its coats. purpleyam wrote the Vanilla Animals Expanded mod this way already.
 
 **A commented-out draft was deleted.** The head of the file held an earlier version of the patch,
-inside `<!-- -->`, pointing at `Things/Pawn/Animal/ExtinctDodo/…` — a texture folder this mod does
+inside `<!-- -->`, pointing at `Things/Pawn/Animal/ExtinctDodo/…`, a texture folder this mod does
 not ship. It was inert, but it was also the only thing in the file that looked like an answer to
 "where are the textures?" and was wrong.
 
@@ -116,8 +116,8 @@ not ship. It was inert, but it was also the only thing in the file that looked l
 **Colorful Coats - Cats and Dogs!**
 ([2388932599](https://steamcommunity.com/sharedfiles/filedetails/?id=2388932599)) has nothing
 left to port: its 14 patched `PawnKindDef`s, their coat chances and its 78 textures are all
-already inside **Colorful Coats - Vanilla Animals Expanded!**, identical — the textures match
-byte for byte, only the folder names differ. It existed because *Vanilla Animals Expanded — Cats
+already inside **Colorful Coats - Vanilla Animals Expanded!**, identical, the textures match
+byte for byte, only the folder names differ. It existed because *Vanilla Animals Expanded: Cats
 and Dogs* used to be a module of its own; Vanilla Animals Expanded has since absorbed it, and
 purpleyam had already folded the cats and dogs into the Vanilla Animals Expanded patch by then.
 Its own target, `VanillaExpanded.VAECD`, stops at 1.3.

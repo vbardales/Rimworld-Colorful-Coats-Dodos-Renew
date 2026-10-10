@@ -1,6 +1,6 @@
 # Test scenarios
 
-One patch file, 21 textures, no assembly, no def of its own. There is very little here to break —
+One patch file, 21 textures, no assembly, no def of its own. There is very little here to break.
 and everything that can break, breaks **silently**. That is the whole reason this mod needs the
 game rather than a checker.
 
@@ -45,7 +45,7 @@ The Continued target is explicitly declared in `modDependencies` for the deliver
 `<loadAfter>` names the three identifiers the pack has shipped under. Without the required
 target, the mod list should report a missing dependency; the guarded XML remains inert.
 
-`purpleyam.colorfulcoats.hlxdodo` — the original — is named in `<incompatibleWith>` and must stay
+`purpleyam.colorfulcoats.hlxdodo`, the original, is named in `<incompatibleWith>` and must stay
 off.
 
 ## What to search the log for
@@ -65,7 +65,7 @@ Lines naming other mods are not ours to fix, and are worth leaving in whatever g
 
 ---
 
-## A — the guard matches at all
+## A: the guard matches at all
 
 The one scenario that matters. Everything else assumes this one passed.
 
@@ -78,7 +78,7 @@ The one scenario that matters. Everything else assumes this one passed.
   fifth republication is the expected cause, and the fix is to add the name, never to replace the
   others.
 
-## B — the seven coats and the three rotations
+## B: the seven coats and the three rotations
 
 21 textures: seven coats, three rotations each. West is not shipped; RimWorld mirrors `_east` when
 no `_west` exists, so a west-facing dodo showing its far side reversed is correct.
@@ -89,7 +89,7 @@ no `_west` exists, so a west-facing dodo showing its far side reversed is correc
   hides the beak, so a wrong file there is easy to miss.
 - Any missing file shows up in the log as `Could not load UnityEngine.Texture2D` with the path.
 
-## C — the coat is per-animal and survives a reload
+## C: the coat is per-animal and survives a reload
 
 Corrected 2026-09-28. This section used to say `Pawn.overrideGraphicIndex` records the coat and goes
 into the save. That was wrong: it is declared on `Thing`, nothing in the renderer reads it, and it stays
@@ -103,7 +103,7 @@ graphic. Decompiled from 1.6's `Assembly-CSharp.dll` by the Megafauna session, n
   and the `alternateGraphics` list are unchanged. A coat that moved to another bird would mean the
   ids were reassigned.
 
-## D — added to a save in progress
+## D: added to a save in progress
 
 **Applicable, played by the owner** (Virginie, 2026-10-02): not automatable, so a user-controlled check. Load
 the save without the mod and count the coloured dodos (none expected), add the mod, load again, count how many
@@ -119,7 +119,7 @@ mod it draws a coat like any other, with the chance of 0.8.
 - The README's "safe to add to a save in progress" is true in that nothing breaks, but it is not
   "existing birds stay as they were": that second claim is false and should not be made.
 
-## E — removed from a save in progress
+## E: removed from a save in progress
 
 **Applicable, played by the owner** (Virginie, 2026-10-02), same form as D: load with the mod and count the
 coloured dodos, remove the mod, reload, and confirm every dodo is brown and the log names neither
@@ -130,7 +130,7 @@ Nothing is saved, so removing the mod leaves nothing that points into a list the
 - Remove the mod, load the same save.
 - The dodos go back to brown, and nothing in the log names `alternateGraphic` or `RG_Dodo`.
 
-## F — two Extinct Animals releases enabled at once
+## F: two Extinct Animals releases enabled at once
 
 The three `RG_Dodo` names sit in a single `<mods>` block for this reason:
 `PatchOperationFindMod` stops at the first name it finds, so one block cannot apply the coats
@@ -142,7 +142,7 @@ twice. Two blocks could, and did, leaving the def with two `alternateGraphics` l
   distinguishes one list from two, so this scenario is really about the log and about the coats
   not vanishing.
 
-## G — the mod alone, with no Extinct Animals at all
+## G: the mod alone, with no Extinct Animals at all
 
 **Not applicable** (Virginie, 2026-10-02): what the game does with a missing hard dependency is the
 game's behaviour, not the mod's (AUDIT.md, "On ne teste pas le jeu"). The mod answers for what it
@@ -152,7 +152,7 @@ declares, and `About.xml` declares the dependency. The text below is kept as the
 - The mod list must report the missing Continued dependency. If loading is forced for this
   diagnostic scenario, the guarded patch must remain inert and produce no patch failure.
 
-## H — the mod list entry itself
+## H: the mod list entry itself
 
 **Not applicable** (Virginie, 2026-10-02): the game draws the mod list entry. The name, icon and Preview are
 files, checked offline (`Check-Mod.ps1`, size and dimensions).

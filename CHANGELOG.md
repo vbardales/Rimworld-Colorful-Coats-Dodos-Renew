@@ -5,7 +5,7 @@ All notable changes to this mod are documented here.
 ## [Unreleased]
 
 Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6. The `1.0.0` tag and GitHub
-release arrive together with the `published` state — the Workshop item going public — not with
+release arrive together with the `published` state, the Workshop item going public, not with
 this file alone; until then this section holds what a `1.0.0` will contain.
 
 ### Added
@@ -14,7 +14,7 @@ this file alone; until then this section holds what a `1.0.0` will contain.
   drawn for it rather than cropped from the coats it patches. Full-resolution sources are kept
   under `Art/`, outside `Mod/`, so they are never published: the uploader takes the junction's
   target directory as it stands on disk, with no filtering.
-  The icon is a 128 px crop of a 1254x1254 render, which weighed 1.5 MB on its own — against
+  The icon is a 128 px crop of a 1254x1254 render, which weighed 1.5 MB on its own, against
   0.16 MB of textures. The crop is tighter than the render because the icon is drawn at 32 px in
   the mod list, where the full composition read as a coloured blur.
 
@@ -22,7 +22,7 @@ this file alone; until then this section holds what a `1.0.0` will contain.
 
 - `PatchOperationFindMod`: `ReGrowth: Extinct Animals (Continued)` added to the `<mods>` list of
   the operation that patches `RG_Dodo`. The operation matches on a mod's **display name**, not on
-  its `packageId` — `Verse.ModLister.HasActiveModWithName(string)` — and purpleyam's three names
+  its `packageId` (`Verse.ModLister.HasActiveModWithName(string)`) and purpleyam's three names
   were all superseded when Mlie republished the pack under a fourth. An unmatched
   `PatchOperationFindMod` is not an error: the `match` branch is skipped, the operation returns
   true, and nothing is logged. The mod would have installed, loaded, thrown nothing, and produced
@@ -32,8 +32,8 @@ this file alone; until then this section holds what a `1.0.0` will contain.
 
 ### Changed
 
-- The two `PatchOperationFindMod` blocks that patched `RG_Dodo` — one for
-  `ReGrowth Remastered: Extinct Animals`, one for `ReGrowth: Extinct Animals` — merged into a
+- The two `PatchOperationFindMod` blocks that patched `RG_Dodo` (one for
+  `ReGrowth Remastered: Extinct Animals`, one for `ReGrowth: Extinct Animals`) merged into a
   single block listing all three names. They had the same xpath and the same value, so with both
   mods active the coats were applied twice, leaving the def with two `alternateGraphics` lists.
   `PatchOperationFindMod` stops at the first name it finds, so one block cannot do that.
@@ -70,7 +70,7 @@ this file alone; until then this section holds what a `1.0.0` will contain.
 ### Verified
 
 - `Verse.PawnKindDef.alternateGraphics` and `alternateGraphicChance`, and
-  `Verse.AlternateGraphic.texPath`, all still exist under those names in 1.6 — checked by
+  `Verse.AlternateGraphic.texPath`, all still exist under those names in 1.6, checked by
   reflection against `Assembly-CSharp.dll`. An XML element matching no field does not stop the
   game: it logs one line and loads with the field unset.
 - `RG_Dodo` is defined in the Continued release as both a `ThingDef` and a `PawnKindDef`, in
@@ -79,7 +79,7 @@ this file alone; until then this section holds what a `1.0.0` will contain.
 - All 7 `texPath` values resolve to shipped textures; no shipped texture is unreferenced.
 - Neither the Continued release nor ReGrowth 2 already defines `alternateGraphics` on `RG_Dodo`.
 
-## [0.1.0] — 2026-09-23
+## [0.1.0] - 2026-09-23
 
 Pre-publication. Creates the Workshop item so its `PublishedFileId` exists, nothing more: the
 item is private, as Steam creates every item, and this is not a claim that the mod is tested or

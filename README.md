@@ -4,10 +4,10 @@ UNOFFICIAL. This mod is published without the original author's explicit consent
 
 Port of **purpleyam's Colorful Coats - Dodos!** to RimWorld 1.6.
 
-**I am not the author of this mod.** The coats and the whole idea are purpleyam's — all I did was
+**I am not the author of this mod.** The coats and the whole idea are purpleyam's, all I did was
 make it find its target again. Credit goes to them; mistakes in the port are mine.
 
-Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651 — declares 1.4 and
+Original mod: https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651, declares 1.4 and
 nothing further. The page is still online; the mod is abandoned, not withdrawn.
 
 ## What the mod does
@@ -23,7 +23,7 @@ nothing else.
 
 This RimWorld 1.6 build requires:
 
-**ReGrowth: Extinct Animals (Continued)**, by Mlie —
+**ReGrowth: Extinct Animals (Continued)**, by Mlie.
 https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791
 
 The required package is `Mlie.ReGrowthExtinctAnimals`; load this mod after it.
@@ -40,7 +40,7 @@ Verse.ModLister.HasActiveModWithName(string name)   // what the operation calls
 ```
 
 purpleyam listed the three names the Extinct Animals pack had gone by. Mlie has since republished
-it as **`ReGrowth: Extinct Animals (Continued)`** — a fourth name, matching none of the three.
+it as **`ReGrowth: Extinct Animals (Continued)`**, a fourth name, matching none of the three.
 
 An unmatched `PatchOperationFindMod` **is not a failure**. No match means the `match` branch is
 skipped and the operation returns true. No log line, no warning, nothing on screen. The mod would
@@ -49,7 +49,7 @@ have installed, loaded, sat in the mod list looking fine, and produced brown dod
 That is the failure mode worth naming, because it does not look like a failure.
 
 The fix is one line: the new name joins the `<mods>` list of the operation that patches
-`RG_Dodo`. The old names stay beside it — `PatchOperationFindMod` takes as many as you give it,
+`RG_Dodo`. The old names stay beside it, `PatchOperationFindMod` takes as many as you give it,
 as historical matching data; they do not extend this build's declared compatibility.
 
 ## What else changed
@@ -68,14 +68,14 @@ The colours, the `0.8` chance and the 21 textures are untouched.
 ## Layout
 
 ```
-Mod/          published — the junction into RimWorld/Mods points here
+Mod/          published, the junction into RimWorld/Mods points here
   About/
   Patches/
   Textures/
 Art/          full-resolution sources for the banner and the icon
 ```
 
-Everything outside `Mod/` — this file, the changelog, the attribution, the art sources — stays out
+Everything outside `Mod/`, this file, the changelog, the attribution, the art sources, stays out
 of the Steam upload by construction. `SteamUGC.SetItemContent` takes the junction's target
 directory as it stands on disk, with no filtering.
 
@@ -83,7 +83,7 @@ directory as it stands on disk, with no filtering.
 
 purpleyam declared no licence, checked at all four places one could be: no `LICENSE` file, nothing
 in `About.xml`, no linked repository, and nothing in the body of the Steam description. Republished
-under the usual convention for abandoned mods — full credit, a link to the original, removal on
+under the usual convention for abandoned mods, full credit, a link to the original, removal on
 request. If purpleyam would rather this did not exist, say so and it comes down.
 
 See [TESTING.md](TESTING.md) for what the game has to settle, [ATTRIBUTION.md](ATTRIBUTION.md) for
