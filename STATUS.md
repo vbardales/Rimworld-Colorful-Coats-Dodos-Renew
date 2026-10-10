@@ -12,8 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   silent
 github_visibility: public
 detached:     yes
-stage:        done
-workflow_stage: done
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -51,9 +50,11 @@ remaining:
     checks (counts before and after), recorded in TESTING.md.
   - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
-session:      local_1a82a4f4-4e37-4fcb-87b4-1b86d5c52392 (historical); this pass ran interactively,
-              no Pickle ticket, no TicketDispatcher registration
-updated:      2026-10-02, AUDIT.md re-applied at HEAD 160ae02 (no stage change, workflow_stage field added,
+session:      local_ed9c3e2d-7d1a-4fb8-b837-a905d235ab81 (2026-10-10 audit pass), registered with the Ticket Manager
+updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retired, workflow_stage done -> playTests[1.0.0]
+              (AUDIT.md section 16 table); ModIcon.png/.ico and the Preview chain regenerated from the changed
+              ModIcon-source.png (closing pass 2). See section "Audit 2026-10-10" at the end.
+              Earlier: 2026-10-02, AUDIT.md re-applied at HEAD 160ae02 (no stage change, workflow_stage field added,
               session title colorfulcoats.dodos / done): CHANGELOG 0.1.0 entry corrected (the sent tree carried
               packageId dodosrenew), evidence minified (Tests/Pickle/README.md, "Evidence to keep"), upstream
               remote rechecked (still none for purpleyam's Dodos; N/A stands), docs read logged in
@@ -62,6 +63,7 @@ updated:      2026-10-02, AUDIT.md re-applied at HEAD 160ae02 (no stage change, 
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
+protocols_read_sha: b4a73cf0998fa5914b1d5e52b0817a8fe77abab3
 ---
 
 # Colorful Coats - Dodos! Renew — status
@@ -499,3 +501,18 @@ commits above; nothing else was pushed.
 ## Preview source migration — 2026-10-02
 
 Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. The canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; the shared renderer writes temporary diagnostics under ignored `Art/.render/`. Existing distributed Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run for this migration. Superseded JSON files and generated QA intermediates were removed. Nothing published.
+
+## Audit 2026-10-10
+
+Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
+
+**State: `done` -> `playTests[1.0.0]`** (AUDIT.md section 16 table; target version 1.0.0, the 0.1.0 pre-publication stays an act outside the chain). Transitions up to `writeTests` hold: no gameplay code, no owned text, settings and l10n `not_applicable` as audited 2026-09-13 (patch hash `3229f81d3345...` unchanged), `TESTING.md` scenarios, Pickle suites 01 to 07 written, `Check-Mod.ps1` passed 2026-09-13. The `stage` field is removed; `workflow_stage` replaces it.
+
+**Open in `playTests`:**
+- 8.c / 8.f: `07-gallery.feature` (the `@requires` scenarios) has never passed. Ticket `c05a` of 2026-10-02 ended `invalid` (empty owner, never played), so the earlier note "pending ticket c05a" was wrong: a new request is needed, on `wsl-deps.sans-facultatifs.map` (it already names screenshotmode, stagedecor, camerazoom).
+- 8.g / 8.k: D and E (add or remove mid-save) are owner-played checks, counts before and after, to record in `TESTING.md` (decided 2026-10-02).
+- 8.m: code review not done. No `Source/` here, only `Mod/` XML and textures, so it covers `Mod/Patches/ColorfulCoats_HlxDodo.xml` since `0.1.0`. `code_review_sha` absent.
+
+**Working-tree changes found and handled:** `Art/ModIcon-source.png` (owner's, 2026-10-04) is newer than `Mod/About/ModIcon.png` (2026-10-02): derivative stale. Source left untouched. Regenerated `Mod/About/ModIcon.png`, `Art/ModIcon.ico` (`deliverModIcon`) and `Mod/About/Preview.png`, `Art/Gallery/0-preview.png`, `Art/Preview.ico` (`Render-Preview.cjs`). Reserve: `ModIcon.png` is 35 KB, over the 20 to 30 KB guide, standard tool output, not retouched; the owner decides. `social_preview_sha256` absent: the GitHub social preview upload belongs to `mountPreview` (10.f).
+
+**Lint:** `Check-Status.ps1` had 0 error and 4 warnings at entry (retired `stage`, old vocabulary, `protocols_read_sha` missing, `visibility: silent` not public or private). `silent` is this mod's documented licence category; the linter reads it as public or private, which is `github_visibility` here. Left as is.
