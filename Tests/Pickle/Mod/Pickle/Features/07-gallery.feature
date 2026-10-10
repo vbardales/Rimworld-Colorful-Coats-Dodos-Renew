@@ -37,7 +37,7 @@ Feature: Workshop gallery captures
     Given Nelim's Pickle Tools: 14 adult animals of kind "RG_Dodo" are spawned around (125, 123)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
     When game speed is paused
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the cells (118, 118) to (132, 132) filling 50 percent of the screen
     And I take a screenshot "gallery-1-flock"
 
@@ -49,6 +49,6 @@ Feature: Workshop gallery captures
     Given Nelim's Pickle Tools: 7 adult animals of kind "RG_Dodo" are spawned around (125, 125)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
-    And Nelim's Pickle Tools: developer mode is turned off for the capture
+    And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the cells (120, 120) to (130, 130) filling 50 percent of the screen
     And I take a screenshot "gallery-2-group"
