@@ -1,4 +1,5 @@
 @requires:nelim.pickletools.screenshotmode
+@requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.coatsteps
 @requires:nelim.pickletools.stagedecor
 @requires:nelim.pickletools.camerazoom
