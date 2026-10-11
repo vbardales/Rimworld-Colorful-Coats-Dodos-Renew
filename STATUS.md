@@ -524,3 +524,7 @@ Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
 ## Gallery run 2026-10-11 (ticket 7c3a)
 
 2/2 passed (`Tests/Pickle/Evidence/2026-10-11-gallery5`). Presentation mode hides the whole interface (it needed `nelim.pickletools.screenshotstudio` in the pass map and `@requires`; without it the step is undefined). Remaining defects read on the images: dodos are small (camera floor at root size 11), the yard is bare, the light is dark at the edges. 07-gallery stays open; candidates are not in `Art/Gallery/` yet.
+
+## CI template refresh 2026-10-11
+
+CI/CD ran generate-publish-workflow.sh --replace (no build project: no C#, requirePaths Patches, forbid Assemblies). Four .github files changed: publish.config.json (templateStamp 82de20b8aa50 -> 7a8f3a601751), scripts/build-check.sh (--ci mode), tests/build-check.test.mjs, tests/changelog-section.test.mjs. Diff reread, the 11 tests of those two files pass. Committed by path.
