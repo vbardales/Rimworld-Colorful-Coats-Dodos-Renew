@@ -7,3 +7,4 @@
 2026-10-10 gallery2 (5d40, 90e7107): 2/2 passed, camera size 11; images 1-flock, 2-group captured, not gallery-valid (UI visible, dodos small, bare yard)
 2026-10-11 gallery4 (00cb, 7d3f4a0-ish): 0/2, Undefined step 'studio presentation mode is enabled' (ScreenshotStudio not staged); fixed by adding screenshotstudio to the pass map and @requires
 2026-10-11 gallery5 (7c3a): 2/2 passed, UI hidden (presentation mode). Dodos still small at camera size 11 on a bare yard: not accepted as gallery images yet
+2026-10-11 gallery6 (ab3d): 2/2 passed, image 2 framed at zoom 9; dodos still small, yard bare, dark edges: not accepted as gallery images
