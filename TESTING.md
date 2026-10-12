@@ -121,9 +121,12 @@ mod it draws a coat like any other, with the chance of 0.8.
 
 ## E: removed from a save in progress
 
-**Applicable, played by the owner** (Virginie, 2026-10-02), same form as D: load with the mod and count the
-coloured dodos, remove the mod, reload, and confirm every dodo is brown and the log names neither
-`alternateGraphic` nor `RG_Dodo`. Record the counts here with the date.
+**Applicable, played by Pickle** (2026-10-11; Virginie, 2026-10-12: playing a test means playing its base scenario).
+`Tests/Pickle/Mod/Pickle/Features/08-removal.feature`, one request with two launches: E1 saves a colony that holds
+20 coloured dodos (at least 3 coats) and hands it to the test mod; E2 loads it with `nelim.colorfulcoats.dodos` taken
+out of the mod list, and asserts no dodo carries a coat and no error is logged. Played 2026-10-11, ticket 162e, both
+passed (`Tests/Pickle/Evidence/2026-10-11-removal`; the active list of the second launch holds only the test mod). The
+brown look on the map is not asserted, only the absence of coats.
 
 Nothing is saved, so removing the mod leaves nothing that points into a list the def no longer has.
 

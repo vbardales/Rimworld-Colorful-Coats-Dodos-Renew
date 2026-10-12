@@ -528,3 +528,7 @@ Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
 ## CI template refresh 2026-10-11
 
 CI/CD ran generate-publish-workflow.sh --replace (no build project: no C#, requirePaths Patches, forbid Assemblies). Four .github files changed: publish.config.json (templateStamp 82de20b8aa50 -> 7a8f3a601751), scripts/build-check.sh (--ci mode), tests/build-check.test.mjs, tests/changelog-section.test.mjs. Diff reread, the 11 tests of those two files pass. Committed by path.
+
+## Removal check E played by Pickle (2026-10-11)
+
+`08-removal.feature` (E1 save with the mod, E2 load without it) passed, ticket 162e, evidence `Tests/Pickle/Evidence/2026-10-11-removal`. TESTING.md E now describes it. Case D still open: no step counts dodos that already exist on the map (question to NPT pending in the Ticket Manager relay).
