@@ -512,7 +512,7 @@ Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
 **Open in `playTests`:**
 - 8.c / 8.f: `07-gallery.feature` (the `@requires` scenarios) has never passed. Ticket `c05a` of 2026-10-02 ended `invalid` (empty owner, never played), so the earlier note "pending ticket c05a" was wrong: a new request is needed, on `wsl-deps.sans-facultatifs.map` (it already names screenshotmode, stagedecor, camerazoom).
 - 8.g / 8.k: D and E (add or remove mid-save) are owner-played checks, counts before and after, to record in `TESTING.md` (decided 2026-10-02).
-- 8.m: code review not done. No `Source/` here, only `Mod/` XML and textures, so it covers `Mod/Patches/ColorfulCoats_HlxDodo.xml` since `0.1.0`. `code_review_sha` absent.
+- 8.m: code review done since `0.1.0` (patch only, no `Source/`): no finding, `code_review_sha` 82feeb3 recorded (2026-10-13).
 
 **Working-tree changes found and handled:** `Art/ModIcon-source.png` (owner's, 2026-10-04) is newer than `Mod/About/ModIcon.png` (2026-10-02): derivative stale. Source left untouched. Regenerated `Mod/About/ModIcon.png`, `Art/ModIcon.ico` (`deliverModIcon`) and `Mod/About/Preview.png`, `Art/Gallery/0-preview.png`, `Art/Preview.ico` (`Render-Preview.cjs`). Reserve: `ModIcon.png` is 35 KB, over the 20 to 30 KB guide, standard tool output, not retouched; the owner decides. `social_preview_sha256` absent: the GitHub social preview upload belongs to `mountPreview` (10.f).
 

@@ -9,3 +9,5 @@
 2026-10-11 gallery5 (7c3a): 2/2 passed, UI hidden (presentation mode). Dodos still small at camera size 11 on a bare yard: not accepted as gallery images yet
 2026-10-11 gallery6 (ab3d): 2/2 passed, image 2 framed at zoom 9; dodos still small, yard bare, dark edges: not accepted as gallery images
 2026-10-11 removal E (162e, f2c3686): E1 and E2 passed; second launch without nelim.colorfulcoats.dodos, no coat on any dodo, no error logged
+2026-10-13 gallery6 (galerie map, 3c81a31): 1/1 passed, scenario 1 in the Sanctuary dodo pen (enclosure-south); capture refused: dodos too small, image dark, colonist in frame
+2026-10-13 gallery7 (cf06, galerie map): 0/1, NullReferenceException in BiomeDef.CommonalityOfAnimal (wild animal spawner) at tick 268, Log window open on the capture; environment, not the mod. Wait cut to 60 ticks, replayed as edb3
