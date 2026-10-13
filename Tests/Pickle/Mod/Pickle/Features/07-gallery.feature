@@ -1,52 +1,44 @@
-@requires:nelim.pickletools.screenshotmode
+@requires:nelim.sanctuarybacklot
 @requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.coatsteps
-@requires:nelim.pickletools.stagedecor
 @requires:nelim.pickletools.camerazoom
 Feature: Workshop gallery captures
 
-  # Staged photographs, not assertions (rule of 2026-10-02, PickleTools/docs/STAGING.md): a person opens each image.
+  # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: -DepMap wsl-deps.galerie.map.
   #
-  # The story of the series: a dodo keeper's yard at midday. The birds hatched in more colours than the pen was
-  # built for, so the keeper swept a gravel yard, put a torch at each end, a pot of green at the back corners and a fire at the back, and let the flock
-  # out to be counted. Every image shares that set; the decor is placed, photographed, and taken away again by the
-  # StageDecor step (which also runs after every scenario).
+  # The story of the series: noon at the dodo pen of the Sanctuary (named place enclosure-south, centre (149, 214), the small
+  # fenced enclosure with its nesting boxes and its green crop zone). The flock has just been let in, and the keeper counts the coats.
+  # Midday, clear sky, natural light on real ground (the earlier test-colony yard was a bare gravel square under artificial light,
+  # runs 2026-10-10 and 2026-10-11). The whole interface is hidden by studio presentation mode.
   #
-  # Cells are the author's arithmetic: the test colony's map is 250 x 250, so its centre is (125, 125). The flock is
-  # spawned around that cell, the yard is the 15 x 15 square around it, and the roof is lifted from a wider square
-  # because the colony sits under a mountain roof. The decor defs are vanilla 1.6 names that Pickle Tools has not
-  # played yet; a "cannot place" failure names the cell and says which def to swap.
+  # Shot plan (place; moment; subject; what the picture says):
+  #   1. enclosure-south, 12:00, wide: the whole flock of 12 in the pen, the fence and the nesting boxes around. "A pen of many colours."
+  #   2. enclosure-south, 12:05, tight: 6 birds framed on their own (zoom 9), each coat readable. "Seven coats, one species."
+  # Every dodo is spawned after the place is framed and the 5 minutes have passed, so none has left the frame.
 
   Background:
-    Given the save "test-colony" is loaded
+    Given the save "Nelims-tribe" is loaded
+    And Nelim's Pickle Tools: all animals are removed
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: the roof is removed from (112, 112) to (138, 138)
-    And Nelim's Pickle Tools: I lay the floor "Gravel" from (118, 118) to (132, 132)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (118, 125)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (132, 125)
-    And Nelim's Pickle Tools: I place the decor "Campfire" at (125, 132)
-    And Nelim's Pickle Tools: the decor "Campfire" at (125, 132) is lit
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (118, 125) is lit
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (132, 125) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (120, 131)
-    And Nelim's Pickle Tools: I place the decor "PlantPot" at (130, 131)
 
-  # Image 1: the whole flock in the yard, many coats in one frame.
+  # Image 1: the whole flock in the pen.
   @review @gallery
-  Scenario: the flock in the keeper's yard
-    Given Nelim's Pickle Tools: 14 adult animals of kind "RG_Dodo" are spawned around (125, 123)
+  Scenario: the flock in the dodo pen
+    Given I wait 60 ticks
+    And Nelim's Pickle Tools: 12 adult animals of kind "RG_Dodo" are spawned around (149, 214)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
     When game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the cells (118, 118) to (132, 132) filling 50 percent of the screen
+    And Nelim's Sanctuary: I frame the sanctuary "enclosure-south"
     And I take a screenshot "gallery-1-flock"
 
-  # Image 2: the same yard, closer, seven birds, so each coat reads on its own. The step "I frame the animals of kind" zooms to 9,
-  # nearer than the 11 floor that the cell-framing step hits (first play 2026-10-10 asked for 8 and read back 11).
+  # Image 2: closer, six birds, so each coat reads on its own, five game minutes later.
   @review @gallery
   Scenario: a few birds up close, each coat readable
-    Given Nelim's Pickle Tools: 7 adult animals of kind "RG_Dodo" are spawned around (125, 125)
+    Given I wait 268 ticks
+    And Nelim's Pickle Tools: 6 adult animals of kind "RG_Dodo" are spawned around (149, 214)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
