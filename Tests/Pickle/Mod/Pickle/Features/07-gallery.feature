@@ -37,7 +37,7 @@ Feature: Workshop gallery captures
   # Image 2: closer, six birds, so each coat reads on its own, five game minutes later.
   @review @gallery
   Scenario: a few birds up close, each coat readable
-    Given I wait 268 ticks
+    Given I wait 60 ticks
     And Nelim's Pickle Tools: 6 adult animals of kind "RG_Dodo" are spawned around (149, 214)
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
