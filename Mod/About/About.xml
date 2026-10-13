@@ -32,11 +32,11 @@ Texture patch only: a single XML patch and 21 textures. No DLC, no Harmony, no a
 
 Needs
 
-ReGrowth: Extinct Animals (Continued) (https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791), by Mlie. Load this mod after it. It is not compatible with the original Colorful Coats - Dodos! (https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651), which this one replaces on 1.6. RimWorld 1.6 only.
+ReGrowth: Extinct Animals (Continued) (https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791), by Mlie. Load this mod after it. It is not compatible with the original Colorful Coats - Dodos! (https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651), which this one replaces on the latest RimWorld version.
 
 What was broken, and why it would have been silent
 
-The patch is guarded by PatchOperationFindMod, which matches a mod's display name, not its packageId. The original listed the three names the Extinct Animals pack had gone by; since then it was republished under a fourth. An unmatched guard is not an error: no match, nothing happens, no log line. On 1.6 the original would have loaded cleanly and produced brown dodos forever. The new name is in the list, the old ones stay as historical matching data, and the two patch operations on the same def were merged so two releases active at once cannot apply the coats twice.
+The patch is guarded by PatchOperationFindMod, which matches a mod's display name, not its packageId. The original listed the three names the Extinct Animals pack had gone by; since then it was republished under a fourth. An unmatched guard is not an error: no match, nothing happens, no log line. On the latest RimWorld version the original would have loaded cleanly and produced brown dodos forever. The new name is in the list, the old ones stay as historical matching data, and the two patch operations on the same def were merged so two releases active at once cannot apply the coats twice.
 
 Adding and removing
 
