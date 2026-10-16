@@ -545,3 +545,7 @@ Open in `playTests`:
 - `tested_1_7`: not yet set; the 1.7 pass starts after the green 1.6 `playTests`.
 - `scripts/Check-Mod.ps1` row in `LOCAL_SCRIPTS.md` awaits Virginie's validation.
 - STATUS.md is 40 KB (WARN): fold the dated sections above into `docs/runs/` when the next commit is made.
+
+## Gallery 07 recapture queued 2026-10-16
+
+`07-gallery.feature` rewritten at `7b19f76` (Nelim styled: LongOily hair rgb 120,50,30, mustard BasicShirt, own face; framing by `I frame the area centred on` at root size 7 and 4.5). Ticket `20261016-175636-716-04c2` (galerie map, evidence `Tests/Pickle/Evidence/2026-10-16-gallery10`) in the queue: on `RUN_DONE`, open both captures and give the verdict (GALLERY.md), add one line to `docs/runs/`. The new hair, colour and shirt steps are unplayed; an undefined step is a test-side fix. Subtitles stay in `PUBLICATION.md` ("Gallery subtitles"), to be burned in with `Add-Subtitle.ps1` after acceptance. TM registered CCD, no pending message.
