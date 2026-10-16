@@ -2,6 +2,7 @@
 @requires:nelim.pickletools.screenshotstudio
 @requires:nelim.pickletools.coatsteps
 @requires:nelim.pickletools.camerazoom
+@requires:nelim.pickletools.colonistrace
 Feature: Workshop gallery captures
 
   # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: -DepMap wsl-deps.galerie.map.
@@ -34,13 +35,23 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I frame the sanctuary "enclosure-south"
     And I take a screenshot "gallery-1-flock"
 
-  # Image 2: closer, six birds, so each coat reads on its own, five game minutes later.
+  # Image 2: five birds in a row facing the camera, Nelim beside them (GALLERY.md: Nelim is the main character, animals seen from the front).
   @review @gallery
   Scenario: a few birds up close, each coat readable
     Given I wait 60 ticks
-    And Nelim's Pickle Tools: 6 adult animals of kind "RG_Dodo" are spawned around (149, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (146, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (148, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (150, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (152, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (154, 213)
+    And the animal "Dodo1" stands at (146, 213) facing South
+    And the animal "Dodo2" stands at (148, 213) facing South
+    And the animal "Dodo3" stands at (150, 213) facing South
+    And the animal "Dodo4" stands at (152, 213) facing South
+    And the animal "Dodo5" stands at (154, 213) facing South
+    And "Nelim" stands at (150, 215) facing South
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the animals of kind "RG_Dodo"
+    And Nelim's Pickle Tools: I frame the cell (150, 214) at zoom 4
     And I take a screenshot "gallery-2-group"
