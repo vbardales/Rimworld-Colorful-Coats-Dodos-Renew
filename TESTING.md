@@ -1,38 +1,23 @@
 # Test scenarios
 
-One patch file, 21 textures, no assembly, no def of its own. There is very little here to break.
-and everything that can break, breaks **silently**. That is the whole reason this mod needs the
-game rather than a checker.
+One patch file, 21 textures, no assembly, no def of own. Little here to break.
+Everything that can break, breaks **silently**. Whole reason mod needs game, not checker.
 
-**The absence of errors in the log is not a pass.** The failure this port exists to fix writes
-nothing at all: `PatchOperationFindMod` matches on a mod's display **name**, and a guard that
-matches nothing skips its `match` branch, returns true, and logs no line. The mod installs, loads,
-sits in the list looking healthy, and produces brown dodos forever. Only birds on screen settle it.
+**No errors in log ≠ pass.** Failure this port fixes writes nothing: `PatchOperationFindMod` matches mod display **name**; guard matching nothing skips `match` branch, returns true, logs no line. Mod installs, loads, sits in list looking healthy, produces brown dodos forever. Only birds on screen settle it.
 
 ## What a script settles first
 
-Four of the things written below are about files rather than about birds, and a file can be read
-without starting the game:
+Four items below concern files, not birds. Files readable without starting game:
 
 ```bash
 pwsh -File scripts/Check-Mod.ps1
 ```
 
-It answers, against the copy of Extinct Animals installed on this machine: whether each
-operation's xpath finds its `PawnKindDef`; whether the `<name>` that pack displays **today** is in
-the `<mods>` of the operation that patches it; whether every `texPath` has its rotations on disk
-and no PNG sits in `Textures/` unreferenced; and whether `<name>`, `<packageId>` and the folder
-name agree. Publication suffixes `(unofficial)` and `(prohibited)` are ignored only for the
-folder comparison. `-Brief` prints only what is wrong; the exit code is 1 on any failure.
+Answers, against installed copy of Extinct Animals on this machine: does each operation's xpath find its `PawnKindDef`; is `<name>` pack displays **today** in `<mods>` of operation patching it; does every `texPath` have rotations on disk, no PNG in `Textures/` unreferenced; do `<name>`, `<packageId>`, folder name agree. Publication suffixes `(unofficial)` and `(prohibited)` ignored only for folder comparison. `-Brief` prints only failures; exit code 1 on any failure.
 
-The name comparison is case-sensitive, because `HasActiveModWithName` is: disassembled against
-1.6's `Assembly-CSharp.dll`, its body is `ModMetaData.Name == name`, `String::op_Equality`, with
-no `ToLower` and no `StringComparison`. A guard reading `Extinct animals` is as unreachable as one
-reading a different name entirely, and the script fails on it.
+Name comparison case-sensitive, as `HasActiveModWithName` is: disassembled against 1.6 `Assembly-CSharp.dll`, body is `ModMetaData.Name == name`, `String::op_Equality`, no `ToLower`, no `StringComparison`. Guard reading `Extinct animals` as unreachable as guard with different name entirely; script fails on it.
 
-**A clean run is scenario A's first half, not its answer.** The script can confirm that the guard
-names the installed pack and that the def is where the xpath looks, and still be describing twenty
-brown dodos: whether the coats reach the screen is settled below, in the game.
+**Clean run = scenario A's first half, not its answer.** Script confirms guard names installed pack and def sits where xpath looks, yet still may describe twenty brown dodos: whether coats reach screen settled below, in game.
 
 ## Load order
 
@@ -41,12 +26,9 @@ Mlie.ReGrowthExtinctAnimals  ReGrowth: Extinct Animals (Continued)   3602926791 
 nelim.colorfulcoats.dodos    this mod                                             after it
 ```
 
-The Continued target is explicitly declared in `modDependencies` for the delivered 1.6 mod.
-`<loadAfter>` names the three identifiers the pack has shipped under. Without the required
-target, the mod list should report a missing dependency; the guarded XML remains inert.
+Continued target explicitly declared in `modDependencies` for delivered 1.6 mod. `<loadAfter>` names three identifiers pack shipped under. Without required target, mod list should report missing dependency; guarded XML stays inert.
 
-`purpleyam.colorfulcoats.hlxdodo`, the original, is named in `<incompatibleWith>` and must stay
-off.
+`purpleyam.colorfulcoats.hlxdodo`, the original, named in `<incompatibleWith>`, must stay off.
 
 ## What to search the log for
 
@@ -55,118 +37,97 @@ off.
 
 | String in the log | Written by | What it would mean for this mod |
 |---|---|---|
-| `Could not load UnityEngine.Texture2D` | `ContentFinder<Texture2D>.Get` | A `texPath` with nothing behind it. The line names the path, so it says which of `ExtinctDodoA`–`G` is missing a rotation. |
-| `Failed to find any textures at` | `Graphic_Multi.Init` | The same fault one level up: no rotation at all found for a coat. |
-| `Patch operation` … `failed` | `PatchOperation.Complete` | Expected count from this mod: **zero**, and zero is not informative. Both `PatchOperationAdd`s carry `<success>Always</success>`, and an unmatched `PatchOperationFindMod` was never a failure in the first place. |
-| `Adding duplicate` | `DefDatabase.Add` | purpleyam's original is enabled alongside this port. `<incompatibleWith>` should make that impossible. |
-| `Could not find type named` | `DirectXmlToObject.ClassTypeOf` | Only two `Class=` values are used here, both `Verse` patch operations. This would mean 1.6 renamed one of them. |
+| `Could not load UnityEngine.Texture2D` | `ContentFinder<Texture2D>.Get` | `texPath` with nothing behind it. Line names path, so says which of `ExtinctDodoA`–`G` missing a rotation. |
+| `Failed to find any textures at` | `Graphic_Multi.Init` | Same fault one level up: no rotation at all found for coat. |
+| `Patch operation` … `failed` | `PatchOperation.Complete` | Expected count from this mod: **zero**, and zero not informative. Both `PatchOperationAdd`s carry `<success>Always</success>`; unmatched `PatchOperationFindMod` never a failure anyway. |
+| `Adding duplicate` | `DefDatabase.Add` | purpleyam's original enabled alongside this port. `<incompatibleWith>` should make impossible. |
+| `Could not find type named` | `DirectXmlToObject.ClassTypeOf` | Only two `Class=` values used, both `Verse` patch operations. Would mean 1.6 renamed one. |
 
-Lines naming other mods are not ours to fix, and are worth leaving in whatever gets pasted back.
+Lines naming other mods not ours to fix; worth leaving in whatever gets pasted back.
 
 ---
 
 ## A: the guard matches at all
 
-The one scenario that matters. Everything else assumes this one passed.
+Only scenario that matters. Everything else assumes this one passed.
 
-- Dev mode on, spawn **20** dodos with the debug spawn-pawn action, `RG_Dodo`.
-- Expect roughly **16 coloured, 4 brown**. Each bird rolls the coats at `0.8`.
-- **All 20 brown means the guard missed**, not bad luck: at `0.8` a clean sweep of brown is about
-  one run in a hundred thousand billion (`0.2^20`).
-- If they are all brown, read the `<name>` in the Extinct Animals pack's own `About.xml` as it
-  stands today, and compare it against the four names in `Patches/ColorfulCoats_HlxDodo.xml`. A
-  fifth republication is the expected cause, and the fix is to add the name, never to replace the
-  others.
+- Dev mode on, spawn **20** dodos with debug spawn-pawn action, `RG_Dodo`.
+- Expect roughly **16 coloured, 4 brown**. Each bird rolls coats at `0.8`.
+- **All 20 brown = guard missed**, not bad luck: at `0.8`, clean sweep of brown about one run in a hundred thousand billion (`0.2^20`).
+- If all brown, read `<name>` in Extinct Animals pack's own `About.xml` as it stands today, compare against four names in `Patches/ColorfulCoats_HlxDodo.xml`. Fifth republication expected cause; fix is add the name, never replace the others.
 
 ## B: the seven coats and the three rotations
 
-21 textures: seven coats, three rotations each. West is not shipped; RimWorld mirrors `_east` when
-no `_west` exists, so a west-facing dodo showing its far side reversed is correct.
+21 textures: seven coats, three rotations each. West not shipped; RimWorld mirrors `_east` when no `_west` exists, so west-facing dodo showing far side reversed is correct.
 
-- Spawn around 40 and look for all seven coats. They are meant to be plainly different birds, not
-  seven shades of one.
-- Watch a few walk in each direction, and check the north view in particular: it is the one that
-  hides the beak, so a wrong file there is easy to miss.
-- Any missing file shows up in the log as `Could not load UnityEngine.Texture2D` with the path.
+- Spawn around 40, look for all seven coats. Meant to be plainly different birds, not seven shades of one.
+- Watch a few walk each direction; check north view especially: hides the beak, so wrong file easy to miss.
+- Any missing file shows in log as `Could not load UnityEngine.Texture2D` with path.
 
 ## C: the coat is per-animal and survives a reload
 
-Corrected 2026-09-28. This section used to say `Pawn.overrideGraphicIndex` records the coat and goes
-into the save. That was wrong: it is declared on `Thing`, nothing in the renderer reads it, and it stays
-null for an ordinary animal. The coat is computed each time the bird is drawn, by
-`PawnGraphicUtils.TryGetAlternate`, from the pawn's `thingIDNumber` and the kind's
-`alternateGraphicChance`; `PawnGraphicUtils.GetGraphicIndex(pawn)` returns it, `-1` for the original
-graphic. Decompiled from 1.6's `Assembly-CSharp.dll` by the Megafauna session, not established here.
+Corrected 2026-09-28. Section used to say `Pawn.overrideGraphicIndex` records coat and goes into save. Wrong: declared on `Thing`, nothing in renderer reads it, stays null for ordinary animal. Coat computed each time bird drawn, by `PawnGraphicUtils.TryGetAlternate`, from pawn's `thingIDNumber` and kind's `alternateGraphicChance`; `PawnGraphicUtils.GetGraphicIndex(pawn)` returns it, `-1` for original graphic. Decompiled from 1.6 `Assembly-CSharp.dll` by Megafauna session, not established here.
 
-- Save with several coloured dodos in view, quit to the menu, load again.
-- Each bird keeps **its own** coat. Nothing is saved, so this holds exactly as long as the bird's id
-  and the `alternateGraphics` list are unchanged. A coat that moved to another bird would mean the
-  ids were reassigned.
+- Save with several coloured dodos in view, quit to menu, load again.
+- Each bird keeps **its own** coat. Nothing saved, so holds exactly as long as bird's id and `alternateGraphics` list unchanged. Coat moving to another bird would mean ids reassigned.
 
 ## D: added to a save in progress
 
-**Applicable, played by the owner** (Virginie, 2026-10-02): not automatable, so a user-controlled check. Load
-the save without the mod and count the coloured dodos (none expected), add the mod, load again, count how many
-changed colour, and record both counts here with the date. Expected: about 8 in 10 of the existing birds.
+**Applicable, played by owner** (Virginie, 2026-10-02): not automatable, so user-controlled check. Load save without mod, count coloured dodos (none expected), add mod, load again, count how many changed colour, record both counts here with date. Expected: about 8 in 10 of existing birds.
 
-Rewritten 2026-09-28. Because the coat is computed from the id and not stored, a dodo generated
-before the mod was added is **not** protected by having no stored index: on the first load with the
-mod it draws a coat like any other, with the chance of 0.8.
+Rewritten 2026-09-28. Coat computed from id, not stored, so dodo generated before mod added is **not** protected by lacking stored index: on first load with mod it draws coat like any other, chance 0.8.
 
-- Add the mod to a running colony that already has dodos.
-- Expect roughly eight in ten of the existing birds to change colour on load, and new ones to draw
-  from the seven as well. A bird that changes is the mod working, not a fault.
-- The README's "safe to add to a save in progress" is true in that nothing breaks, but it is not
-  "existing birds stay as they were": that second claim is false and should not be made.
+- Add mod to running colony already having dodos.
+- Expect roughly eight in ten existing birds change colour on load, new ones draw from the seven too. Bird that changes = mod working, not fault.
+- README's "safe to add to a save in progress" true in that nothing breaks, but not "existing birds stay as they were": that second claim false, should not be made.
 
 ## E: removed from a save in progress
 
 **Applicable, played by Pickle** (2026-10-11; Virginie, 2026-10-12: playing a test means playing its base scenario).
-`Tests/Pickle/Mod/Pickle/Features/08-removal.feature`, one request with two launches: E1 saves a colony that holds
-20 coloured dodos (at least 3 coats) and hands it to the test mod; E2 loads it with `nelim.colorfulcoats.dodos` taken
-out of the mod list, and asserts no dodo carries a coat and no error is logged. Played 2026-10-11, ticket 162e, both
-passed (`Tests/Pickle/Evidence/2026-10-11-removal`; the active list of the second launch holds only the test mod). The
-brown look on the map is not asserted, only the absence of coats.
+`Tests/Pickle/Mod/Pickle/Features/08-removal.feature`, one request, two launches: E1 saves colony holding
+20 coloured dodos (at least 3 coats), hands it to test mod; E2 loads it with `nelim.colorfulcoats.dodos` taken
+out of mod list, asserts no dodo carries coat and no error logged. Played 2026-10-11, ticket 162e, both
+passed (`Tests/Pickle/Evidence/2026-10-11-removal`; active list of second launch holds only test mod). Brown
+look on map not asserted, only absence of coats.
 
-Nothing is saved, so removing the mod leaves nothing that points into a list the def no longer has.
+Nothing saved, so removing mod leaves nothing pointing into list the def no longer has.
 
-- Remove the mod, load the same save.
-- The dodos go back to brown, and nothing in the log names `alternateGraphic` or `RG_Dodo`.
+- Remove mod, load same save.
+- Dodos go back to brown, nothing in log names `alternateGraphic` or `RG_Dodo`.
 
 ## F: two Extinct Animals releases enabled at once
 
-The three `RG_Dodo` names sit in a single `<mods>` block for this reason:
-`PatchOperationFindMod` stops at the first name it finds, so one block cannot apply the coats
-twice. Two blocks could, and did, leaving the def with two `alternateGraphics` lists.
+Three `RG_Dodo` names sit in single `<mods>` block for this reason:
+`PatchOperationFindMod` stops at first name found, so one block cannot apply coats
+twice. Two blocks could, and did, leaving def with two `alternateGraphics` lists.
 
-- Enable the Continued release together with ReGrowth 2 or the Remastered pack, whichever is
-  installed.
-- The coats still appear, and the log stays as clean as in scenario A. Nothing on screen
-  distinguishes one list from two, so this scenario is really about the log and about the coats
+- Enable Continued release together with ReGrowth 2 or Remastered pack, whichever installed.
+- Coats still appear, log stays as clean as scenario A. Nothing on screen
+  distinguishes one list from two, so scenario really about log and coats
   not vanishing.
 
 ## G: the mod alone, with no Extinct Animals at all
 
-**Not applicable** (Virginie, 2026-10-02): what the game does with a missing hard dependency is the
-game's behaviour, not the mod's (AUDIT.md, "On ne teste pas le jeu"). The mod answers for what it
-declares, and `About.xml` declares the dependency. The text below is kept as the original intent only.
+**Not applicable** (Virginie, 2026-10-02): what game does with missing hard dependency is
+game's behaviour, not mod's (AUDIT.md, "On ne teste pas le jeu"). Mod answers for what it
+declares; `About.xml` declares the dependency. Text below kept as original intent only.
 
-- Enable this mod with the pack switched off entirely.
-- The mod list must report the missing Continued dependency. If loading is forced for this
-  diagnostic scenario, the guarded patch must remain inert and produce no patch failure.
+- Enable this mod with pack switched off entirely.
+- Mod list must report missing Continued dependency. If loading forced for this
+  diagnostic scenario, guarded patch must stay inert, produce no patch failure.
 
 ## H: the mod list entry itself
 
-**Not applicable** (Virginie, 2026-10-02): the game draws the mod list entry. The name, icon and Preview are
+**Not applicable** (Virginie, 2026-10-02): game draws mod list entry. Name, icon, Preview are
 files, checked offline (`Check-Mod.ps1`, size and dimensions).
 
-- The name reads `Colorful Coats - Dodos! Renew (unofficial)`.
-- The icon is drawn at about 32 px there. The mascot's face should be readable at that size; it is
-  the reason the icon is a tighter crop of its source than the full render under `Art/`.
-- The Workshop banner is `About/Preview.png`, 896x504, and says `Renew` rather than `1.6`.
+- Name reads `Colorful Coats - Dodos! Renew (unofficial)`.
+- Icon drawn at about 32 px there. Mascot's face should be readable at that size; reason
+  icon is tighter crop of its source than full render under `Art/`.
+- Workshop banner is `About/Preview.png`, 896x504, says `Renew` not `1.6`.
 
 ## What cannot be tested on 1.6
 
-The first operation in the patch targets `RG-EAP_Dodo`, the defName Helixien's original pack used.
-That pack declares nothing past its own era and will not load here. The operation is kept for
-players on older games, and its silence on 1.6 is expected rather than a fault.
+First operation in patch targets `RG-EAP_Dodo`, defName Helixien's original pack used.
+That pack declares nothing past its own era, will not load here. Operation kept for
+players on older games; its silence on 1.6 expected, not fault.

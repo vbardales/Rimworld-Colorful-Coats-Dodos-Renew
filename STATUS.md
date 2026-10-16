@@ -66,70 +66,69 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
 protocols_read_sha: 99bba7dc90ed7f3ae7d65943291502340e234398
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 ---
-
 # Colorful Coats - Dodos! Renew: status
 
-Read by a sweep across every mod, rather than by asking each thread in turn. It lives at the
-root, never inside `Mod/`, so Steam never receives it.
+Read by sweep across every mod, not by asking each thread in turn. Lives at
+root, never inside `Mod/`, so Steam never gets it.
 
-Codex now maintains this file for this repository and updates it as work progresses.
-The local Git root is the folder above, with its own `.git` directory and no Git superproject.
-This task covers this standalone repository, no longer the monorepo.
-GitHub CLI confirmed PUBLIC visibility on 2026-09-12; origin fetch and push use the remote above.
+Codex now maintains file for this repo, updates as work progresses.
+Local Git root is folder above, own `.git` directory, no Git superproject.
+Task covers this standalone repo, no longer monorepo.
+GitHub CLI confirmed PUBLIC visibility 2026-09-12; origin fetch and push use remote above.
 
-The mod title in `Mod/About/About.xml` already ends with `(unofficial)`, consistent with the
-unofficial port notice. No additional suffix is needed. The description itself includes
-`https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew`; the `<url>` field matches it.
+Mod title in `Mod/About/About.xml` already ends `(unofficial)`, matching
+unofficial port notice. No extra suffix needed. Description itself includes
+`https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew`; `<url>` field matches.
 
-Both `LICENSE` and `Mod/LICENSE` grant MIT only for the port additions: patch changes,
-showcase art, packaging and documentation. They explicitly exclude purpleyam's original
-coats, chances and 21 textures. The repository records no declared licence for those original
-elements; original files and the live Steam description were independently rechecked on 2026-09-12.
-The `silent` classification is retained for the original material, not for the port additions.
+Both `LICENSE` and `Mod/LICENSE` grant MIT only for port additions: patch changes,
+showcase art, packaging, documentation. Explicitly exclude purpleyam's original
+coats, chances, 21 textures. Repo records no declared licence for those original
+elements; original files and live Steam description independently rechecked 2026-09-12.
+`silent` classification kept for original material, not port additions.
 
-Historical stage was `done`. The 2026-09-13 audit and attribution correction below supersede that decision.
-Game validation is recorded separately in `tested_on` and the relevant `remaining` entries;
-Its absence does not block the `done` stage.
-The tracking fields use these conventions:
+Historical stage was `done`. 2026-09-13 audit and attribution correction below supersede that decision.
+Game validation recorded separately in `tested_on` and relevant `remaining` entries;
+its absence does not block `done` stage.
+Tracking fields use these conventions:
 
-- **`stage`**, the exact state name from the user's cumulative workflow; see the
-  sequence and interpretation in the latest audit below.
-- **`tested_on`**, the date of the last run in game. Empty means never.
-- **`dependencies`**, `declared` when every mod this one needs is named in the About's
-  `modDependencies`, `to check` when a non-vanilla `loadAfter` suggests a dependency that is not
-  declared, `none` when the mod needs nothing. An undeclared dependency is not cosmetic: on
+- **`stage`**, exact state name from user's cumulative workflow; see
+  sequence and interpretation in latest audit below.
+- **`tested_on`**, date of last in-game run. Empty means never.
+- **`dependencies`**, `declared` when every mod this one needs is named in About's
+  `modDependencies`, `to check` when non-vanilla `loadAfter` suggests undeclared dependency,
+  `none` when mod needs nothing. Undeclared dependency not cosmetic: on
   2026-09-11 Reequilibrage animaux took 47 vanilla animals down with it, Muffalo included, because
-  the class it injects belongs to a mod that was not declared and not loaded.
-- **`remaining`**, what is left, in three kinds: `feature` for something missing from a first
-  release, `defect` for a known fault left unfixed, `unverified` for what could not be checked.
-  The line already there is true of nearly the whole repository; replace it once it stops being.
+  class it injects belongs to mod not declared and not loaded.
+- **`remaining`**, what is left, three kinds: `feature` for something missing from first
+  release, `defect` for known fault left unfixed, `unverified` for what could not be checked.
+  Line already there true of nearly whole repo; replace once no longer true.
 
-`visibility` records the mod's provenance and permission category: `original` for original work,
-`open` for an explicit upstream licence, `silent` for no declared upstream licence,
-and `forbidden` for an explicit refusal. Here it is `silent`, because the original material
-has no declared licence according to the repository attribution. The MIT licence for the port
-additions does not change that category. `licence` retains the same classification for compatibility.
-`github_visibility` separately records whether the GitHub repository is public or private.
+`visibility` records mod's provenance and permission category: `original` for original work,
+`open` for explicit upstream licence, `silent` for no declared upstream licence,
+`forbidden` for explicit refusal. Here `silent`, because original material
+has no declared licence per repo attribution. MIT licence for port
+additions does not change category. `licence` keeps same classification for compatibility.
+`github_visibility` separately records whether GitHub repo is public or private.
 
 ## Visibility recheck: 2026-09-12
 
-`visibility: silent` retained after checking:
+`visibility: silent` kept after checking:
 
 - Installed original: `C:/Program Files (x86)/Steam/steamapps/workshop/content/294100/2388053651`.
-  File inventory contains no licence file. Its `About/About.xml` has no licence, permission
-  statement or repository URL; supported versions are 1.2, 1.3 and 1.4.
-  Searches of the original XML/text files found no redistribution grant or explicit refusal.
+  File inventory has no licence file. Its `About/About.xml` has no licence, permission
+  statement, repo URL; supported versions 1.2, 1.3, 1.4.
+  Searches of original XML/text files found no redistribution grant or explicit refusal.
 - [Original Steam page](https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651&l=english),
-  fetched directly during this recheck: description contains no licence, redistribution grant,
-  explicit refusal or GitHub link. It credits Erin for the original texture and purpleyam for
-  the colour variants. No separate licence for Erin's underlying texture was established here.
-- The port's MIT grant remains limited to its additions. No evidence found warrants changing
-  the category to `open`, `original` or `forbidden`. Absence of a grant is not implicit permission.
+  fetched directly this recheck: description has no licence, redistribution grant,
+  explicit refusal, GitHub link. Credits Erin for original texture and purpleyam for
+  colour variants. No separate licence for Erin's underlying texture established here.
+- Port's MIT grant stays limited to additions. No evidence found warrants changing
+  category to `open`, `original` or `forbidden`. Absence of grant not implicit permission.
 
-Expanded Steam audit: all six public Workshop items listed on purpleyam's profile were checked
-directly, including descriptions, all 151 comments, all 19 changelog entries and discussion
-indexes (zero topics for every item). Comment counts returned by Steam matched the number
-of comments retrieved, so this was not limited to the first page.
+Expanded Steam audit: all six public Workshop items on purpleyam's profile checked
+directly, including descriptions, all 151 comments, all 19 changelog entries, discussion
+indexes (zero topics every item). Steam comment counts matched number
+of comments retrieved, so not limited to first page.
 
 | Workshop item | ID | Comments checked | Changelog entries |
 | --- | --- | ---: | ---: |
@@ -140,44 +139,44 @@ of comments retrieved, so this was not limited to the first page.
 | Colorful Coats - Vanilla Animals Expanded! | 2398446130 | 31 | 5 |
 | Colorful Coats - Cats and Dogs! | 2388932599 | 20 | 3 |
 
-Also checked the public [author profile](https://steamcommunity.com/profiles/76561198342847927/),
+Also checked public [author profile](https://steamcommunity.com/profiles/76561198342847927/),
 [Workshop listing](https://steamcommunity.com/profiles/76561198342847927/myworkshopfiles/?appid=294100)
 and [author collection](https://steamcommunity.com/sharedfiles/filedetails/?id=2773216059)
-(six items, zero comments/discussions). No author repository link or general reuse policy found.
+(six items, zero comments/discussions). No author repo link or general reuse policy found.
 
 Relevant exception: on [More Ideological Words](https://steamcommunity.com/sharedfiles/filedetails/?id=2643795171),
-purpleyam permits translations on 2022-02-15 and 2022-08-25. Those replies address translations
-of that mod; they do not grant permission to redistribute the dodo textures or all of the author's
-mods. The GitHub reference in that item's comments is Sarg Bjornson suggesting his own code,
-and a linked Gist is a third-party error log, not purpleyam's repository.
+purpleyam permits translations 2022-02-15 and 2022-08-25. Replies address translations
+of that mod; no permission to redistribute dodo textures or all author's
+mods. GitHub reference in that item's comments is Sarg Bjornson suggesting own code,
+linked Gist is third-party error log, not purpleyam's repo.
 
-An author reply on 2024-04-03 discusses checking their mods for 1.5, so the original's 1.4
+Author reply 2024-04-03 discusses checking their mods for 1.5, so original's 1.4
 declaration must not be used to assert author inactivity or abandonment. No new permission
-or refusal applicable to Dodos was found: `visibility: silent` remains the supported category.
-Scope covers these public Steam pages as retrieved on 2026-09-12, not deleted/private content
-or private correspondence; no message was sent to the author.
-Firecrawl CLI was unavailable; web search and a direct HTTP fetch were used instead.
+or refusal applicable to Dodos found: `visibility: silent` remains supported category.
+Scope covers these public Steam pages as retrieved 2026-09-12, not deleted/private content
+or private correspondence; no message sent to author.
+Firecrawl CLI unavailable; web search and direct HTTP fetch used instead.
 
 ## Earlier journal
 
-Dated sections from 2026-09-12 to 2026-10-11 (preview overlay, translation audit, technical validation, cumulative audit, attribution and dependency corrections, 2026-09-28 re-audit, preview migration, 2026-10-10 audit, gallery runs, CI template refresh) are in `docs/runs/status-journal-2026-10-16.md`. Facts that still hold: settings and l10n `not_applicable` (patch hash `3229f81d3345`), no owned strings, Check-Mod.ps1 passes, ModIcon and Preview regenerated 2026-10-10, ModIcon.png 35 KB accepted.
+Dated sections 2026-09-12 to 2026-10-11 (preview overlay, translation audit, technical validation, cumulative audit, attribution and dependency corrections, 2026-09-28 re-audit, preview migration, 2026-10-10 audit, gallery runs, CI template refresh) in `docs/runs/status-journal-2026-10-16.md`. Facts still holding: settings and l10n `not_applicable` (patch hash `3229f81d3345`), no owned strings, Check-Mod.ps1 passes, ModIcon and Preview regenerated 2026-10-10, ModIcon.png 35 KB accepted.
 
 ## Removal check E played by Pickle (2026-10-11)
 
-`08-removal.feature` (E1 save with the mod, E2 load without it) passed, ticket 162e, evidence `Tests/Pickle/Evidence/2026-10-11-removal`. TESTING.md E now describes it. Case D still open: no step counts dodos that already exist on the map (question to NPT pending in the Ticket Manager relay).
+`08-removal.feature` (E1 save with mod, E2 load without it) passed, ticket 162e, evidence `Tests/Pickle/Evidence/2026-10-11-removal`. TESTING.md E now describes it. Case D still open: no step counts dodos already on map (question to NPT pending in Ticket Manager relay).
 
 ## Audit replay 2026-10-16
 
 AUDIT.md (protocols HEAD 005d9b2) replayed from `setupRepo` to `playTests`: transitions up to `writeTests` hold, `workflow_stage: playTests[1.0.0]` stands, `protocols_read_sha` current. `Check-Status.ps1 -Strict`: 0 error, 1 warning (`visibility: silent`, documented category). `Check-Mod.ps1`: four checks pass. 8.m holds: no commit under `Mod/` since `code_review_sha`. Evidence pruned (2 superseded folders, 83 MB).
 
 Open in `playTests`:
-- 8.c / 8.f: gallery 07 passes (gallery9, 2026-10-14, 1/1) but the capture was read and refused: dodos are about 40 px, coats not readable, wide bare ground. Needs a much tighter crop on the five birds. Nothing candidate in `Art/Gallery/`.
-- 8.g / 8.k: case D (add mid-save) still has no step counting existing dodos (question to NPT pending).
-- 8.l: `docs/runs/` holds only the 2026-09-28 line; the gallery and removal runs of 2026-10-10 to 14 need their one line each.
-- `tested_1_7`: not yet set; the 1.7 pass starts after the green 1.6 `playTests`.
+- 8.c / 8.f: gallery 07 passes (gallery9, 2026-10-14, 1/1) but capture read and refused: dodos about 40 px, coats unreadable, wide bare ground. Needs much tighter crop on five birds. Nothing candidate in `Art/Gallery/`.
+- 8.g / 8.k: case D (add mid-save) still no step counting existing dodos (question to NPT pending).
+- 8.l: `docs/runs/` holds only 2026-09-28 line; gallery and removal runs of 2026-10-10 to 14 need one line each.
+- `tested_1_7`: not yet set; 1.7 pass starts after green 1.6 `playTests`.
 - `scripts/Check-Mod.ps1` row in `LOCAL_SCRIPTS.md` awaits Virginie's validation.
-- STATUS.md is 40 KB (WARN): fold the dated sections above into `docs/runs/` when the next commit is made.
+- STATUS.md is 40 KB (WARN): fold dated sections above into `docs/runs/` at next commit.
 
 ## Gallery 07 recapture queued 2026-10-16
 
-`07-gallery.feature` rewritten at `7b19f76` (Nelim styled: LongOily hair rgb 120,50,30, mustard BasicShirt, own face; framing by `I frame the area centred on` at root size 7 and 4.5). Ticket `20261016-175636-716-04c2` (galerie map, evidence `Tests/Pickle/Evidence/2026-10-16-gallery10`) in the queue: on `RUN_DONE`, open both captures and give the verdict (GALLERY.md), add one line to `docs/runs/`. The new hair, colour and shirt steps are unplayed; an undefined step is a test-side fix. Subtitles stay in `PUBLICATION.md` ("Gallery subtitles"), to be burned in with `Add-Subtitle.ps1` after acceptance. TM registered CCD, no pending message.
+`07-gallery.feature` rewritten at `7b19f76` (Nelim styled: LongOily hair rgb 120,50,30, mustard BasicShirt, own face; framing by `I frame the area centred on` at root size 7 and 4.5). Ticket `20261016-175636-716-04c2` (galerie map, evidence `Tests/Pickle/Evidence/2026-10-16-gallery10`) in queue: on `RUN_DONE`, open both captures, give verdict (GALLERY.md), add one line to `docs/runs/`. New hair, colour, shirt steps unplayed; undefined step is test-side fix. Subtitles stay in `PUBLICATION.md` ("Gallery subtitles"), burn in with `Add-Subtitle.ps1` after acceptance. TM registered CCD, no pending message.
