@@ -77,8 +77,18 @@ change. Steam shows the first image large. `Art/Gallery/0-preview.png` is byte-i
 | # | File | Shows | Status |
 |---|---|---|---|
 | 0 | `Art/Gallery/0-preview.png` | The Preview itself | in place |
-| 1 | `gallery-1-flock` | 14 dodos in a staged keeper yard at midday (gravel, two torches, a fire, two plant pots), at least four coats in one frame | staged 2026-10-02, not run, not opened |
-| 2 | `gallery-2-group` | The same yard, closer, 7 dodos, each coat readable | staged 2026-10-02, not run, not opened |
+| 1 | `gallery-1-flock` | The whole flock of 12 in the Sanctuary dodo pen at midday, fence and nesting boxes around, at least four coats in one frame | played 2026-10-13 (gallery6), not accepted: dodos too small |
+| 2 | `gallery-2-group` | Nelim and five dodos facing the camera, each coat readable | played 2026-10-14 (gallery9), refused: dodos about 40 px, coats unreadable, Nelim not staged |
+
+### Gallery subtitles
+
+One line of English written at the bottom of each scene without an interface window, like a film subtitle
+(GALLERY.md, "Sous-titres"). The unsubtitled originals live in `Art/Gallery-clean/`, same index and name. `0-` has none.
+
+| Index | File | Line |
+|---|---|---|
+| 1 | `1-flock` | A pen of many colours: the keeper lets the flock in at noon. |
+| 2 | `2-group` | Seven coats, one species: Nelim counts them one by one. |
 
 The only capture so far (`04-coats-on-spawn`, 2026-09-28) was judged small and dim under a mountain roof, not
 gallery quality. The gallery scenarios do not fix that: the scene is whatever tile the test colony sits on. If the

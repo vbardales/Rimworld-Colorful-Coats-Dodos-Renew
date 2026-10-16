@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 7bafac79376f69b0ecc5d31de811aef4f53a9987
+protocols_read_sha: 005d9b2720a85d62a3a31b02c265f3133621ee72
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 ---
 
@@ -533,3 +533,15 @@ CI/CD ran generate-publish-workflow.sh --replace (no build project: no C#, requi
 ## Removal check E played by Pickle (2026-10-11)
 
 `08-removal.feature` (E1 save with the mod, E2 load without it) passed, ticket 162e, evidence `Tests/Pickle/Evidence/2026-10-11-removal`. TESTING.md E now describes it. Case D still open: no step counts dodos that already exist on the map (question to NPT pending in the Ticket Manager relay).
+
+## Audit replay 2026-10-16
+
+AUDIT.md (protocols HEAD 005d9b2) replayed from `setupRepo` to `playTests`: transitions up to `writeTests` hold, `workflow_stage: playTests[1.0.0]` stands, `protocols_read_sha` current. `Check-Status.ps1 -Strict`: 0 error, 1 warning (`visibility: silent`, documented category). `Check-Mod.ps1`: four checks pass. 8.m holds: no commit under `Mod/` since `code_review_sha`. Evidence pruned (2 superseded folders, 83 MB).
+
+Open in `playTests`:
+- 8.c / 8.f: gallery 07 passes (gallery9, 2026-10-14, 1/1) but the capture was read and refused: dodos are about 40 px, coats not readable, wide bare ground. Needs a much tighter crop on the five birds. Nothing candidate in `Art/Gallery/`.
+- 8.g / 8.k: case D (add mid-save) still has no step counting existing dodos (question to NPT pending).
+- 8.l: `docs/runs/` holds only the 2026-09-28 line; the gallery and removal runs of 2026-10-10 to 14 need their one line each.
+- `tested_1_7`: not yet set; the 1.7 pass starts after the green 1.6 `playTests`.
+- `scripts/Check-Mod.ps1` row in `LOCAL_SCRIPTS.md` awaits Virginie's validation.
+- STATUS.md is 40 KB (WARN): fold the dated sections above into `docs/runs/` when the next commit is made.
