@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 99bba7dc90ed7f3ae7d65943291502340e234398
+protocols_read_sha: 78bf85cc96d564b99ea1a0e122ba9beb10d77268
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 ---
 # Colorful Coats - Dodos! Renew: status
