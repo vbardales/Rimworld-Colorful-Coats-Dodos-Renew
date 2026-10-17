@@ -36,7 +36,7 @@ Feature: Workshop gallery captures
   Scenario: the flock in the dodo pen
     Given I wait 60 ticks
     And Nelim's Pickle Tools: 12 adult animals of kind "RG_Dodo" are spawned around (149, 214)
-    And "Nelim" stands at (140, 214) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 214) facing South
     And Nelim's Sanctuary: Nelim has her own face
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
     When game speed is paused
@@ -53,12 +53,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (150, 213)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (152, 213)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (154, 213)
-    And the animal "Dodo1" stands at (146, 213) facing South
-    And the animal "Dodo2" stands at (148, 213) facing South
-    And the animal "Dodo3" stands at (150, 213) facing South
-    And the animal "Dodo4" stands at (152, 213) facing South
-    And the animal "Dodo5" stands at (154, 213) facing South
-    And "Nelim" stands at (143, 214) facing South
+    And Nelim's Pickle Tools: the animal "Dodo1" stands at (146, 213) facing South
+    And Nelim's Pickle Tools: the animal "Dodo2" stands at (148, 213) facing South
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (150, 213) facing South
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (152, 213) facing South
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (154, 213) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (143, 214) facing South
     And Nelim's Sanctuary: Nelim has her own face
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
     When game speed is paused
