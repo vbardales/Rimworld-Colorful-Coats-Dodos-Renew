@@ -1,5 +1,6 @@
 # Pass "galerie": -DepMap wsl-deps.galerie.map. The Workshop gallery of this mod (feature 07), played in the Sanctuaire de Nelim of SanctuaryBacklot (GALLERY.md):
 # the save Nelims-tribe is loaded with the mods it was made with. Body of the list: copy of SanctuaryBacklot/Tests/Pickle/wsl-deps.sanctuary.map (2026-10-13), which also stages the studio, camera and coat steps. The mod itself and its hard dependency come from the staging.
+OskarPotocki.VanillaFactionsExpanded.Core 2023507013
 nelim.pickletools.screenshotstudio path:PickleTools/ScreenshotStudio/Mod
 nelim.pickletools.camerazoom path:PickleTools/CameraZoom/Mod
 nelim.pickletools.stagedecor path:PickleTools/StageDecor/Mod
