@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: d6fb9fab25c8a5f6db73f5603f047ea46fd4f266
+protocols_read_sha: ae14323a14dbd80ffc6beca9f9dd21b0f7184bb8
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -189,3 +189,5 @@ Request from Audit via TM (2026-10-18, partial wake between writeTests and shoot
 Process slip: one `grep` used on AGENTS.md at the protocols root (no-grep rule), reported to Virginie in the session.
 Ticket 3db2 (gallery12) ended 2026-10-18 with no report (launcher exit 3, `no-report.txt`): mod 2816938779 declares no packageId, tar errors on textures. Test-side or staging fault, coat assertions still undecided. gallery10 and gallery11 read earlier (0/2 each). Evidence pruned 2026-10-18 (gallery2, gallery5, 125.6 MB). Next: find the launch fault, refile gallery 07 as a small ticket.
 Gallery 07 refiled 2026-10-18 as ticket `20261018-202933-073-398c` (galerie map, tree 7368e39, evidence `Tests/Pickle/Evidence/2026-10-18-gallery13`) after 3db2 died with the game start stalled (systemic, same stall on SanctuaryBacklot 327c and Megafauna fe32; AnimalsNaturally 694c open 15:50-19:45). On `RUN_DONE`: summary.json then junit.xml, captures stay unaccepted, one line to `docs/runs/`.
+
+Resumed 2026-10-19 (protocols_read_sha ae14323a): ticket 398c ended guard stop, partial report 0/2, same two coat assertions red even with VEF staged; recorded in docs/runs/, gallery13 evidence studied and deleted (new rule: runs land in Tests/Pickle/Inbox/, refile with -EvidenceDir Tests/Pickle/Inbox/<run>). Next: diagnose the coat assertion alone as a small ticket (def patched in galerie map?), gallery polish waits for shootGallery.
