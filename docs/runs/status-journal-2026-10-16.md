@@ -364,11 +364,11 @@ Applied `../AUDIT.md` (current version) at HEAD `5364411` plus the working tree.
 
 ## Gallery run 2026-10-10 (ticket 5d40)
 
-2/2 scenarios passed (`Tests/Pickle/Evidence/2026-10-10-gallery2`). The framing now holds (camera root size 11), but both captures show the full UI, small dodos on a bare yard: they are test proof, not gallery images. 07-gallery stays open: next step is a scene with decor, a tighter crop and the UI hidden (GALLERY.md). Em dashes removed from README, ATTRIBUTION, CHANGELOG, TESTING and STATUS.
+2/2 scenarios passed ((evidence pruned 2026-10-18)). The framing now holds (camera root size 11), but both captures show the full UI, small dodos on a bare yard: they are test proof, not gallery images. 07-gallery stays open: next step is a scene with decor, a tighter crop and the UI hidden (GALLERY.md). Em dashes removed from README, ATTRIBUTION, CHANGELOG, TESTING and STATUS.
 
 ## Gallery run 2026-10-11 (ticket 7c3a)
 
-2/2 passed (`Tests/Pickle/Evidence/2026-10-11-gallery5`). Presentation mode hides the whole interface (it needed `nelim.pickletools.screenshotstudio` in the pass map and `@requires`; without it the step is undefined). Remaining defects read on the images: dodos are small (camera floor at root size 11), the yard is bare, the light is dark at the edges. 07-gallery stays open; candidates are not in `Art/Gallery/` yet.
+2/2 passed ((evidence pruned 2026-10-18)). Presentation mode hides the whole interface (it needed `nelim.pickletools.screenshotstudio` in the pass map and `@requires`; without it the step is undefined). Remaining defects read on the images: dodos are small (camera floor at root size 11), the yard is bare, the light is dark at the edges. 07-gallery stays open; candidates are not in `Art/Gallery/` yet.
 
 ## CI template refresh 2026-10-11
 
