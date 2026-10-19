@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: b4c2c58a55479ef3e5fb3f98d333e541cb105462
+protocols_read_sha: 7d3b1f5a26a32c297c2c12758979e0a909f674a1
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -195,3 +195,5 @@ Resumed 2026-10-19 (protocols_read_sha ae14323a): ticket 398c ended guard stop, 
 Evidence triage 2026-10-19: Tests/Pickle/Evidence/ holds 4 proofs (0.11 MB), each with RELEASE.md; reds, gallery runs and stall folders deleted, Inbox empty, Inbox/Parked gitignored.
 
 Coat assertion refiled 2026-10-19 as ticket 20261019-153454-581-7434 (07-gallery::the flock in the dodo pen, galerie map + VEF, nobatch, evidence Tests/Pickle/Inbox/2026-10-19-gallery14). Host free RAM was 1.1 GB at filing (398c stalled on memory): a stall again is the host, not the mod. On RUN_DONE: summary.json (exitReason first), junit.xml, captures stay unaccepted, one line to docs/runs/, Inbox emptied.
+
+Evidence pass 2026-10-19 (owner request, protocols 7d3b1f5): all 4 Evidence folders moved to Inbox, Prune-Evidence -Apply put them back minified (0.14 MB, RELEASE.md each, kept: sole proofs of 06, 08, dfixture and the 4 target/patch scenarios; last Mod/ commit 82feeb3 touched only About.xml text, no Patches/Defs/Textures change since 2026-09-27, so STALE? flag does not invalidate them). pickle-reports-archive: none of this mod. Inbox empty, no Parked. Ticket 7434 (gallery14) still queued, lands in Inbox/2026-10-19-gallery14.
