@@ -193,3 +193,5 @@ Gallery 07 refiled 2026-10-18 as ticket `20261018-202933-073-398c` (galerie map,
 Resumed 2026-10-19 (protocols_read_sha ae14323a): ticket 398c ended guard stop, partial report 0/2, same two coat assertions red even with VEF staged; recorded in docs/runs/, gallery13 evidence studied and deleted (new rule: runs land in Tests/Pickle/Inbox/, refile with -EvidenceDir Tests/Pickle/Inbox/<run>). Next: diagnose the coat assertion alone as a small ticket (def patched in galerie map?), gallery polish waits for shootGallery.
 
 Evidence triage 2026-10-19: Tests/Pickle/Evidence/ holds 4 proofs (0.11 MB), each with RELEASE.md; reds, gallery runs and stall folders deleted, Inbox empty, Inbox/Parked gitignored.
+
+Coat assertion refiled 2026-10-19 as ticket 20261019-153454-581-7434 (07-gallery::the flock in the dodo pen, galerie map + VEF, nobatch, evidence Tests/Pickle/Inbox/2026-10-19-gallery14). Host free RAM was 1.1 GB at filing (398c stalled on memory): a stall again is the host, not the mod. On RUN_DONE: summary.json (exitReason first), junit.xml, captures stay unaccepted, one line to docs/runs/, Inbox emptied.
