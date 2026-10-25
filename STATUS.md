@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 2442e211bd4516b10b1740009e11b7312c5e1c2b
+protocols_read_sha: 709f94c1383b5e32138ef80caf13ef1057a42d1f
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -203,3 +203,5 @@ Ticket 7434 (gallery14) ended 2026-10-19 17:23, exit 1 in 16 s, no report: stagi
 ReGrowth: Extinct Animals (Continued), two Workshop items, same packageId Mlie.ReGrowthExtinctAnimals (read 2026-10-19 from the installed About.xml of 3820991509): 3602926791 is the 1.6 release (last update 1.6.3, 16 Oct), 3820991509 is the 1.7 release (supportedVersions 1.7 only, assets cached in an AssetBundle). They cannot be loaded together. 1.6 tickets (gallery) stage 3602926791 (resubscribed by Virginie, download pending, folder not yet on disk at 17:40); the 1.7 pass will need 3820991509 in its own 1.7 dep map, and About.xml modDependencies steamWorkshopUrl moves to 3820991509 only when 1.7 is declared (same commit as the Preview redo). Nothing changed in Mod/.
 
 ReGrowth 1.6 (3602926791) found on disk 2026-10-20 (Steam had finished downloading). Coat assertion refiled as ticket 20261020-000541-908-0285 (07-gallery::the flock in the dodo pen, galerie map + VEF, nobatch, tree bf5405f, evidence Tests/Pickle/Inbox/2026-10-20-gallery15). On RUN_DONE: summary.json (exitReason first), junit.xml, captures stay unaccepted, one line to docs/runs/, Inbox emptied.
+
+Resumed 2026-10-25 (protocols_read_sha 709f94c1): ticket 0285 (gallery15) had landed 2026-10-20 and was unread: 0/1, exitReason failed, same coat assertion red (0 extra coats of 12 RG_Dodo, 4 wanted) with ReGrowth 1.6 + VEF staged and the game running 60 s. Line added to docs/runs/2026-09-28.txt, evidence folder deleted. Patch file `Mod/Patches/ColorfulCoats_HlxDodo.xml` reads correct (display name "ReGrowth: Extinct Animals (Continued)" listed). Next: replay the assertion alone on the minimal map to tell a galerie-map fault from a step fault; gallery polish waits for shootGallery. Session title carries no code yet: asked Virginie.
