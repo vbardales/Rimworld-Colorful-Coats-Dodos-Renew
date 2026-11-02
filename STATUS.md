@@ -63,7 +63,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 709f94c1383b5e32138ef80caf13ef1057a42d1f
+protocols_read_sha: 6da222f069eb16f924130746381b580e977d6214
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
