@@ -28,7 +28,8 @@ tested_on:    2026-09-28, Tests/Pickle minimal pass only (29/29); manual scenari
               incompatibility pass (F) unwritten
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
-  - defect: 2026-11-03 Preview re-render (echo.width/height removed) not committed: echo dodos overlap the subtitle text ("instead of") at 896x504; Preview.png of 2026-10-25 kept; fix Art/Preview.config.json echo placement then re-render
+  - defect: 2026-11-03 Preview re-render (echo.width/height removed) not committed: 2026-11-06 render with migrated config (auto fit, titleSize 61, 3 lines) puts the echo dodos against the "!" of "Dodos!" (touching the title); render not committed, Preview.png of 2026-10-25 kept; fix Art/Preview.config.json echo/panelTop then re-render
+  - unverified: ticket 268e (2026-11-03, minimal map) exit 0 but the only scenario was Skipped (0 passed, 1 skipped, summary.json): no verdict on the coat assertion; cause of the skip to read in Tests/Pickle/Inbox/2026-11-02-coats-minimal/report.html
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
   - verified: Tests/Pickle minimal pass, request 1193, 2026-09-28 (docs/runs/2026-09-28.txt): 29 of 29 passed, exitReason
@@ -64,7 +65,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 014c74a804b7cbfdc5fc105210e9c31037c24a95
+protocols_read_sha: 4e6d7b694f3ae899b26ec15b743228a30a7dd519
 code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
