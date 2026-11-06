@@ -40,6 +40,7 @@ remaining:
     distinct coats, small and dim under a mountain roof - readable but not gallery-quality. First run (b506, 27/29)
     had two test-side failures, both fixed; that evidence pruned, this run's kept. Staged: Dodos acc24a4 + PickleTools
     09f9c0e.
+  - verified: code review 2026-11-06 of 82feeb3b..HEAD (Mod/ only, no Source/): Mod/ diff is the guard-name line plus its comment, and Preview.png (image, exempt); no defect found. code_review_sha set.
   - decided 2026-11-06 (Virginie): D (add the mod to a save in progress) is NOT APPLICABLE and always was: it is the principle of Pickle itself, so testing it tests that a Pickle test works. Withdraws the 2026-10-02 owner-played decision below. Audit asked to document it. E (removal) played 2026-10-11, 162e.
   - (superseded for D, see line above) TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
@@ -68,7 +69,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
 protocols_read_sha: 28785802f833b595d4add3702a39c6c162346fbc
-code_review_sha: 82feeb3b56e00c1d9a054fbbf06f5a93c05c95f6
+code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
 # Colorful Coats - Dodos! Renew: status
