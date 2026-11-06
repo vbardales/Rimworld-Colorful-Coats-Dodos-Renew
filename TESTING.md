@@ -84,7 +84,7 @@ Rewritten 2026-09-28. Coat computed from id, not stored, so dodo generated befor
 ## E: removed from a save in progress
 
 **Applicable, played by Pickle** (2026-10-11; Virginie, 2026-10-12: playing a test means playing its base scenario).
-`Tests/Pickle/Mod/Pickle/Features/08-removal.feature`, one request, two launches: E1 saves colony holding
+`Tests/Pickle/Mod/Pickle/Features/08-removal-write.feature` and `Tests/Pickle/Removal/Mod/Pickle/Features/removal-check.feature`, one request, two launches: E1 saves colony holding
 20 coloured dodos (at least 3 coats), hands it to test mod; E2 loads it with `nelim.colorfulcoats.dodos` taken
 out of mod list, asserts no dodo carries coat and no error logged. Played 2026-10-11, ticket 162e, both
 passed (`Tests/Pickle/Evidence/2026-10-11-removal`; active list of second launch holds only test mod). Brown
