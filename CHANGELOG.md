@@ -29,6 +29,9 @@ this file alone; until then this section holds what a `1.0.0` will contain.
   brown dodos forever. This was the only thing wrong with it.
   The three old names are kept beside the new one, because a player on an older game still has one
   of them.
+  The 1.6 build of the Continued pack (Workshop 3602926791) is named
+  `[1.6] ReGrowth: Extinct Animals (Continued)`, so that name is listed too. Found by Pickle run
+  20261106-003950-422-fadc: 0 extra coats on 30 `RG_Dodo`, patch skipped silently.
 
 ### Changed
 

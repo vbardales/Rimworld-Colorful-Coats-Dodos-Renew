@@ -5,7 +5,8 @@
     PatchOperationFindMod matches on a mod's display NAME, not its packageId
     (Verse.ModLister.HasActiveModWithName). The Extinct Animals pack has been published under
     four names over its life, and every one of them still exists in somebody's mod folder, so
-    all four are listed. The 1.6 one is "ReGrowth: Extinct Animals (Continued)".
+    all of them are listed. The Continued release is "ReGrowth: Extinct Animals (Continued)" on
+    1.7 and "[1.6] ReGrowth: Extinct Animals (Continued)" on 1.6 (Workshop 3602926791).
 
     Two operations rather than four, because the defName is what actually differs: the original
     Helixien pack called the bird RG-EAP_Dodo, and every later release calls it RG_Dodo. Listing
@@ -45,6 +46,7 @@
       <li>ReGrowth: Extinct Animals</li>
       <li>ReGrowth Remastered: Extinct Animals</li>
       <li>ReGrowth: Extinct Animals (Continued)</li>
+      <li>[1.6] ReGrowth: Extinct Animals (Continued)</li>
     </mods>
     <match Class="PatchOperationSequence">
       <operations>
