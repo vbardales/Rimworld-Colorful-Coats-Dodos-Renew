@@ -29,15 +29,15 @@ tested_on:    2026-09-28, Tests/Pickle minimal pass only (29/29); manual scenari
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
   - verified: Preview re-rendered 2026-11-06 (migrated config, titleSize 54, 3 lines, suffix below), echo clear of title and description, no clipping; committed; validated by Virginie 2026-11-06
-  - unverified: ticket 268e (2026-11-03) is NOT a pass: filed without -DepMap, so nelim.pickletools.coatsteps was not staged and its only scenario was skipped (0 passed, 1 skipped). Not counted. Refiled 2026-11-06 as 20261106-003950-422-fadc with -DepMap wsl-deps.sans-facultatifs.map (evidence Tests/Pickle/Inbox/2026-11-06-coats-minimal); delete the 2026-11-02-coats-minimal evidence at RUN_DONE
+  - ticket 268e (2026-11-03) was not a pass (no -DepMap); superseded by cf88 above.
   - defect: RUN_DONE 20261106-003950-422-fadc FAILED (0 passed, 1 failed, 0 extra coats on 30 RG_Dodo). Probable cause, inferred and not yet proven: staged pack 3602926791 is named "[1.6] ReGrowth: Extinct Animals (Continued)", absent from the PatchOperationFindMod list. Name added in 96a060e (not pushed). Not counted as a pass. Needs a refile with -DepMap wsl-deps.sans-facultatifs.map; if it fails again, check the RG_Dodo xpath against the staged pack's defs
-  - verified (partial): RUN_DONE 4aa1 (2026-11-06, set sans-facultatifs): 29 passed incl. 04 thirty adults with several coats and 05 reload, so the [1.6] guard-name fix 96a060e holds. 1 failed (09 D2, fixture dodos-without-mod absent, test-side defect: D has no own scenario per SUBMIT.md, 09-addition.feature removed) and 9 skipped (06 and 07 need their own maps, 08 and 09 D1 are @wip). Not a pass: refiled excluding 06, 07, 08.
+  - verified: Tests/Pickle minimal pass, ticket cf88, 2026-11-06, commit 1e9b44a, features 01-05 only (-Filter of file names, set sans-facultatifs): 29 of 29 passed, 0 skipped, exitReason passed (Docs/runs/2026-11-06.txt, evidence Tests/Pickle/Evidence/2026-11-06-minimal). Coats applied after guard-name fix 96a060e (4aa1: 29 passed, D2 fixture defect fixed by removing 09-addition; 1140: unfiltered exclusion filter ran the whole staged set, OOM, not counted). @review capture opened: ten dodos, pink, cream, dark, blue, brown, dim under a mountain roof.
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
   - verified: Tests/Pickle minimal pass, request 1193, 2026-09-28 (docs/runs/2026-09-28.txt): 29 of 29 passed, exitReason
     passed. Guard fired, patch attributed, def type asserted (7 alternate graphics, chance 0.8), 21 textures answered by
     this mod, clean load, coats on spawn (B), drawn texture matches the coat index, coat survives reload (C). The
-    @review capture (Tests/Pickle/Evidence/2026-09-28-minimal-rerun/screenshots/manual--dodo-coats--step0.jpg, minified 2026-10-02 from the 1920x1080 PNG) was opened: ten dodos, several
+    @review capture (Tests/Pickle/Evidence/2026-11-06-minimal/screenshots/manual--dodo-coats--step0.jpg, minified 2026-10-02 from the 1920x1080 PNG) was opened: ten dodos, several
     distinct coats, small and dim under a mountain roof - readable but not gallery-quality. First run (b506, 27/29)
     had two test-side failures, both fixed; that evidence pruned, this run's kept. Staged: Dodos acc24a4 + PickleTools
     09f9c0e.

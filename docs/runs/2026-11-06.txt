@@ -1,0 +1,35 @@
+# Pickle Run Summary
+
+29 scenarios: 29 passed, 0 failed, 0 skipped
+
+| Scenario | Outcome | Duration (ms) | Attempts | Mean tick (ms) |
+|---|---|---|---|---|
+| the target pack is running and loads before this mod | Passed | 589 | 1 |  |
+| the dodo's kind exists | Passed | 175 | 1 |  |
+| this mod's patch, and not another's, changed the dodo | Passed | 221 | 1 |  |
+| the patch really applied, with the documented chance | Passed | 203 | 1 |  |
+| A facing north is answered by this mod | Passed | 200 | 1 |  |
+| A facing east is answered by this mod | Passed | 206 | 1 |  |
+| A facing south is answered by this mod | Passed | 203 | 1 |  |
+| B facing north is answered by this mod | Passed | 218 | 1 |  |
+| B facing east is answered by this mod | Passed | 202 | 1 |  |
+| B facing south is answered by this mod | Passed | 209 | 1 |  |
+| C facing north is answered by this mod | Passed | 211 | 1 |  |
+| C facing east is answered by this mod | Passed | 192 | 1 |  |
+| C facing south is answered by this mod | Passed | 204 | 1 |  |
+| D facing north is answered by this mod | Passed | 207 | 1 |  |
+| D facing east is answered by this mod | Passed | 199 | 1 |  |
+| D facing south is answered by this mod | Passed | 199 | 1 |  |
+| E facing north is answered by this mod | Passed | 197 | 1 |  |
+| E facing east is answered by this mod | Passed | 209 | 1 |  |
+| E facing south is answered by this mod | Passed | 194 | 1 |  |
+| F facing north is answered by this mod | Passed | 220 | 1 |  |
+| F facing east is answered by this mod | Passed | 213 | 1 |  |
+| F facing south is answered by this mod | Passed | 201 | 1 |  |
+| G facing north is answered by this mod | Passed | 205 | 1 |  |
+| G facing east is answered by this mod | Passed | 202 | 1 |  |
+| G facing south is answered by this mod | Passed | 202 | 1 |  |
+| nothing in the log belongs to this mod | Passed | 400 | 1 |  |
+| thirty adult dodos show several different coats | Passed | 37155 | 1 |  |
+| the coats are plainly different birds | Passed | 33536 | 1 |  |
+| each dodo has the coat it had before | Passed | 38999 | 1 |  |
