@@ -73,9 +73,7 @@ Corrected 2026-09-28. Section used to say `Pawn.overrideGraphicIndex` records co
 
 ## D: added to a save in progress
 
-**Applicable, played by owner** (Virginie, 2026-10-02): not automatable, so user-controlled check. Load save without mod, count coloured dodos (none expected), add mod, load again, count how many changed colour, record both counts here with date. Expected: about 8 in 10 of existing birds.
-
-No Pickle scenario of its own (2026-11-06): the harness doc (SUBMIT.md, `-ThenWithout`) says adding a mod to a save has no dedicated test, every base scenario already loads the mod into a save that did not contain it. A `09-addition.feature` written 2026-10-12 needed a fixture that no normal pass can make; it failed in run 4aa1 ("Fixture 'dodos-without-mod' not found") and was removed.
+**Not applicable** (Virginie, 2026-11-06, and always the rule): testing that a mod can be added to a save in progress is the same as testing that a Pickle test works, since loading a save with the mod active is the principle of Pickle itself. No owner-played check, no dedicated scenario, no fixture. A `09-addition.feature` written 2026-10-12 needed a fixture that no normal pass can make; it failed in run 4aa1 ("Fixture 'dodos-without-mod' not found") and was removed. The 2026-10-02 owner-played decision is withdrawn.
 
 Rewritten 2026-09-28. Coat computed from id, not stored, so dodo generated before mod added is **not** protected by lacking stored index: on first load with mod it draws coat like any other, chance 0.8.
 
