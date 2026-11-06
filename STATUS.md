@@ -43,6 +43,7 @@ remaining:
   - verified: code review 2026-11-06 of 82feeb3b..HEAD (Mod/ only, no Source/): Mod/ diff is the guard-name line plus its comment, and Preview.png (image, exempt); no defect found. code_review_sha set.
   - verified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo replayed after the guard change, ticket 73d0, 2026-11-06, commit ecaaa6c: 4 of 4 passed, 0 skipped, exitReason passed (Docs/runs/2026-11-06-incompat.txt, Tests/Pickle/Evidence/2026-11-06-incompat). Closes 8.f for 06; 07 (gallery) stays with shootGallery.
   - unverified: removal chain E (8.e) moved to a companion suite per Audit convention: 08-removal-write.feature (E1, no @wip) + Tests/Pickle/Removal/Mod (E2) + wsl-deps.removal.map; ticket 1e67 filed 2026-11-06 (commit after 7597ec3), result awaited. Green closes 8.e; then 8.b (owner: deployed build and text) and 8.n remain.
+  - defect: ticket 1e67 (2026-11-06) FAILED, exit 3 guard stop (game silent or blocked), no report, evidence Tests/Pickle/Inbox/2026-11-06-removal/seq1 (Player.log: only warning "Pickle tests dependency (nelim.colorfulcoats.dodos) needs <downloadUrl> and/or <steamWorkshopUrl>"; cause not proven). Not a pass; 8.e still open.
   - decided 2026-11-06 (Virginie): D (add the mod to a save in progress) is NOT APPLICABLE and always was: it is the principle of Pickle itself, so testing it tests that a Pickle test works. Withdraws the 2026-10-02 owner-played decision below. Audit asked to document it. E (removal) played 2026-10-11, 162e.
   - (superseded for D, see line above) TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
@@ -70,7 +71,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: ee814610b42e6d48f11ec0b1b0322ac1e35940a2
+protocols_read_sha: e6d50cff45d01b79a9a8fb49f90eba7a5c8f1035
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
