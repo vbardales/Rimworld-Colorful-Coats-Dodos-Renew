@@ -28,7 +28,7 @@ tested_on:    2026-09-28, Tests/Pickle minimal pass only (29/29); manual scenari
               incompatibility pass (F) unwritten
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
-  - verified: Preview re-rendered 2026-11-06 (migrated config, titleSize 54, 3 lines, suffix below), echo clear of title and description, no clipping; committed
+  - verified: Preview re-rendered 2026-11-06 (migrated config, titleSize 54, 3 lines, suffix below), echo clear of title and description, no clipping; committed; validated by Virginie 2026-11-06
   - unverified: ticket 268e (2026-11-03) is NOT a pass: filed without -DepMap, so nelim.pickletools.coatsteps was not staged and its only scenario was skipped (0 passed, 1 skipped). Not counted. Refiled 2026-11-06 as 20261106-003950-422-fadc with -DepMap wsl-deps.sans-facultatifs.map (evidence Tests/Pickle/Inbox/2026-11-06-coats-minimal); delete the 2026-11-02-coats-minimal evidence at RUN_DONE
   - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
   - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
