@@ -1,0 +1,10 @@
+# Pickle Run Summary
+
+4 scenarios: 4 passed, 0 failed, 0 skipped
+
+| Scenario | Outcome | Duration (ms) | Attempts | Mean tick (ms) |
+|---|---|---|---|---|
+| both mods run, and the original is the one this mod declares against | Passed | 557 | 1 |  |
+| a coat texture is shipped twice | Passed | 172 | 1 |  |
+| this mod's patch still applies | Passed | 406 | 1 |  |
+| the original adds no message of its own | Passed | 187 | 1 |  |
