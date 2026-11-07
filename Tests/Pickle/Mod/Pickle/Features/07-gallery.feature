@@ -12,9 +12,9 @@
 # Roo_Royal_LongHD under TSFApparel_StrawHat, mustard Apparel_BasicShirt rgb (205, 150, 40), smile MouthLipsSimpleSmile (owner, 2026-11-07).
 # Indoors (6) the game takes the hat off. Fixes after the first run: bamboo cleared from the frame, hay and berries unforbidden (red X),
 # coats given by name (no random draw), stray animals removed (5), carried Kibble dropped (it hid Nelim), tighter roots.
-#   1. workshop-1-dawn; enclosure-south, south gate in the fence row at z 207; 8h; root 4.5
-#        Seven dodos, one per coat, face the camera in a loose arc north of Nelim, who stands at (159, 210) facing South at the open gate
-#        with empty hands; TorchLamp lit on both gate posts, Plant_Daylily, Plant_YellowTallGrass, DR_StickLantern lit. Instant: she has just
+#   1. workshop-1-dawn; enclosure-south, south gate in the fence row at z 207; 8h; root 5
+#        Seven dodos, one per coat, scattered in depth and facing the camera north of Nelim, who stands at (159, 209) facing South at the open gate
+#        with empty hands; TorchLamp lit on both gate posts, Plant_Daylily, Plant_YellowTallGrass, DR_StickLantern lit, Stool, tall grass all round. Instant: she has just
 #        pulled the gate open. Says: The pen wakes up in many colours.
 #   2. workshop-2-breakfast; enclosure-south, middle (149, 214); 10h; root 3.5
 #        Hay lies in a pile at (149, 214); Nelim stands at (149, 212) facing South, hands empty, smiling; five dodos (coats 0, 2, 3, 5, 6)
@@ -25,15 +25,15 @@
 #        PlantPot_Daylily, Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit. Instant: the berries have just landed.
 #        Says: Seven coats, one flock.
 #   4. workshop-4-the-nest; enclosure-south, nesting boxes (138, 214); 15h; root 2.8
-#        A hen (coat 4) lies asleep on a hay nest at (138, 214) with one egg beside her at (139, 213); Nelim stands at (141, 214) facing West
+#        A hen (coat 4) lies asleep on a hay nest at (138, 214), the cells cleared first (a daylily stood there), with one egg beside her at (139, 213); Nelim stands at (141, 214) facing West
 #        with the second egg in hand; EggBox, DR_StickLantern lit, Plant_Daylily, Plant_YellowTallGrass. Instant: she has taken the first egg.
 #        Says: A quiet afternoon, two eggs.
-#   5. workshop-5-golden-hour; enclosure-south, west gate (138, 217); 17h; root 3.5
-#        Shogun at (137, 215) faces the camera, turned back to a straggling dodo; three more dodos (coats 1, 3, 5) walk East, away from the
-#        low sun; Nelim at (135, 219) behind them; TorchLamp lit, DR_StickLantern lit, Plant_YellowTallGrass; the pen emptied of other animals.
+#   5. workshop-5-golden-hour; enclosure-south, west gate (139, 217); 17h; root 3.5
+#        Shogun at (138, 215) faces the camera, turned back to a straggling dodo; three more dodos (coats 1, 3, 5) walk East, away from the
+#        low sun; Nelim at (136, 218) behind them; TorchLamp lit, DR_StickLantern lit, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just stopped. Says: The last bird comes home.
 #   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 3.2
-#        Four dodos (coats 0, 2, 4, 6) asleep on hay, one lit Brazier; Nelim at (200, 236) facing East, hat off indoors, smiling at them, the last
+#        Four dodos (coats 0, 2, 4, 6) asleep on hay, one lit Brazier; Nelim at (200, 236) facing East, hat off indoors, poker table and dining chairs hidden, smiling at them, the last
 #        armful of Hay laid at (201, 237). Instant: the last bird has just settled. Says: Everyone is home.
 # Interface windows: none (the mod has no settings, no menu).
 Feature: Workshop gallery captures
@@ -60,17 +60,22 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (160, 208) is lit
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (163, 210)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (163, 210) is lit
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 211) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (163, 212) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 210) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (163, 211) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (152, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (165, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" near (162, 210)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 215) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (165, 216) fully grown
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (157, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (158, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (160, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (161, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (155, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (163, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (159, 218)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (157, 210) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (161, 217) fully grown
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (156, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (159, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (161, 212)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (163, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (154, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (158, 212)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (160, 214)
     And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
@@ -79,19 +84,19 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
     And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
     And I wait 60 ticks
-    When Nelim's Pickle Tools: the animal "Dodo0" stands at (157, 214) facing South
-    And Nelim's Pickle Tools: the animal "Dodo1" stands at (158, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo2" stands at (160, 214) facing South
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (161, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo4" stands at (155, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (163, 214) facing South
-    And Nelim's Pickle Tools: the animal "Dodo6" stands at (159, 218) facing South
-    And Nelim's Pickle Tools: "Nelim" stands at (159, 210) facing South
+    When Nelim's Pickle Tools: the animal "Dodo0" stands at (156, 213) facing South
+    And Nelim's Pickle Tools: the animal "Dodo1" stands at (159, 216) facing South
+    And Nelim's Pickle Tools: the animal "Dodo2" stands at (161, 212) facing South
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (163, 215) facing South
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (154, 216) facing South
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (158, 212) facing South
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (160, 214) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (159, 209) facing South
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (159, 212) at root size 4.5
+    And Nelim's Pickle Tools: I frame the area centred on (159, 212) at root size 5
     And I take a screenshot "gallery-1-dawn"
     And Nelim's Pickle Tools: the decor is removed
 
@@ -105,13 +110,16 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (146, 211)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (146, 211) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (152, 211)
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (145, 212)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (154, 216)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (154, 216) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 215) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (155, 216) fully grown
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (147, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (149, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (151, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (147, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (151, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (150, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (152, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (146, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (152, 213)
     And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
     And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
     And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
@@ -119,10 +127,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
     And I wait 60 ticks
     When Nelim's Pickle Tools: the animal "Dodo0" stands at (147, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo2" stands at (149, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (151, 216) facing South
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (147, 214) facing East
-    And Nelim's Pickle Tools: the animal "Dodo6" stands at (151, 214) facing West
+    And Nelim's Pickle Tools: the animal "Dodo2" stands at (150, 217) facing South
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (152, 215) facing South
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (146, 214) facing East
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (152, 213) facing West
     And Nelim's Pickle Tools: "Nelim" carries 10 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (149, 214)
     And Nelim's Pickle Tools: the thing "Hay" at (149, 214) is not forbidden
@@ -141,6 +149,7 @@ Feature: Workshop gallery captures
     Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
     And I set the hour to 12
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: the area from (150, 211) to (160, 220) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (151, 218)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 219) fully grown
@@ -149,12 +158,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (159, 217)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (159, 217) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (153, 217)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 218)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 219)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (156, 218)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (157, 217)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (153, 215)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (157, 215)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (154, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (158, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (153, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (157, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (155, 213)
     And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
@@ -164,12 +173,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
     And I wait 60 ticks
     When Nelim's Pickle Tools: the animal "Dodo0" stands at (153, 217) facing East
-    And Nelim's Pickle Tools: the animal "Dodo1" stands at (154, 218) facing South
+    And Nelim's Pickle Tools: the animal "Dodo1" stands at (154, 219) facing South
     And Nelim's Pickle Tools: the animal "Dodo2" stands at (156, 218) facing South
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (157, 217) facing West
-    And Nelim's Pickle Tools: the animal "Dodo4" stands at (153, 215) facing East
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (157, 215) facing West
-    And Nelim's Pickle Tools: the animal "Dodo6" stands at (154, 214) facing East
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (158, 216) facing West
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (153, 214) facing East
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (157, 214) facing West
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (155, 213) facing North
     And Nelim's Pickle Tools: "Nelim" carries 10 of the item "RawBerries"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (155, 216)
     And Nelim's Pickle Tools: the thing "RawBerries" at (155, 216) is not forbidden
@@ -188,6 +197,7 @@ Feature: Workshop gallery captures
     Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
     And I set the hour to 15
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: the area from (137, 213) to (140, 215) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (141, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (141, 217) is lit
@@ -228,23 +238,23 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (145, 220) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (136, 221) fully grown
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (141, 217)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (143, 219)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (145, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (140, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (141, 218)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (142, 215)
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
     And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
     And I wait 60 ticks
-    When Nelim's Pickle Tools: the animal "Dodo1" stands at (141, 217) facing East
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (143, 219) facing East
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (145, 217) facing East
-    And Nelim's Pickle Tools: the animal "Shogun" stands at (137, 215) facing South
-    And Nelim's Pickle Tools: "Nelim" stands at (135, 219) facing East
+    When Nelim's Pickle Tools: the animal "Dodo1" stands at (140, 216) facing East
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (141, 218) facing East
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (142, 215) facing East
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (138, 215) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (136, 218) facing East
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (138, 217) at root size 3.5
+    And Nelim's Pickle Tools: I frame the area centred on (139, 217) at root size 3.5
     And I take a screenshot "gallery-5-golden-hour"
     And Nelim's Pickle Tools: the decor is removed
 
@@ -274,7 +284,9 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (201, 237)
     And Nelim's Pickle Tools: the thing "Hay" at (201, 237) is not forbidden
     And Nelim's Pickle Tools: "Nelim" stands at (200, 236) facing East
-    Then Nelim's Sanctuary: the buildings within 7 cells of (196, 238) are logged
+    And Nelim's Sanctuary: the "PokerTable" near (196, 238) is hidden
+    And Nelim's Sanctuary: the "DiningChair" near (196, 238) is hidden
+    And Nelim's Sanctuary: the "DiningChair" near (197, 239) is hidden
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
