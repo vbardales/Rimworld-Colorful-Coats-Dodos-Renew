@@ -26,10 +26,10 @@
 #        Says: Seven coats, one flock.
 #   4. workshop-4-the-nest; enclosure-south, nesting boxes (138, 214); 15h; root 2.8
 #        A hen (coat 4) lies asleep on a hay nest at (138, 214), the cells cleared first (a daylily stood there), with one egg beside her at (139, 213); Nelim stands at (141, 214) facing West
-#        with the second egg in hand; EggBox, DR_StickLantern lit, Plant_Daylily, Plant_YellowTallGrass. Instant: she has taken the first egg.
-#        Says: A quiet afternoon, two eggs.
+#        looking down at the hen; EggBox, DR_StickLantern lit, Plant_Daylily, Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
+#        Says: A quiet afternoon, one egg.
 #   5. workshop-5-golden-hour; enclosure-south, west gate (139, 217); 17h; root 3.5
-#        Shogun at (138, 215) faces the camera, turned back to a straggling dodo; three more dodos (coats 1, 3, 5) walk East, away from the
+#        Shogun at (138, 216) faces the camera, turned back to a straggling dodo; three more dodos (coats 1, 3, 5) walk East, away from the
 #        low sun; Nelim at (136, 218) behind them; TorchLamp lit, DR_StickLantern lit, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just stopped. Says: The last bird comes home.
 #   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 3.2
@@ -242,6 +242,19 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (141, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (141, 217) is lit
     And Nelim's Pickle Tools: I place the decor "EggBox" near (136, 212)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (136, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (135, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Stool" near (143, 216)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (144, 216)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (144, 216) is lit
+    And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (142, 215)
+    And Nelim's Pickle Tools: the thing "Hay" at (142, 215) is not forbidden
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (136, 215) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 211) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 217) fully grown
@@ -272,23 +285,34 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the animals are removed from the area from (126, 208) to (150, 226)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the area from (134, 214) to (141, 221) is cleared
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (134, 217)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (134, 217) is lit
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (145, 220)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (145, 220) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (137, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (138, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 220) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (140, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (139, 220) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (136, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (136, 221) fully grown
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (140, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (141, 218)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (142, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (140, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (142, 218)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (141, 215)
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
     And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
     And I wait 60 ticks
-    When Nelim's Pickle Tools: the animal "Dodo1" stands at (140, 216) facing East
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (141, 218) facing East
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (142, 215) facing East
-    And Nelim's Pickle Tools: the animal "Shogun" stands at (138, 215) facing South
+    When Nelim's Pickle Tools: the animal "Dodo1" stands at (140, 217) facing East
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (142, 218) facing East
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (141, 215) facing East
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (138, 216) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (136, 218) facing East
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
@@ -326,7 +350,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" stands at (200, 236) facing East
     And Nelim's Sanctuary: the "PokerTable" near (196, 238) is hidden
     And Nelim's Sanctuary: the "DiningChair" near (196, 238) is hidden
-    And Nelim's Sanctuary: the "DiningChair" near (197, 239) is hidden
     And Nelim's Sanctuary: Nelim has her own face
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
