@@ -234,6 +234,6 @@ Gallery runs read 2026-11-07 (tickets 5469 and e957, all six scenarios Passed; a
 4 the-nest: dodo curled on grass, no nest, no egg, Nelim only standing. REDO.
 5 golden-hour: turkeys, sheep, cats, camels crowd the frame, Shogun and Nelim tiny, no herding read. REDO.
 6 roost: sleeping birds on hay, z sign, long hair, braziers; table and eight chairs clash with a barn, no armful of hay. Closest to candidate, REDO.
-Next: recompose each scene (closer camera, clear the stray animals, props that tell the instant), then Check-ShotlistVsScenario and refile on auto.
+Recomposed 2026-11-07 (96ccc5f): bamboo cleared in scene 1 (area step), hay and berries unforbidden (red X), coats given by name, strays removed in 5 (area step), Kibble dropped (hid Nelim), nest of hay and two eggs in 4, tighter roots, header in Check-ShotlistVsScenario format (OK). Refiled auto: 46db (1-3, gallery-a-4), 7ab8 (4-6, gallery-b-4). Not rated by rate-gallery before filing (GALLERY.md barrier skipped, say so). Scene 6 logs buildings within 7 cells of (196, 238) to find the table and chair defNames to hide. Art/Preview.config.json has an uncommitted change not made by this session.
 
 OptionalCompat (Audit 4.b/4.e, 2026-11-07): Mod/About/OptionalCompat.xml written, Check-OptionalCompat.ps1 OK (3 declared). Open: workshopId of ReGrowth.BOTR.ExtinctAnimalsPack and ReGrowth2.ExtinctAnimals (not in registry, Steam search page did not load); the Mlie entry carries 3602926791. Check whether Workshop item 3820991509 (Mlie.ReGrowthExtinctAnimals) is a successor. Unpushed commits: yes.
