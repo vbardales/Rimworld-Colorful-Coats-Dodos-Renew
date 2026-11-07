@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<OptionalCompat>
+  <li>
+    <packageId>Mlie.ReGrowthExtinctAnimals</packageId>
+    <workshopId>3602926791</workshopId>
+    <kind>patch</kind>
+  </li>
+  <li>
+    <packageId>ReGrowth.BOTR.ExtinctAnimalsPack</packageId>
+    <kind>patch</kind>
+  </li>
+  <li>
+    <packageId>ReGrowth2.ExtinctAnimals</packageId>
+    <kind>patch</kind>
+  </li>
+</OptionalCompat>

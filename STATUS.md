@@ -73,7 +73,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: d2fe5947117627b98c44cc38fd00bfbd90725403
+protocols_read_sha: f0219f10b948804b3bfd2586c5fca74bf45c3805
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -225,4 +225,6 @@ Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the encl
 
 Six scenarios of `07-gallery.feature` rewritten from the shotlist; `wsl-deps.galerie.map` now holds Hat Hair Control (3760821540) and Stick Lantern (2024351846). `Check-Steps.ps1`: every step line resolves. `Check-FeatureDefs.js`: all defs found except `MouthLipsSimpleSmile`, which no installed mod defines (Search-Workshop, 0 hits). The owner validated that name; the nearest real defs are `MouthLipsSmallSmile`, `MouthLipsSimpleSmile`, `MouthLipsGrin` (Vanilla Facial Animations 2816938779). No ticket filed until the owner confirms which one.
 
-Tickets filed 2026-11-07 (runner auto, label sha d46058c): 20261107-173352-868-724f (scenes 1-3), 20261107-173358-315-20be (scenes 4-6). On RUN_DONE: open every capture, accept or refuse each (review-gallery step 12), triage Inbox. Unverified: the dog name "Shogun" in scene 5. Open from Audit 4.b/4.e: `Mod/About/OptionalCompat.xml` still to write (three historical ReGrowth packs, kind patch, packageIds ReGrowth.BOTR.ExtinctAnimalsPack and ReGrowth2.ExtinctAnimals plus a third; Workshop ids missing, Chrome did not load the Steam search page twice); then rerun scripts/Check-OptionalCompat.ps1 and tell Audit. Also check whether Workshop item 3820991509 (Mlie.ReGrowthExtinctAnimals) is a successor. Unpushed commits: yes.
+Tickets 724f and 20be (2026-11-07) failed 6 of 6: no hairstyle Roo_Royal_LongHD (dep map lacked Roo's HD hairstyles). Fixed in 249968b (rooboid.hdhair.continued 3559870636 added to wsl-deps.galerie.map); refiled runner auto: 4868 (scenes 1-3, evidence Tests/Pickle/Inbox/gallery-a-2), c53b (scenes 4-6, gallery-b-2). Old Inbox runs deleted (refused). On RUN_DONE: open every capture, accept or refuse each (review-gallery step 12), triage Inbox. Unverified: the dog name "Shogun" in scene 5. New gate 2026-11-07 (GALLERY.md): four notes (image, adequacy, understanding, decoration) under 4/5 means REDO; not yet applied to this series' plan (Check-ShotlistVsScenario: no shotlist header found in the feature).
+
+OptionalCompat (Audit 4.b/4.e, 2026-11-07): Mod/About/OptionalCompat.xml written, Check-OptionalCompat.ps1 OK (3 declared). Open: workshopId of ReGrowth.BOTR.ExtinctAnimalsPack and ReGrowth2.ExtinctAnimals (not in registry, Steam search page did not load); the Mlie entry carries 3602926791. Check whether Workshop item 3820991509 (Mlie.ReGrowthExtinctAnimals) is a successor. Unpushed commits: yes.
