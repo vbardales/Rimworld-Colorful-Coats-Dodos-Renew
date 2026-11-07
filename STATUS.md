@@ -44,6 +44,7 @@ remaining:
   - verified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo replayed after the guard change, ticket 73d0, 2026-11-06, commit ecaaa6c: 4 of 4 passed, 0 skipped, exitReason passed (Docs/runs/2026-11-06-incompat.txt, Tests/Pickle/Evidence/2026-11-06-incompat). Closes 8.f for 06; 07 (gallery) stays with shootGallery.
   - unverified: removal chain E (8.e) moved to a companion suite per Audit convention: 08-removal-write.feature (E1, no @wip) + Tests/Pickle/Removal/Mod (E2) + wsl-deps.removal.map; ticket 1e67 filed 2026-11-06 (commit after 7597ec3), result awaited. Green closes 8.e; then 8.b (owner: deployed build and text) and 8.n remain.
   - defect: ticket 1e67 (2026-11-06) FAILED, exit 3 guard stop: infra (local PC under 0.5 GB free RAM, game never finished booting, log ends "Terminated"), nothing played, not a mod fault. Refiled on azure as 7328 (08-removal-write, then removal-check without the mod, no batch), evidence Tests/Pickle/Inbox/2026-11-06-removal-azure, result awaited. 8.e still open.
+  - defect: ticket 7328 (azure) FAILED at submit, exit 1 "scenarios failed": Run-PickleWsl.ps1 refuses -Then on hetzner and azure (game profile not shared between remote runs), nothing played, not a mod fault. Refiled 2026-11-07 on -Runner wsl as 9187 (08-removal-write, -Then removal-check -ThenWithout nelim.colorfulcoats.dodos, -DepMap wsl-deps.removal.map, -NoBatch), evidence Tests/Pickle/Inbox/2026-11-07-removal-wsl, result awaited. 8.e still open. WSL RAM was the 1e67 cause: if it stalls again, ask Virginie to free RAM.
   - decided 2026-11-06 (Virginie): D (add the mod to a save in progress) is NOT APPLICABLE and always was: it is the principle of Pickle itself, so testing it tests that a Pickle test works. Withdraws the 2026-10-02 owner-played decision below. Audit asked to document it. E (removal) played 2026-10-11, 162e.
   - (superseded for D, see line above) TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
@@ -71,7 +72,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: e6d50cff45d01b79a9a8fb49f90eba7a5c8f1035
+protocols_read_sha: d2fe5947117627b98c44cc38fd00bfbd90725403
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
