@@ -1,0 +1,12 @@
+# Pickle Run Summary
+
+Ticket 9187, 2026-11-07, runner wsl (local lane), game 1.6, English, -Then removal-check -ThenWithout nelim.colorfulcoats.dodos, -DepMap wsl-deps.removal.map, -NoBatch.
+2 scenarios: 2 passed, 0 failed, 0 skipped, exit 0, over two chained launches.
+Evidence: Tests/Pickle/Inbox/2026-11-07-removal-wsl (seq1, seq2).
+
+| Launch | Scenario | Outcome | Duration (s) |
+|---|---|---|---|
+| seq1 | a save holds dodos with their coats (E1) | Passed | 124 |
+| seq2 | the same save loads without the mod, and no dodo carries a coat (E2) | Passed | 19 |
+
+Earlier attempts, not counted: 1e67 (local, guard stop, under 0.5 GB free RAM), 7328 (azure, refused: -Then not allowed on hetzner and azure).

@@ -24,15 +24,15 @@ github_description: present
 dependencies: declared
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
-tested_on:    2026-11-06, Tests/Pickle minimal pass (29/29, features 01-05, ticket cf88); D not applicable, E played 2026-10-11 (162e, @wip tag still on 08-removal); F (06) and gallery (07) to replay after the guard change
+tested_on:    2026-11-07, minimal pass 2026-11-06 (29/29, features 01-05, ticket cf88), F (06) 4/4 (73d0), E (removal) 2/2 (9187, 2026-11-07, Docs/runs/2026-11-07-removal.txt); D, G, H not applicable; gallery (07) stays with shootGallery
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
   - verified: Preview re-rendered 2026-11-06 (migrated config, titleSize 54, 3 lines, suffix below), echo clear of title and description, no clipping; committed; validated by Virginie 2026-11-06
   - ticket 268e (2026-11-03) was not a pass (no -DepMap); superseded by cf88 above.
   - defect: RUN_DONE 20261106-003950-422-fadc FAILED (0 passed, 1 failed, 0 extra coats on 30 RG_Dodo). Probable cause, inferred and not yet proven: staged pack 3602926791 is named "[1.6] ReGrowth: Extinct Animals (Continued)", absent from the PatchOperationFindMod list. Name added in 96a060e (not pushed). Not counted as a pass. Needs a refile with -DepMap wsl-deps.sans-facultatifs.map; if it fails again, check the RG_Dodo xpath against the staged pack's defs
   - verified: Tests/Pickle minimal pass, ticket cf88, 2026-11-06, commit 1e9b44a, features 01-05 only (-Filter of file names, set sans-facultatifs): 29 of 29 passed, 0 skipped, exitReason passed (Docs/runs/2026-11-06.txt, evidence Tests/Pickle/Evidence/2026-11-06-minimal). Coats applied after guard-name fix 96a060e (4aa1: 29 passed, D2 fixture defect fixed by removing 09-addition; 1140: unfiltered exclusion filter ran the whole staged set, OOM, not counted). @review capture opened: ten dodos, pink, cream, dark, blue, brown, dim under a mountain roof.
-  - unverified: README and About claims of in-game testing and save safety have no recorded execution evidence
-  - unverified: in-game scenarios A-H in TESTING.md, no recorded game validation
+  - verified: README and About claims of save safety: adding is the principle of Pickle (D n/a), removal played green 2026-11-07 (9187); log clean in cf88 ("nothing in the log belongs to this mod", Docs/runs/2026-11-06.txt)
+  - verified: scenarios A-H of TESTING.md: A-C by Pickle (cf88), D, G, H not applicable, E by 9187, F by 73d0
   - verified: Tests/Pickle minimal pass, request 1193, 2026-09-28 (docs/runs/2026-09-28.txt): 29 of 29 passed, exitReason
     passed. Guard fired, patch attributed, def type asserted (7 alternate graphics, chance 0.8), 21 textures answered by
     this mod, clean load, coats on spawn (B), drawn texture matches the coat index, coat survives reload (C). The
@@ -42,16 +42,17 @@ remaining:
     09f9c0e.
   - verified: code review 2026-11-06 of 82feeb3b..HEAD (Mod/ only, no Source/): Mod/ diff is the guard-name line plus its comment, and Preview.png (image, exempt); no defect found. code_review_sha set.
   - verified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo replayed after the guard change, ticket 73d0, 2026-11-06, commit ecaaa6c: 4 of 4 passed, 0 skipped, exitReason passed (Docs/runs/2026-11-06-incompat.txt, Tests/Pickle/Evidence/2026-11-06-incompat). Closes 8.f for 06; 07 (gallery) stays with shootGallery.
-  - unverified: removal chain E (8.e) moved to a companion suite per Audit convention: 08-removal-write.feature (E1, no @wip) + Tests/Pickle/Removal/Mod (E2) + wsl-deps.removal.map; ticket 1e67 filed 2026-11-06 (commit after 7597ec3), result awaited. Green closes 8.e; then 8.b (owner: deployed build and text) and 8.n remain.
+  - (closed by 9187, see below) removal chain E (8.e) moved to a companion suite per Audit convention: 08-removal-write.feature (E1, no @wip) + Tests/Pickle/Removal/Mod (E2) + wsl-deps.removal.map; ticket 1e67 filed 2026-11-06 (commit after 7597ec3), result awaited. Green closes 8.e; then 8.b (owner: deployed build and text) and 8.n remain.
   - defect: ticket 1e67 (2026-11-06) FAILED, exit 3 guard stop: infra (local PC under 0.5 GB free RAM, game never finished booting, log ends "Terminated"), nothing played, not a mod fault. Refiled on azure as 7328 (08-removal-write, then removal-check without the mod, no batch), evidence Tests/Pickle/Inbox/2026-11-06-removal-azure, result awaited. 8.e still open.
   - defect: ticket 7328 (azure) FAILED at submit, exit 1 "scenarios failed": Run-PickleWsl.ps1 refuses -Then on hetzner and azure (game profile not shared between remote runs), nothing played, not a mod fault. Refiled 2026-11-07 on -Runner wsl as 9187 (08-removal-write, -Then removal-check -ThenWithout nelim.colorfulcoats.dodos, -DepMap wsl-deps.removal.map, -NoBatch), evidence Tests/Pickle/Inbox/2026-11-07-removal-wsl, result awaited. 8.e still open. WSL RAM was the 1e67 cause: if it stalls again, ask Virginie to free RAM.
+  - verified: removal chain E (8.e), ticket 9187, 2026-11-07, local lane, game 1.6, English: 2 passed, 0 skipped, 0 failed over two chained launches (seq1 E1 "a save holds dodos with their coats" 124 s, seq2 E2 "the same save loads without the mod, and no dodo carries a coat" 19 s), exit 0. Evidence Tests/Pickle/Inbox/2026-11-07-removal-wsl/seq1 and seq2. Closes 8.e; 8.b (owner: deployed build and text) and 8.n remain. Supersedes the 1e67 and 7328 defects above (infra and runner refusals, not mod faults).
   - decided 2026-11-06 (Virginie): D (add the mod to a save in progress) is NOT APPLICABLE and always was: it is the principle of Pickle itself, so testing it tests that a Pickle test works. Withdraws the 2026-10-02 owner-played decision below. Audit asked to document it. E (removal) played 2026-10-11, 162e.
   - (superseded for D, see line above) TESTING.md D and E (add/remove mid-save) cannot be automated in this harness (one mod set per launch).
     Since the coat is computed from the bird id and stored nowhere, birds already in a save will change colour when
     the mod is added: "nothing breaks" holds, "existing birds stay as they were" does not (see decision below).
   - verified: incompatibility pass for purpleyam.colorfulcoats.hlxdodo (06-incompat-hlxdodo.feature, wsl-deps.incompat-hlxdodo.map), played 2026-10-02: e03f (3 of 4 green, the fourth fixed) and 53da (1/1, exitReason passed). Observed: the original patches nothing and ships the same 21 PNGs byte for byte; with it loaded this mod still patches RG_Dodo and logs no error. See
     Tests/Pickle/README.md
-  - unverified: AUDIT.md 2026-10-02 added three conditions to done -> tested. (1) No @wip scenario: met, none exists.
+  - (all three now met 2026-11-07: no @wip, F and E played, D G H n/a) AUDIT.md 2026-10-02 added three conditions to done -> tested. (1) No @wip scenario: met, none exists.
     (2) Every conditional scenario has run: F incompatibility pass played 2026-10-02, met; the gallery @requires scenarios (07) are pending ticket c05a. No feature carries a
     mod-level @requires; the existing ones name PickleTools companions, all staged in the minimal pass. (3) No manual
     test left to validate: A-C are covered by Pickle; D and E must be played or listed as not applicable with a reason;
