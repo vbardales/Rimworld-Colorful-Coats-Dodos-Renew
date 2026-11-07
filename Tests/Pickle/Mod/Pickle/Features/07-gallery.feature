@@ -22,7 +22,7 @@
 #        Says: Breakfast is served.
 #   3. workshop-3-seven-coats; enclosure-south, east side (155, 216); 12h; root 3
 #        Berries lie at (155, 216); the seven coats (0 to 6) packed around them, facing the pile; Nelim at (151, 216) facing East;
-#        PlantPot_Daylily, Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit. Instant: the berries have just landed.
+#        PlantPot_Daylily, Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit, DR_StickLantern lit. Instant: the berries have just landed.
 #        Says: Seven coats, one flock.
 #   4. workshop-4-the-nest; enclosure-south, nesting boxes (138, 214); 15h; root 2.8
 #        A hen (coat 4) lies asleep on a hay nest at (138, 214), the cells cleared first (a daylily stood there), with one egg beside her at (139, 213); Nelim stands at (141, 214) facing West
@@ -69,6 +69,27 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (165, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (157, 210) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (161, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 210) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 215) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (162, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (164, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (151, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (166, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (160, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (151, 211) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (153, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (164, 209) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (158, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (154, 209)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (154, 209) is lit
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (165, 209)
+    And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (153, 211)
+    And Nelim's Pickle Tools: the thing "Hay" at (153, 211) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (165, 212)
+    And Nelim's Pickle Tools: the thing "Hay" at (165, 212) is not forbidden
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (156, 213)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (159, 216)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (161, 212)
@@ -115,6 +136,16 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "TorchLamp" at (154, 216) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 215) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (155, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (148, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (145, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (151, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (154, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 211) fully grown
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (152, 219)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (152, 219) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (147, 216)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (150, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (152, 215)
@@ -157,13 +188,22 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (158, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (159, 217)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (159, 217) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (150, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (159, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (151, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (159, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (149, 215)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (149, 215) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (153, 217)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 219)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 218)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (156, 218)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (158, 216)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (153, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (157, 214)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (155, 213)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (153, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (157, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (155, 214)
     And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
@@ -173,12 +213,12 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
     And I wait 60 ticks
     When Nelim's Pickle Tools: the animal "Dodo0" stands at (153, 217) facing East
-    And Nelim's Pickle Tools: the animal "Dodo1" stands at (154, 219) facing South
+    And Nelim's Pickle Tools: the animal "Dodo1" stands at (154, 218) facing South
     And Nelim's Pickle Tools: the animal "Dodo2" stands at (156, 218) facing South
     And Nelim's Pickle Tools: the animal "Dodo3" stands at (158, 216) facing West
-    And Nelim's Pickle Tools: the animal "Dodo4" stands at (153, 214) facing East
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (157, 214) facing West
-    And Nelim's Pickle Tools: the animal "Dodo6" stands at (155, 213) facing North
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (153, 215) facing East
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (157, 215) facing West
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (155, 214) facing North
     And Nelim's Pickle Tools: "Nelim" carries 10 of the item "RawBerries"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (155, 216)
     And Nelim's Pickle Tools: the thing "RawBerries" at (155, 216) is not forbidden
