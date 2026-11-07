@@ -183,3 +183,16 @@ Social preview uploaded 2026-10-25 (GitHub Settings, Social preview) from Mod/Ab
 Resumed 2026-10-25 (protocols_read_sha 709f94c1, no protocol change): coat assertion replayed alone on the minimal map (sans-facultatifs, no galerie) as ticket 20261025-135803-629-c46f, filter 04-coats-on-spawn::thirty adult dodos, tree 4f63d8f, evidence Tests/Pickle/Inbox/2026-10-25-coats-minimal. On RUN_DONE: summary.json (exitReason first), junit.xml, one line to docs/runs/, Inbox emptied. Green means galerie-map fault; red means mod or step fault.
 
 Session code CCD given 2026-10-25 (Virginie); title: colorfulcoats.dod.../playTests[1.0.0].
+
+## Shotlist (2026-11-07, skill write-shotlist, full plan in the header of 07-gallery.feature)
+
+Story: "Feeding day at the dodo pen", one day, Nelim in a straw hat and mustard shirt, enclosure-south for 1 to 5, barn for 6. Series estimate 4/5. Director pass (Opus) kept in full. Scenario blocks still the old two-shot draft: rewritten before any ticket.
+
+| # | Name | Place | Hour | Root | Subject | Estimate | Main risk | Verdict after run |
+|---|---|---|---|---|---|---|---|---|
+| 1 | workshop-1-dawn | enclosure-south, south gate | 8 | 6 | flock leaving the shelter, Nelim at the gate | 4 | coats read as spots | |
+| 2 | workshop-2-breakfast | enclosure-south, middle | 10 | 4 | hay just dropped, 5 dodos | 4 | empty-hand pose | |
+| 3 | workshop-3-seven-coats | enclosure-south, east | 12 | 3.5 | all seven coats pecking berries | 4.5 | overlap hides a coat | |
+| 4 | workshop-4-the-nest | enclosure-south, nesting boxes | 15 | 3 | hen asleep on a nest, Nelim takes the egg | 4 | dodo egg def, low angle | |
+| 5 | workshop-5-golden-hour | enclosure-south, west gate | 17 | 4 | Shogun herds a straggler home | 4 | Shogun placement, pose | |
+| 6 | workshop-6-roost | barn, east extension | 19 | 4 | sleeping birds on hay, last armful | 4 | lying birds hide coats | |
