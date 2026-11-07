@@ -3,11 +3,11 @@
 @requires:nelim.pickletools.coatsteps
 @requires:nelim.pickletools.camerazoom
 @requires:nelim.pickletools.colonistrace
+@requires:nelim.pickletools.stagedecor
 Feature: Workshop gallery captures
 
   # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: -DepMap wsl-deps.galerie.map (plus Mlie.StickLantern 2024351846 and lordfelix.HatHairControl 3760821540).
-  # SHOTLIST of 2026-11-07 (skill write-shotlist). The Scenario blocks below are the superseded two-shot draft: they are rewritten to this
-  # plan before any ticket (a scene not in this plan is not written; rewriting a scene deletes its old captures, GALLERY.md).
+  # SHOTLIST of 2026-11-07 (skill write-shotlist). Scenarios rewritten from it on 2026-11-07 (old two-shot draft deleted).
   #
   # STORY. "Feeding day at the dodo pen". Nelim, keeper of the Sanctuary and only colonist, spends one day with the dodo flock in the
   # enclosure-south pen (x 130-168, z 204-223): she lets the flock out at 8, feeds it, counts the seven coats at noon, finds a nest at 15,
@@ -58,45 +58,209 @@ Feature: Workshop gallery captures
 
   Background:
     Given the save "Nelims-tribe" is loaded
-    And Nelim's Pickle Tools: all animals are removed
-    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
-    And I set the hour to 12
     And I set the weather to "Clear"
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "LongOily"
-    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (120, 50, 30)
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
+    And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (205, 150, 40)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_StrawHat"
 
-  # Image 1: the whole flock in the pen, Nelim at the gate.
+  # Image 1: the flock leaves the night shelter, Nelim opens the south gate.
   @review @gallery
-  Scenario: the flock in the dodo pen
-    Given I wait 60 ticks
-    And Nelim's Pickle Tools: 12 adult animals of kind "RG_Dodo" are spawned around (149, 214)
-    And Nelim's Pickle Tools: "Nelim" stands at (140, 214) facing South
-    And Nelim's Sanctuary: Nelim has her own face
+  Scenario: workshop-1-dawn
+    Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
+    And I set the hour to 8
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (158, 206)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (160, 206)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (158, 206) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (160, 206) is lit
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (155, 209) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (163, 209) fully grown
+    And Nelim's Pickle Tools: 9 adult animals of kind "RG_Dodo" are spawned around (159, 213)
+    And I wait 60 ticks
     Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 4 different extra coats were drawn
-    When game speed is paused
-    And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (146, 214) at root size 7
-    And I take a screenshot "gallery-1-flock"
-
-  # Image 2: five birds in a row facing the camera, Nelim at the left end (GALLERY.md: Nelim is the main character, animals seen from the front).
-  @review @gallery
-  Scenario: a few birds up close, each coat readable
-    Given I wait 60 ticks
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (146, 213)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (148, 213)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (150, 213)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (152, 213)
-    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (154, 213)
-    And Nelim's Pickle Tools: the animal "Dodo1" stands at (146, 213) facing South
-    And Nelim's Pickle Tools: the animal "Dodo2" stands at (148, 213) facing South
-    And Nelim's Pickle Tools: the animal "Dodo3" stands at (150, 213) facing South
-    And Nelim's Pickle Tools: the animal "Dodo4" stands at (152, 213) facing South
-    And Nelim's Pickle Tools: the animal "Dodo5" stands at (154, 213) facing South
-    And Nelim's Pickle Tools: "Nelim" stands at (143, 214) facing South
+    When Nelim's Pickle Tools: "Nelim" stands at (159, 209) facing South
+    And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
     And Nelim's Sanctuary: Nelim has her own face
-    Then Nelim's Pickle Tools: among the animals of kind "RG_Dodo", at least 3 different extra coats were drawn
-    When game speed is paused
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (149, 213) at root size 4.5
-    And I take a screenshot "gallery-2-group"
+    And Nelim's Pickle Tools: I frame the area centred on (159, 212) at root size 6
+    And I take a screenshot "gallery-1-dawn"
+    And Nelim's Pickle Tools: the decor is removed
+
+  # Image 2: the hay drop, five coats face the pile.
+  @review @gallery
+  Scenario: workshop-2-breakfast
+    Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
+    And I set the hour to 10
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (146, 211)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (146, 211) is lit
+    And Nelim's Pickle Tools: I place the decor "Stool" near (152, 211)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 215) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (155, 216) fully grown
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (147, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (149, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (151, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (148, 219)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (150, 219)
+    And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
+    And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
+    And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
+    And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
+    And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the animal "Dodo0" stands at (147, 216) facing South
+    And Nelim's Pickle Tools: the animal "Dodo2" stands at (149, 217) facing South
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (151, 216) facing West
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (148, 219) facing East
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (150, 219) facing South
+    And Nelim's Pickle Tools: "Nelim" carries 10 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (149, 214)
+    And Nelim's Pickle Tools: "Nelim" stands at (149, 213) facing South
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I frame the area centred on (149, 215) at root size 4
+    And I take a screenshot "gallery-2-breakfast"
+    And Nelim's Pickle Tools: the decor is removed
+
+  # Image 3: all seven coats, hero shot.
+  @review @gallery
+  Scenario: workshop-3-seven-coats
+    Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
+    And I set the hour to 12
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (160, 213)
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (161, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (153, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (159, 220)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (159, 220) is lit
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (153, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (155, 214)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (157, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (154, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (156, 218)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (158, 215)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (152, 218)
+    And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
+    And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
+    And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
+    And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
+    And Nelim's Pickle Tools: the animal "Dodo4" is given coat 4
+    And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
+    And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the animal "Dodo0" stands at (153, 215) facing South
+    And Nelim's Pickle Tools: the animal "Dodo1" stands at (155, 214) facing South
+    And Nelim's Pickle Tools: the animal "Dodo2" stands at (157, 216) facing West
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (154, 217) facing East
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (156, 218) facing South
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (158, 215) facing West
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (152, 218) facing East
+    And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
+    And Nelim's Pickle Tools: "Nelim" stands at (150, 215) facing East
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I frame the area centred on (154, 216) at root size 3.5
+    And I take a screenshot "gallery-3-seven-coats"
+    And Nelim's Pickle Tools: the decor is removed
+
+  # Image 4: the hen on her nest, one egg lifted.
+  @review @gallery
+  Scenario: workshop-4-the-nest
+    Given Nelim's Sanctuary: the animals are removed from the sanctuary "enclosure-south"
+    And I set the hour to 15
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (140, 216)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (140, 216) is lit
+    And Nelim's Pickle Tools: I place the decor "EggBox" near (136, 212)
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (138, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 211) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 217) fully grown
+    And Nelim's Pickle Tools: a female adult animal of kind "RG_Dodo" named "Hen" is spawned at (138, 214)
+    And Nelim's Pickle Tools: the animal "Hen" is given coat 4
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the animal "Hen" lies at (138, 214) facing South
+    And Nelim's Pickle Tools: "Nelim" carries the item "EggChickenUnfertilized"
+    And Nelim's Pickle Tools: "Nelim" stands at (141, 214) facing West
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I frame the area centred on (139, 214) at root size 3
+    And I take a screenshot "gallery-4-the-nest"
+    And Nelim's Pickle Tools: the decor is removed
+
+  # Image 5: golden hour, Shogun turned back to a straggler.
+  @review @gallery
+  Scenario: workshop-5-golden-hour
+    Given I set the hour to 17
+    And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (134, 217)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (140, 221)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (134, 217) is lit
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (140, 221) is lit
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (139, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (141, 218)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (143, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (137, 219)
+    And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
+    And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
+    And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
+    And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the animal "Dodo1" stands at (139, 216) facing East
+    And Nelim's Pickle Tools: the animal "Dodo3" stands at (141, 218) facing East
+    And Nelim's Pickle Tools: the animal "Dodo5" stands at (143, 216) facing East
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (137, 219) facing East
+    And Nelim's Pickle Tools: the animal "Shogun" stands at (136, 215) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (133, 219) facing East
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I frame the area centred on (138, 217) at root size 4
+    And I take a screenshot "gallery-5-golden-hour"
+    And Nelim's Pickle Tools: the decor is removed
+
+  # Image 6: closing image, the roost in the barn, last armful of hay.
+  @review @gallery
+  Scenario: workshop-6-roost
+    Given Nelim's Sanctuary: the animals are removed from the sanctuary "barn"
+    And I set the hour to 19
+    And Nelim's Sanctuary: I am at the sanctuary "barn"
+    And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: I place the decor "Brazier" near (201, 236)
+    And Nelim's Pickle Tools: the decor "Brazier" at (201, 236) is lit
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (199, 238)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (201, 239)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (203, 238)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (200, 241)
+    And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
+    And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
+    And Nelim's Pickle Tools: the animal "Dodo4" is given coat 4
+    And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
+    And I wait 60 ticks
+    When Nelim's Pickle Tools: the animal "Dodo0" lies at (199, 238) facing South
+    And Nelim's Pickle Tools: the animal "Dodo2" lies at (201, 239) facing South
+    And Nelim's Pickle Tools: the animal "Dodo4" lies at (203, 238) facing West
+    And Nelim's Pickle Tools: the animal "Dodo6" lies at (200, 241) facing East
+    And Nelim's Pickle Tools: "Nelim" carries 20 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" stands at (198, 236) facing East
+    And Nelim's Sanctuary: Nelim has her own face
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And game speed is paused
+    And Nelim's Pickle Tools: studio presentation mode is enabled
+    And Nelim's Pickle Tools: I frame the area centred on (201, 238) at root size 4
+    And I take a screenshot "gallery-6-roost"
+    And Nelim's Pickle Tools: the decor is removed

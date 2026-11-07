@@ -220,3 +220,7 @@ Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the encl
 | Included animal (rule 5) | Shot(s) |
 |---|---|
 | RG_Dodo, coats A to G (indices 0 to 6) | 3 (all seven side by side); also 1, 2, 4, 5, 6 |
+
+## Review-gallery (2026-11-07)
+
+Six scenarios of `07-gallery.feature` rewritten from the shotlist; `wsl-deps.galerie.map` now holds Hat Hair Control (3760821540) and Stick Lantern (2024351846). `Check-Steps.ps1`: every step line resolves. `Check-FeatureDefs.js`: all defs found except `MouthLipsSmile`, which no installed mod defines (Search-Workshop, 0 hits). The owner validated that name; the nearest real defs are `MouthLipsSmallSmile`, `MouthLipsSimpleSmile`, `MouthLipsGrin` (Vanilla Facial Animations 2816938779). No ticket filed until the owner confirms which one.
