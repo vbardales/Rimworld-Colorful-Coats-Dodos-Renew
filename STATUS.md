@@ -196,3 +196,27 @@ Story: "Feeding day at the dodo pen", one day, Nelim in a straw hat and mustard 
 | 4 | workshop-4-the-nest | enclosure-south, nesting boxes | 15 | 3 | hen asleep on a nest, Nelim takes the egg | 4 | dodo egg def, low angle | |
 | 5 | workshop-5-golden-hour | enclosure-south, west gate | 17 | 4 | Shogun herds a straggler home | 4 | Shogun placement, pose | |
 | 6 | workshop-6-roost | barn, east extension | 19 | 4 | sleeping birds on hay, last armful | 4 | lying birds hide coats | |
+
+## NSB (sync-nsb 2026-11-07)
+
+Rules said back (owner, 2026-11-05 and 06): everything in NSB is free; outside NSB needs express validation for a colonist or a domestic animal; colonist properties change only with express validation; every outfit is free; every animal the mod includes is in the gallery.
+Changes in NSB since the last sync: none known (first sync of this mod). Updated: Nelim now played as the roster (hair colour #382412 and hairstyle `Roo_Royal_LongHD` under a hat, no override; the old LongOily and rgb(120,50,30) lines of the superseded scenarios are dropped); Hat Hair Control (current NSB choice) replaces Show Hair Under Stuff in the plan. Left alone: Shogun, decor of the pen.
+Pending owner question (rule 3): MouthSmile + LidCheerful on Nelim, instead of her roster mouth MouthLipsSmirk. Without it the six scenes lose 0.5 each at criterion d (GALLERY.md, smile malus), 3.5 to 4.
+Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the enclosures; SANCTUAIRE-CASES is dated 2026-10-06 and not regenerated). Tribe read: 2026-11-07 (NELIM-PROFIL, SHOGUN-PROFIL, CATALOGUE-ANIMAUX, GALERIE-COLONS; APPARENCES-CANON and LOOKS-VALIDATION by grep only).
+
+| Place | Shots | Changes made for the gallery | Last read |
+|---|---|---|---|
+| enclosure-south (status: to embellish, NPT decorating: troughs, bambooBundle, Yuran_PenMarker, shade trees planned) | 1-5 | TorchLamp, StickLantern, hay, daylilies, tall grass, stool, EggBox, nest (removed after each shot) | 2026-11-07 |
+| barn, east extension (validated 2026-11-06; a decoration is now wanted by the owner) | 6 | lit Brazier, Hay (removed after the shot) | 2026-11-07 |
+
+| Colonist | Shots | Outfit per shot | Last read | Exceptions |
+|---|---|---|---|---|
+| Nelim | 1-4, 6 (5 behind the dodos) | straw hat, mustard shirt, usual trousers, all day: free outfit, warm colour that sets off the blue, white and brown coats | 2026-11-07 | mouth override MouthSmile: PENDING |
+
+| Animal | Shots | Outfit | Last read | Exceptions |
+|---|---|---|---|---|
+| Shogun | 5 | `Apparel_leatherdogcollar` (validated daily look, 2026-11-06) | 2026-11-07 | none |
+
+| Included animal (rule 5) | Shot(s) |
+|---|---|
+| RG_Dodo, coats A to G (indices 0 to 6) | 3 (all seven side by side); also 1, 2, 4, 5, 6 |

@@ -5,7 +5,7 @@
 @requires:nelim.pickletools.colonistrace
 Feature: Workshop gallery captures
 
-  # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: -DepMap wsl-deps.galerie.map (plus Mlie.StickLantern 2024351846).
+  # Staged photographs, not assertions (GALLERY.md): a person opens each image. Pass: -DepMap wsl-deps.galerie.map (plus Mlie.StickLantern 2024351846 and lordfelix.HatHairControl 3760821540).
   # SHOTLIST of 2026-11-07 (skill write-shotlist). The Scenario blocks below are the superseded two-shot draft: they are rewritten to this
   # plan before any ticket (a scene not in this plan is not written; rewriting a scene deletes its old captures, GALLERY.md).
   #
@@ -14,9 +14,12 @@ Feature: Workshop gallery captures
   # herds the stragglers home at 17 and lays the last hay in the barn at 19. One start hour per image (set with "I set the hour"),
   # clear sky; the sun is up at 8 (check on the first capture). Places: enclosure-south for 1 to 5, barn for the closing image 6.
   # Everything the mod brings is shown: coats in a flock (1), on birds that move (2), all seven side by side (3), on a resting bird (4),
-  # in warm evening light (5), asleep (6). Nelim: dark auburn long loose hair ("Long") under a straw hat (Apparel_StrawHat, hair shown by
-  # Show Hair Under Stuff), mustard shirt (Apparel_BasicShirt dyed 205,150,40) over her usual trousers, her own face with a smile
-  # (MouthSmile, LidCheerful), same outfit all day. Shogun (NSB labrador, leather collar) appears in 5. Animals spawned after the place is framed.
+  # in warm evening light (5), asleep (6). Nelim (NSB canon, nothing changed): hair colour Hair_DarkSaturatedReddish #382412, hairstyle
+  # Roo_Royal_LongHD under the straw hat (Apparel_StrawHat; the roster hairstyle "with a hat"; hair shown by Hat Hair Control 3760821540,
+  # seed in the Sanctuary config), mustard shirt (Apparel_BasicShirt dyed 205,150,40, free outfit) over her usual trousers, her own face.
+  # Smile: the roster mouth is MouthLipsSmirk; MouthSmile + LidCheerful is a mouth override that needs the owner's express validation
+  # (sync-nsb rule 3), PENDING: no scenario is written before the answer. Same outfit all day. Shogun (NSB labrador, leather collar,
+  # validated daily look) appears in 5. Animals spawned after the place is framed. The old Background hair lines are dropped.
   # Series estimate 4/5. Director pass (Opus) kept: hat, root sizes cut for 268 px, hay not repeated, one subject in 4, Shogun facing the
   # camera in 5, scene 6 reframed on one brazier. Not kept: none.
   #
