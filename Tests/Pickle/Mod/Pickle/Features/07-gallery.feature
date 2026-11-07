@@ -17,8 +17,9 @@ Feature: Workshop gallery captures
   # in warm evening light (5), asleep (6). Nelim (NSB canon, nothing changed): hair colour Hair_DarkSaturatedReddish #382412, hairstyle
   # Roo_Royal_LongHD under the straw hat (Apparel_StrawHat; the roster hairstyle "with a hat"; hair shown by Hat Hair Control 3760821540,
   # seed in the Sanctuary config), mustard shirt (Apparel_BasicShirt dyed 205,150,40, free outfit) over her usual trousers, her own face.
-  # Smile: the roster mouth is MouthLipsSmirk; MouthSmile + LidCheerful is a mouth override that needs the owner's express validation
-  # (sync-nsb rule 3), PENDING: no scenario is written before the answer. Same outfit all day. Shogun (NSB labrador, leather collar,
+  # Smile: roster mouth is MouthLipsSmirk; the owner validated the override on 2026-11-07 ("je valide le sourire de Nelim : MouthLipsSmile"):
+  # mouth MouthLipsSmile on every image of this gallery, roster lids (LidCheerful) kept. The def name is checked before any ticket (Check-FeatureDefs).
+  # Same outfit all day. Shogun (NSB labrador, leather collar,
   # validated daily look) appears in 5. Animals spawned after the place is framed. The old Background hair lines are dropped.
   # Series estimate 4/5. Director pass (Opus) kept: hat, root sizes cut for 268 px, hay not repeated, one subject in 4, Shogun facing the
   # camera in 5, scene 6 reframed on one brazier. Not kept: none.
