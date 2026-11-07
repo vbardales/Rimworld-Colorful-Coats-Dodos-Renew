@@ -32,3 +32,5 @@ lordfelix.HatHairControl 3760821540
 Mlie.StickLantern 2024351846
 # Added 2026-11-07 (tickets 724f and 20be failed 6 of 6: no hairstyle Roo_Royal_LongHD): Roo HD hairstyles of Nelim (canon, as in FoldingSkateboardRenew and SanctuaryBacklot maps).
 rooboid.hdhair.continued 3559870636
+# Straw hat of Nelim: TSFApparel_StrawHat, T's Samurai Faction (tickets 4868 and c53b failed 6 of 6: no apparel Apparel_StrawHat, a def no installed mod defines).
+Trickity.Samurai.Faction 2559958496

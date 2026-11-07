@@ -15,7 +15,7 @@ Feature: Workshop gallery captures
   # clear sky; the sun is up at 8 (check on the first capture). Places: enclosure-south for 1 to 5, barn for the closing image 6.
   # Everything the mod brings is shown: coats in a flock (1), on birds that move (2), all seven side by side (3), on a resting bird (4),
   # in warm evening light (5), asleep (6). Nelim (NSB canon, nothing changed): hair colour Hair_DarkSaturatedReddish #382412, hairstyle
-  # Roo_Royal_LongHD under the straw hat (Apparel_StrawHat; the roster hairstyle "with a hat"; hair shown by Hat Hair Control 3760821540,
+  # Roo_Royal_LongHD under the straw hat (TSFApparel_StrawHat, T's Samurai Faction 2559958496; the roster hairstyle "with a hat"; hair shown by Hat Hair Control 3760821540,
   # seed in the Sanctuary config), mustard shirt (Apparel_BasicShirt dyed 205,150,40, free outfit) over her usual trousers, her own face.
   # Smile: roster mouth is MouthLipsSmirk; the owner validated the override on 2026-11-07 ("je valide le sourire de Nelim : MouthLipsSmile"):
   # mouth MouthLipsSimpleSmile on every image of this gallery, roster lids (LidCheerful) kept. The def name is checked before any ticket (Check-FeatureDefs).
@@ -62,7 +62,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (205, 150, 40)
-    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_StrawHat"
+    And Nelim's Pickle Tools: "Nelim" also wears "TSFApparel_StrawHat"
 
   # Image 1: the flock leaves the night shelter, Nelim opens the south gate.
   @review @gallery
