@@ -201,7 +201,7 @@ Story: "Feeding day at the dodo pen", one day, Nelim in a straw hat and mustard 
 
 Rules said back (owner, 2026-11-05 and 06): everything in NSB is free; outside NSB needs express validation for a colonist or a domestic animal; colonist properties change only with express validation; every outfit is free; every animal the mod includes is in the gallery.
 Changes in NSB since the last sync: none known (first sync of this mod). Updated: Nelim now played as the roster (hair colour #382412 and hairstyle `Roo_Royal_LongHD` under a hat, no override; the old LongOily and rgb(120,50,30) lines of the superseded scenarios are dropped); Hat Hair Control (current NSB choice) replaces Show Hair Under Stuff in the plan. Left alone: Shogun, decor of the pen.
-Validated by the owner, 2026-11-07, rule 3 (her words: "je valide le sourire de Nelim : MouthLipsSmile"): mouth MouthLipsSmile on Nelim instead of her roster MouthLipsSmirk, for the six images of this gallery, roster lids kept. The def name is still to check (Check-FeatureDefs) before any ticket.
+Validated by the owner, 2026-11-07, rule 3 (her words: "je valide le sourire de Nelim : MouthLipsSmile"): mouth MouthLipsSimpleSmile on Nelim instead of her roster MouthLipsSmirk, for the six images of this gallery, roster lids kept. The def name is still to check (Check-FeatureDefs) before any ticket. That def does not exist; the owner then chose MouthLipsSimpleSmile in chat (2026-11-07), which is the one played.
 Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the enclosures; SANCTUAIRE-CASES is dated 2026-10-06 and not regenerated). Tribe read: 2026-11-07 (NELIM-PROFIL, SHOGUN-PROFIL, CATALOGUE-ANIMAUX, GALERIE-COLONS; APPARENCES-CANON and LOOKS-VALIDATION by grep only).
 
 | Place | Shots | Changes made for the gallery | Last read |
@@ -211,7 +211,7 @@ Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the encl
 
 | Colonist | Shots | Outfit per shot | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1-4, 6 (5 behind the dodos) | straw hat, mustard shirt, usual trousers, all day: free outfit, warm colour that sets off the blue, white and brown coats | 2026-11-07 | mouth MouthLipsSmile: validated 2026-11-07 ("je valide le sourire de Nelim : MouthLipsSmile") |
+| Nelim | 1-4, 6 (5 behind the dodos) | straw hat, mustard shirt, usual trousers, all day: free outfit, warm colour that sets off the blue, white and brown coats | 2026-11-07 | mouth MouthLipsSimpleSmile: validated 2026-11-07 ("je valide le sourire de Nelim : MouthLipsSmile") |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
@@ -223,4 +223,4 @@ Places read: 2026-11-07 (SANCTUAIRE-LIEUX, EMBELLISSEMENT-LIEUX rows of the encl
 
 ## Review-gallery (2026-11-07)
 
-Six scenarios of `07-gallery.feature` rewritten from the shotlist; `wsl-deps.galerie.map` now holds Hat Hair Control (3760821540) and Stick Lantern (2024351846). `Check-Steps.ps1`: every step line resolves. `Check-FeatureDefs.js`: all defs found except `MouthLipsSmile`, which no installed mod defines (Search-Workshop, 0 hits). The owner validated that name; the nearest real defs are `MouthLipsSmallSmile`, `MouthLipsSimpleSmile`, `MouthLipsGrin` (Vanilla Facial Animations 2816938779). No ticket filed until the owner confirms which one.
+Six scenarios of `07-gallery.feature` rewritten from the shotlist; `wsl-deps.galerie.map` now holds Hat Hair Control (3760821540) and Stick Lantern (2024351846). `Check-Steps.ps1`: every step line resolves. `Check-FeatureDefs.js`: all defs found except `MouthLipsSimpleSmile`, which no installed mod defines (Search-Workshop, 0 hits). The owner validated that name; the nearest real defs are `MouthLipsSmallSmile`, `MouthLipsSimpleSmile`, `MouthLipsGrin` (Vanilla Facial Animations 2816938779). No ticket filed until the owner confirms which one.

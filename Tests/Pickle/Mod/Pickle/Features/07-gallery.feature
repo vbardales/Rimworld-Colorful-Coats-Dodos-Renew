@@ -18,7 +18,7 @@ Feature: Workshop gallery captures
   # Roo_Royal_LongHD under the straw hat (Apparel_StrawHat; the roster hairstyle "with a hat"; hair shown by Hat Hair Control 3760821540,
   # seed in the Sanctuary config), mustard shirt (Apparel_BasicShirt dyed 205,150,40, free outfit) over her usual trousers, her own face.
   # Smile: roster mouth is MouthLipsSmirk; the owner validated the override on 2026-11-07 ("je valide le sourire de Nelim : MouthLipsSmile"):
-  # mouth MouthLipsSmile on every image of this gallery, roster lids (LidCheerful) kept. The def name is checked before any ticket (Check-FeatureDefs).
+  # mouth MouthLipsSimpleSmile on every image of this gallery, roster lids (LidCheerful) kept. The def name is checked before any ticket (Check-FeatureDefs).
   # Same outfit all day. Shogun (NSB labrador, leather collar,
   # validated daily look) appears in 5. Animals spawned after the place is framed. The old Background hair lines are dropped.
   # Series estimate 4/5. Director pass (Opus) kept: hat, root sizes cut for 268 px, hay not repeated, one subject in 4, Shogun facing the
@@ -83,7 +83,7 @@ Feature: Workshop gallery captures
     When Nelim's Pickle Tools: "Nelim" stands at (159, 209) facing South
     And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (159, 212) at root size 6
@@ -122,7 +122,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (149, 214)
     And Nelim's Pickle Tools: "Nelim" stands at (149, 213) facing South
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (149, 215) at root size 4
@@ -166,7 +166,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" carries the item "RawBerries"
     And Nelim's Pickle Tools: "Nelim" stands at (150, 215) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (154, 216) at root size 3.5
@@ -193,7 +193,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" carries the item "EggChickenUnfertilized"
     And Nelim's Pickle Tools: "Nelim" stands at (141, 214) facing West
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (139, 214) at root size 3
@@ -226,7 +226,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the animal "Shogun" stands at (136, 215) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (133, 219) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (138, 217) at root size 4
@@ -258,7 +258,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" carries 20 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" stands at (198, 236) facing East
     And Nelim's Sanctuary: Nelim has her own face
-    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSmile"
+    And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: I frame the area centred on (201, 238) at root size 4
