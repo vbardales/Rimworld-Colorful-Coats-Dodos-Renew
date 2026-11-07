@@ -227,4 +227,13 @@ Six scenarios of `07-gallery.feature` rewritten from the shotlist; `wsl-deps.gal
 
 Gallery tickets 2026-11-07: 724f/20be failed 6 of 6 (no hairstyle Roo_Royal_LongHD, fixed 249968b); 4868/c53b failed 6 of 6 (no apparel Apparel_StrawHat: the def is TSFApparel_StrawHat, T's Samurai Faction 2559958496, fixed a2a9127, feature and wsl-deps.galerie.map). Refiled runner auto: 5469 (scenes 1-3, evidence Tests/Pickle/Inbox/gallery-a-3), e957 (scenes 4-6, gallery-b-3). Old Inbox runs deleted (refused). On RUN_DONE: open every capture, accept or refuse each (review-gallery step 12), triage Inbox. Unverified: the dog name "Shogun" in scene 5; any other def of the six scenarios still unplayed. New gate 2026-11-07 (GALLERY.md): four notes (image, adequacy, understanding, decoration) under 4/5 means REDO; not yet applied to this plan (Check-ShotlistVsScenario: no shotlist header in the feature).
 
+Gallery runs read 2026-11-07 (tickets 5469 and e957, all six scenarios Passed; a first merged run had scene 1 red on the 4-coat assertion with 9 dodos, 3 coats drawn, bad luck, green on the replay). Captures opened, verdict by scene, all six REDO (nothing in Art/Gallery/, Inbox deleted as refused):
+1 dawn: Nelim seen from behind and small, hair hidden, bamboo clutter, dodos tiny and scattered, gate not readable. REDO.
+2 breakfast: red X marker over the hat, hay carried not dropped, five dodos far from her. REDO.
+3 seven-coats: seven coats readable (best of the set) but no berries and no pecking, bare ground. REDO (adequacy and decoration under 4).
+4 the-nest: dodo curled on grass, no nest, no egg, Nelim only standing. REDO.
+5 golden-hour: turkeys, sheep, cats, camels crowd the frame, Shogun and Nelim tiny, no herding read. REDO.
+6 roost: sleeping birds on hay, z sign, long hair, braziers; table and eight chairs clash with a barn, no armful of hay. Closest to candidate, REDO.
+Next: recompose each scene (closer camera, clear the stray animals, props that tell the instant), then Check-ShotlistVsScenario and refile on auto.
+
 OptionalCompat (Audit 4.b/4.e, 2026-11-07): Mod/About/OptionalCompat.xml written, Check-OptionalCompat.ps1 OK (3 declared). Open: workshopId of ReGrowth.BOTR.ExtinctAnimalsPack and ReGrowth2.ExtinctAnimals (not in registry, Steam search page did not load); the Mlie entry carries 3602926791. Check whether Workshop item 3820991509 (Mlie.ReGrowthExtinctAnimals) is a successor. Unpushed commits: yes.
