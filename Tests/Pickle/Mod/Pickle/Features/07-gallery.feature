@@ -54,6 +54,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the area from (150, 209) to (166, 222) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (158, 208)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (158, 208) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (160, 208)
@@ -128,6 +129,7 @@ Feature: Workshop gallery captures
     And I set the hour to 10
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (146, 211)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (146, 211) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (152, 211)
@@ -182,6 +184,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the area from (150, 211) to (160, 220) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (151, 218)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 213) fully grown
@@ -239,6 +242,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the area from (137, 213) to (140, 215) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (141, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (141, 217) is lit
     And Nelim's Pickle Tools: I place the decor "EggBox" near (136, 212)
@@ -285,6 +289,7 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the animals are removed from the area from (126, 208) to (150, 226)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
+    And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: the area from (134, 214) to (141, 221) is cleared
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (134, 217)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (134, 217) is lit
