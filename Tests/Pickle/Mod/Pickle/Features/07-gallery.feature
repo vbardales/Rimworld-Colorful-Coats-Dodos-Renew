@@ -243,7 +243,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the area from (137, 213) to (140, 215) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 217) is lit
     And Nelim's Pickle Tools: I place the decor "EggBox" near (136, 212)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
