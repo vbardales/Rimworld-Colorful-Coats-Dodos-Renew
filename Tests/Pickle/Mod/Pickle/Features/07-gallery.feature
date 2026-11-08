@@ -130,8 +130,8 @@ Feature: Workshop gallery captures
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (146, 211)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (146, 211) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (154, 211)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (154, 211) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (152, 211)
     And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (145, 212)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (154, 216)
@@ -146,8 +146,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (154, 218) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 211) fully grown
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (152, 219)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (152, 219) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (156, 219)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (156, 219) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (147, 216)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (150, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (152, 215)
@@ -196,10 +196,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (151, 218) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (150, 219) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (159, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (160, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 214) fully grown
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (149, 215)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (149, 215) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (154, 214)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (154, 214) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (153, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 218)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (156, 218)
@@ -243,8 +243,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the area from (137, 213) to (140, 215) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (141, 217)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (141, 217) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 217)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 217) is lit
     And Nelim's Pickle Tools: I place the decor "EggBox" near (136, 212)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 213) fully grown
@@ -254,8 +254,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (135, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Stool" near (143, 216)
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" near (144, 216)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (144, 216) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (135, 211)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (135, 211) is lit
     And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (142, 215)
     And Nelim's Pickle Tools: the thing "Hay" at (142, 215) is not forbidden
@@ -293,8 +293,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the area from (134, 214) to (141, 221) is cleared
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (134, 217)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (134, 217) is lit
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (145, 220)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (145, 220) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 220)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 220) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (137, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 217) fully grown
