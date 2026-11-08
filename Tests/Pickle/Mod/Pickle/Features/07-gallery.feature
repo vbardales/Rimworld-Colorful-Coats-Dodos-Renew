@@ -15,17 +15,17 @@
 # Gestures are obtained by pose steps: pawns stand at a cell facing a direction, carry then put down an item (hands empty after, the hay or berries stay on the ground), animals stand or lie at a cell, the game is paused after 60 ticks of set-up.
 #   1. workshop-1-dawn; enclosure-south, south gate in the fence row at z 207; 7h; root 4
 #        Seven dodos, one per coat, packed close in z 211 to 214 and turned East or West toward the gate, one bird (coat 6) in the gate opening at (159, 209) facing South, the first one out; Nelim stands at (157, 209) facing East beside the gate post, hands empty, smiling;
-#        TorchLamp lit on both gate posts at (158, 208) and (160, 208), Plant_Daylily, Plant_YellowTallGrass, DR_StickLantern lit, Stool, PlantPot_Daylily; no hay (hay belongs to scene 2). Instant: she has just pulled the gate open and the flock streams out.
+#        TorchLamp lit on both gate posts at (158, 208) and (160, 208), Plant_Daylily, Plant_YellowTallGrass, DR_StickLantern lit, Stool; no hay (hay belongs to scene 2). Instant: she has just pulled the gate open and the flock streams out.
 #        Says: The pen wakes up in many colours.
 #        Frame: wide, root 4 centred (159, 210); foreground the fence row with the two lit gate posts and the gate bird, middle the flock, top tall grass and daylilies; Nelim low left of the gate; low warm light of 7h.
 #   2. workshop-2-breakfast; enclosure-south, east of the logo (157, 213); 10h; root 3
 #        Hay lies in a pile at (157, 213); Nelim stands at (159, 213) facing West toward it, hands empty, smiling; five dodos (coats 0, 2, 3, 5, 6)
-#        touching the pile at (156, 214), (158, 214), (157, 214), (158, 212), (156, 212), facing it; the map's own Brazier near (160, 213) hidden; DR_StickLantern lit at (154, 211) and (156, 219), TorchLamp lit at (154, 216), Stool, PlantPot_Daylily, Plant_Daylily, Plant_YellowTallGrass all inside the frame (x 153 to 161). Instant: before the first peck.
+#        touching the pile at (156, 214), (158, 214), (157, 214), (158, 212), (156, 212), facing it; the map's own Brazier near (160, 213) hidden; DR_StickLantern lit at (154, 211) and (156, 219), TorchLamp lit at (154, 216), Stool, Plant_Daylily, Plant_YellowTallGrass all inside the frame (x 153 to 161). Instant: before the first peck.
 #        Says: Breakfast is served.
 #        Frame: medium, root 3 centred (157, 213); foreground the hay pile and the ring of birds, Nelim on the right (mirror of scene 3), lit lanterns at the edges; bright 10h light.
 #   3. workshop-3-seven-coats; enclosure-south, east side (155, 216); 12h; root 2.6
 #        Berries lie at (155, 216); the seven coats (0 to 6) in a tight ring one cell around them, the north row facing South (front view), none turned North; Nelim at (153, 216) facing East at the open gap of the ring;
-#        PlantPot_Daylily, Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit at (159, 217), DR_StickLantern lit at (154, 214), the map's plants kept (only the ring cells cleared). Instant: the berries have just landed.
+#        Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit at (159, 217), DR_StickLantern lit at (154, 214), the map's plants kept (only the ring cells cleared). Instant: the berries have just landed.
 #        Says: Seven coats, one flock.
 #        Frame: medium, root 2.6 centred (155, 216); berries in the foreground centre, the seven coats in a tight ring behind, Nelim left, torch and lantern lit at the back; noon light.
 #   4. workshop-4-the-nest; enclosure-south, nesting boxes, west of the logo (133, 214); 15h; root 2.4
@@ -40,7 +40,7 @@
 #        Frame: medium, root 3.2 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
 #   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 2.8
 #        Four dodos (coats 0, 2, 4, 6) asleep on hay laid under each of them at (199, 238), (201, 239), (203, 238), (200, 239), all inside z 237 to 239, one lit Brazier at (201, 236); Nelim at (198, 238) facing East toward the birds, hat off indoors, poker table and dining chairs hidden, smiling, the last
-#        armful of Hay laid at (201, 237); DR_StickLantern lit at (204, 236), Stool, PlantPot_Daylily at (204, 239). Instant: the last bird has just settled. Says: Everyone is home.
+#        armful of Hay laid at (201, 237); DR_StickLantern lit at (204, 236), Stool. Instant: the last bird has just settled. Says: Everyone is home.
 #        Frame: tight, root 2.8 centred (201, 238); four sleeping dodos on hay in the foreground, Nelim at the left edge, lit Brazier, DR_StickLantern and Stool behind; warm firelight at 19h.
 # Interface windows: none (the mod has no settings, no menu).
 Feature: Workshop gallery captures
@@ -91,7 +91,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (158, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" near (154, 209)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (154, 209) is lit
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (165, 209)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (161, 211) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (158, 214) fully grown
@@ -138,7 +137,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (154, 211)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (154, 211) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (158, 210)
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (161, 211)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" near (154, 216)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (154, 216) is lit
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (153, 214) fully grown
@@ -197,7 +195,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the area from (153, 214) to (157, 218) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (151, 218)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (158, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (158, 213) fully grown
@@ -352,7 +349,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (204, 236)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (204, 236) is lit
     And Nelim's Pickle Tools: I place the decor "Stool" near (203, 236)
-    And Nelim's Pickle Tools: I place the decor "PlantPot_Daylily" near (204, 239)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (199, 238)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (201, 239)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (203, 238)
