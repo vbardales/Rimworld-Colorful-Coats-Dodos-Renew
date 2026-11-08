@@ -2,34 +2,14 @@
   "panel": {
     "title": "Colorful Coats - Dodos! Renew (unofficial)",
     "titleParts": [
-      {
-        "text": "Colorful"
-      },
-      {
-        "text": "Coats -",
-        "breakBefore": true
-      },
-      {
-        "text": "Dodos!",
-        "breakBefore": true
-      },
-      {
-        "text": "Renew (unofficial)",
-        "suffix": true
-      }
+      { "text": "Colorful Coats - Dodos!" },
+      { "text": "Renew (unofficial)", "suffix": true }
     ],
-    "description": "Seven coats for the dodo, instead of the one it hatches with.",
-    "titleSize": 54
+    "description": "Seven coats for the dodo, instead of the one it hatches with."
   },
-  "background": {
-    "file": "Preview-source.png"
-  },
-  "echo": {
-    "file": "echo-concept.png"
-  },
-  "icon": {
-    "file": "ModIcon-source.png"
-  },
+  "background": { "file": "Preview-source.png" },
+  "echo": { "file": "echo-concept.png" },
+  "icon": { "file": "ModIcon-source.png" },
   "palette": {
     "veil": "#594C39",
     "inkPrimary": "#F2ECE1",
