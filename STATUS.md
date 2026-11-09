@@ -73,7 +73,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: a95086f2b1c3b3d1df3d0bb4b62e789ea0561c85
+protocols_read_sha: 01ba2e9cfe0b307ec9f0aef7d1edfd39f2458666
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -247,6 +247,8 @@ Gallery tickets 2026-11-08 (1f68c51): 66e9 (1-3) 1 of 3 passed (scene 1), fab9 (
 a447 (2-5, 2026-11-08): scenes 2, 3, 5 passed, scene 4 red ("the cell (135, 217) already holds DR_StickLantern": the fixture has a lantern there). Placement step removed, the existing lantern is lit (commit after bcb623e). Scene 4 refiled alone: 8f1b (gallery-d-7). Captures of 1, 2, 3, 5, 6 wait in Inbox (gallery-a-7-1, gallery-c-7, gallery-b-7) for the review at the end.
 
 Sync 2026-11-08 (sync-nsb-npt, fourth run, after 21:00): NSB since the third run: one commit b5e64e8 (VALIDE: enclosure and workshops validated, workshops to be redone entirely; right-bank and gravel-yard refused; left-bank telescope order). None touches enclosure-south (validated 2026-11-08, logo free) or the barn extension (validated 2026-11-06). No roster, profile, looks or animal catalogue change, no NPT step or catalogue change since 2026-11-08 00:38. Nothing updated in the mod. Rules said back: 1 NSB free, 2 outside NSB needs express validation (animals of the mod authorised), 3 colonist properties only with express validation (Nelim mouth MouthLipsSimpleSmile validated 2026-11-07), 4 outfits free, 5 every included animal shown (RG_Dodo coats A to G, scene 3). Places read: 2026-11-08 (diffs only). Tribe read: 2026-11-07 (no change since). Steps read: 2026-11-08. Tables above stand.
+
+Sync 2026-11-09 (sync-nsb-npt, fifth run): NSB since the fourth run: final decor fixture `Nelims-tribe-decor-mods-z3.rws` copied to Mod/Pickle/Fixtures (old `Nelims-tribe` kept, no scenario repointed, owner "comme tu veux"); VALIDE 2026-11-09: left-bank, workshops, barn and others validated (enclosure-south already validated 2026-11-08); roster/profile edits touch Quill only. No Nelim or Shogun change. NPT since 2026-11-08: new steps (flecks of a def not thrown: could hide the sleeping Z of scene 6; item carried made of stuff; Beauty2 mouth offset; frame centred on a point; drawing of a class skipped), none renamed, none used here changed. Nothing updated in the mod; the flecks step is a candidate for scene 6 at the next recompose. Rules said back: 1 NSB free, 2 outside NSB needs express validation (animals of the mod authorised), 3 colonist properties only with express validation (Nelim mouth MouthLipsSimpleSmile validated 2026-11-07), 4 outfits free, 5 every included animal shown (RG_Dodo coats A to G, scene 3). Places read: 2026-11-09 (diffs only). Tribe read: 2026-11-09 (diffs only). Steps read: 2026-11-09 (diffs only). Tables above stand. Ticket 5bb8 result already in Tests/Pickle/Inbox/gallery-f-7 (summary: 6 of 6 passed, set galerie), captures not yet opened.
 
 ## Shotlist 2026-11-08 (skill write-shotlist, plan in the header of 07-gallery.feature)
 
