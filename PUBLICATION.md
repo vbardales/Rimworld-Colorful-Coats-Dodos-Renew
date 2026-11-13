@@ -117,8 +117,8 @@ For the `1.0.0` upload. The first line must carry the exact version in BBCode or
 
 ```
 [b]1.0.0[/b]
-First public release of the 1.6 port. Seven coats for the dodos of ReGrowth: Extinct Animals (Continued), found
-again by a patch guard that matched an outdated mod name. No change to stats, meat or eggs.
+First public release of the 1.6 port. Seven coats for the dodos of ReGrowth: Extinct Animals (Continued),
+restored by a patch guard that now matches the mod's current name. No change to stats, meat or eggs.
 ```
 
 ## Release path (CI)
