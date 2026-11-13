@@ -49,7 +49,7 @@ Code, XML patches, tests and documentation were written with Claude (Anthropic) 
 
 ## Thanks
 
-purpleyam, for the coats; Helixien, for the dodo; Mlie, for keeping it alive. Harmony, and the development-only test tools Pickle and RimLogging, never a dependency of this mod.
+purpleyam, for the coats; Helixien, for the dodo; Mlie, for keeping it alive. Harmony and the development-only test tools Pickle and RimLogging are never dependencies of this mod.
 
 Credits, licence scope and the source-by-source assessment are in ATTRIBUTION.md and LICENSE (MIT for the port's additions only).
 
