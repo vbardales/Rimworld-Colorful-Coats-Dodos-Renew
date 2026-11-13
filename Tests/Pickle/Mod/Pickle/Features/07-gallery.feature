@@ -33,12 +33,13 @@
 #        EggBox, DR_StickLantern lit at (135, 217), TorchLamp lit at (135, 211), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
 #        Says: A quiet afternoon, one egg.
 #        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
-# FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 216); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
+# FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
+# FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 215); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
 #   5. workshop-5-golden-hour; enclosure-south, west gate (138, 217); 18h; root 3.2
-#        (Fourth pass: root 3 centred (136, 217), three more dodos (coats 0, 4, 6) at (141, 216), (142, 217), (141, 218), all facing East.) A drive toward the East: the straggling dodo (coat 2) at (136, 216) with Shogun behind it at (135, 216) and Nelim last at (134, 216), all facing East; three more dodos (coats 1, 3, 5) at (138, 217), (140, 217), (139, 216) facing East, away from the
+#        (Fifth pass: root 3.4 centred (138, 217); fourth pass: three more dodos (coats 0, 4, 6) at (141, 216), (142, 217), (141, 218), all facing East.) A drive toward the East: the straggling dodo (coat 2) at (136, 216) with Shogun behind it at (135, 216) and Nelim last at (134, 216), all facing East; three more dodos (coats 1, 3, 5) at (138, 217), (140, 217), (139, 216) facing East, away from the
 #        low sun; TorchLamp lit at (134, 217), DR_StickLantern lit at (135, 220), Plant_Daylily, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just caught up and Shogun nudges it home. Says: The last bird comes home.
-#        Frame: medium, root 3.2 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
+#        Frame: medium, root 3.4 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
 #   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 2.8
 #        Four dodos (coats 0, 2, 4, 6) asleep on hay laid under each of them at (199, 238), (201, 239), (203, 238), (200, 239), all inside z 237 to 239, one lit Brazier at (201, 236); Nelim at (198, 238) facing East toward the birds, hat off indoors, poker table and dining chairs hidden, smiling, the last
 #        armful of Hay laid at (201, 237); DR_StickLantern lit at (204, 236) and (197, 236), no Stool (it read as a table, third pass). Instant: the last bird has just settled. Says: Everyone is home.
@@ -260,7 +261,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 217) is lit
-    And Nelim's Pickle Tools: I place the decor "EggBox" near (133, 216)
+    And Nelim's Pickle Tools: I place the decor "EggBox" exactly at (133, 215)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 216) fully grown
@@ -351,7 +352,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (136, 217) at root size 3
+    And Nelim's Pickle Tools: I frame the area centred on (138, 217) at root size 3.4
     And I take a screenshot "gallery-5-golden-hour"
     And Nelim's Pickle Tools: the decor is removed
 
