@@ -37,7 +37,7 @@ this file alone; until then this section holds what a `1.0.0` will contain.
 
 - The two `PatchOperationFindMod` blocks that patched `RG_Dodo` (one for
   `ReGrowth Remastered: Extinct Animals`, one for `ReGrowth: Extinct Animals`) merged into a
-  single block listing all three names. They had the same xpath and the same value, so with both
+  single block listing every name. They had the same xpath and the same value, so with both
   mods active the coats were applied twice, leaving the def with two `alternateGraphics` lists.
   `PatchOperationFindMod` stops at the first name it finds, so one block cannot do that.
 - `<success>Always</success>` added to both `PatchOperationAdd` operations.
@@ -53,7 +53,8 @@ this file alone; until then this section holds what a `1.0.0` will contain.
   away from it, but the Workshop item and its `PublishedFileId.txt` stay as they are.
 - `<supportedVersions>` set to 1.6.
 - `<loadAfter>` given `Mlie.ReGrowthExtinctAnimals` alongside the two old identifiers.
-- `About/PublishedFileId.txt` dropped: it names purpleyam's Workshop item.
+- `About/PublishedFileId.txt` dropped: it named purpleyam's Workshop item. A new one, holding this
+  port's own private item `3806766249`, was added by the `0.1.0` pre-publication below and stays.
 
 ### Removed
 
