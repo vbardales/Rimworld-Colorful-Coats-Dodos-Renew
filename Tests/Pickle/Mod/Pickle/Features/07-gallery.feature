@@ -33,6 +33,7 @@
 #        EggBox, DR_StickLantern lit at (135, 217), TorchLamp lit at (135, 211), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
 #        Says: A quiet afternoon, one egg.
 #        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
+# SEVENTH PASS 2026-11-13 (capture of ea0a: image 4, adequacy 4, understanding 4, decoration 3.5, REDO): 5 eight more plants (Plant_Daylily at (141, 221), (145, 216), (137, 222), (139, 214); Plant_YellowTallGrass at (140, 222), (137, 219), (141, 214), (145, 219)) over the bare soil, sun glow held at 0.55 for a golden 18h light; same frame.
 # SIXTH PASS 2026-11-13 (captures of 93eb): 5 REDO, a stray Heart fleck floats over a dodo (the anomaly scene 3 already suppresses), the same flecks step added; 4 candidate.
 # FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
 # FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 215); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
@@ -326,6 +327,15 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 219) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (136, 221) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (141, 221) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (145, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (137, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (139, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (140, 222) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (137, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (141, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (145, 219) fully grown
+    And Nelim's Pickle Tools: the sun glow of the map is held at 0.55
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (138, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (140, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (139, 216)
