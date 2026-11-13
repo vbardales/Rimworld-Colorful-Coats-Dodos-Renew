@@ -22,6 +22,7 @@ upstream_mod_remotes: N/A
 title_suffix: (unofficial), already present
 github_description: present
 dependencies: declared
+workshop_required_items: n/a, not released yet
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
 tested_on:    2026-11-07, minimal pass 2026-11-06 (29/29, features 01-05, ticket cf88), F (06) 4/4 (73d0), E (removal) 2/2 (9187, 2026-11-07, Docs/runs/2026-11-07-removal.txt); D, G, H not applicable; gallery (07) stays with shootGallery
@@ -272,3 +273,12 @@ Review-translation 2026-11-13: seven ChatGPT passes read, 4 corrections applied 
 Ecosystem (Steam, PiI 2026-11-13, docs/inventory/ecosystem-steam/ColorfulCoatsDodosRenew.md, protocols 3369fef): no other dodo recolour on Steam or in the corpus. Dodo holders only: ReGrowth Extinct Animals (patch target, 3602926791 and 3820991509), DodoRex 3828845619 (separate dodo race, not a recolour), Saroodles Additions. The original has 0 defs, so no defName fork scan. Nothing to play, no action. Supersedes the local-scan line above.
 
 Sync 2026-11-13 (sync-nsb-npt, sixth run): NSB since 2026-11-09: docs renamed to Docs (18abf53), Beauty2 mouth Harmony patch and Quill eyes (cc61d17, Quill only), tests and TESTING.md regenerated. None touches Nelim (mouth MouthLipsSimpleSmile validated 2026-11-07), Shogun, enclosure-south (validated 2026-11-08, logo free) or the barn extension. NPT since 2026-11-09: new steps, none renamed, none used here changed. Candidates for the next recompose: "the terrain of the cell is" and `I lay the floor` (bare soil), "I place the decor <pot> holding <plant> fully grown near" (plants in the frame), "the main bar, the speed controls and the mouse-over readout are hidden" and "the sky overlays are hidden" (cleaner frames), "the cell is probed" (check a cell is free before a decor step). Nothing updated in the mod. Rules said back: 1 NSB free, 2 outside NSB needs express validation (animals of the mod authorised), 3 colonist properties only with express validation (Nelim mouth MouthLipsSimpleSmile validated 2026-11-07), 4 outfits free, 5 every included animal shown (RG_Dodo coats A to G, scene 3). Places read: 2026-11-13 (log only, rename). Tribe read: 2026-11-13 (log only). Steps read: 2026-11-13 (diffs only). Tables above stand.
+
+## Dependencies (AUDIT 4.g, read from Mod/ 2026-11-13, revision f9e3d02)
+
+- Required (`modDependencies`): `Mlie.ReGrowthExtinctAnimals`, ReGrowth: Extinct Animals (Continued), Workshop 3602926791, the patch target (`RG_Dodo`). The patch is guarded by `PatchOperationFindMod` on display names (four names listed in `Mod/Patches/ColorfulCoats_HlxDodo.xml`).
+- Incompatible (`incompatibleWith`): `purpleyam.colorfulcoats.hlxdodo` (the original, played 2026-10-02 and 2026-11-06).
+- Load order (`loadAfter`): `Mlie.ReGrowthExtinctAnimals`, `ReGrowth.BOTR.ExtinctAnimalsPack`, `ReGrowth2.ExtinctAnimals`.
+- Optional integrations (`Mod/About/OptionalCompat.xml`, Check-OptionalCompat OK): the same three ReGrowth packages, kind patch. Open: workshopId of the last two (not in the registry); the registry says 3602926791 is replaced by Workshop item 3820991509 (Mlie.ReGrowthExtinctAnimals), to settle before publication.
+- DLC: none. Harmony, assembly, Defs of its own: none (4.c, 4.f: no animal added, the mod only recolours `RG_Dodo`).
+- Workshop required items (4.g): `n/a, not released yet` (private prepublication 0.1.0 only, owner decision 2026-11-10). The hand setting by Virginie moves to `prepareRelease` or `publish`: Required item ReGrowth 3602926791 (or its successor).
