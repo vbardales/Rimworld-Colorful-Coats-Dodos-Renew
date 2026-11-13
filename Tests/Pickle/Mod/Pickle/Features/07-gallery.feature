@@ -33,8 +33,9 @@
 #        EggBox, DR_StickLantern lit at (135, 217), TorchLamp lit at (135, 211), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
 #        Says: A quiet afternoon, one egg.
 #        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
+# FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 216); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
 #   5. workshop-5-golden-hour; enclosure-south, west gate (138, 217); 18h; root 3.2
-#        (Third pass: closer, root 2.8 centred (137, 217).) A drive toward the East: the straggling dodo (coat 2) at (136, 216) with Shogun behind it at (135, 216) and Nelim last at (134, 216), all facing East; three more dodos (coats 1, 3, 5) at (138, 217), (140, 217), (139, 216) facing East, away from the
+#        (Fourth pass: root 3 centred (136, 217), three more dodos (coats 0, 4, 6) at (141, 216), (142, 217), (141, 218), all facing East.) A drive toward the East: the straggling dodo (coat 2) at (136, 216) with Shogun behind it at (135, 216) and Nelim last at (134, 216), all facing East; three more dodos (coats 1, 3, 5) at (138, 217), (140, 217), (139, 216) facing East, away from the
 #        low sun; TorchLamp lit at (134, 217), DR_StickLantern lit at (135, 220), Plant_Daylily, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just caught up and Shogun nudges it home. Says: The last bird comes home.
 #        Frame: medium, root 3.2 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
@@ -72,7 +73,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (163, 211) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (152, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (165, 214) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" near (162, 210)
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (152, 215) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (165, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (157, 210) fully grown
@@ -260,14 +260,13 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 217)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 217) is lit
-    And Nelim's Pickle Tools: I place the decor "EggBox" near (131, 212)
+    And Nelim's Pickle Tools: I place the decor "EggBox" near (133, 216)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (136, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
-    And Nelim's Pickle Tools: I place the decor "Stool" near (143, 216)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (135, 211)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (135, 211) is lit
     And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
@@ -328,12 +327,21 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo3" is spawned at (140, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo5" is spawned at (139, 216)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (136, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (141, 216)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (142, 217)
+    And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo6" is spawned at (141, 218)
     And Nelim's Pickle Tools: the animal "Dodo1" is given coat 1
     And Nelim's Pickle Tools: the animal "Dodo3" is given coat 3
     And Nelim's Pickle Tools: the animal "Dodo5" is given coat 5
     And Nelim's Pickle Tools: the animal "Dodo2" is given coat 2
+    And Nelim's Pickle Tools: the animal "Dodo0" is given coat 0
+    And Nelim's Pickle Tools: the animal "Dodo4" is given coat 4
+    And Nelim's Pickle Tools: the animal "Dodo6" is given coat 6
     And I wait 60 ticks
     When Nelim's Pickle Tools: the animal "Dodo1" stands at (138, 217) facing East
+    And Nelim's Pickle Tools: the animal "Dodo0" stands at (141, 216) facing East
+    And Nelim's Pickle Tools: the animal "Dodo4" stands at (142, 217) facing East
+    And Nelim's Pickle Tools: the animal "Dodo6" stands at (141, 218) facing East
     And Nelim's Pickle Tools: the animal "Dodo3" stands at (140, 217) facing East
     And Nelim's Pickle Tools: the animal "Dodo5" stands at (139, 216) facing East
     And Nelim's Pickle Tools: the animal "Dodo2" stands at (136, 216) facing East
@@ -343,7 +351,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (137, 217) at root size 2.8
+    And Nelim's Pickle Tools: I frame the area centred on (136, 217) at root size 3
     And I take a screenshot "gallery-5-golden-hour"
     And Nelim's Pickle Tools: the decor is removed
 
