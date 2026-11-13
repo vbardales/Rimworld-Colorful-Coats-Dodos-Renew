@@ -91,4 +91,4 @@ what was taken and what was changed, [LICENSE](LICENSE) for what the MIT grant d
 cover, and [CHANGELOG.md](CHANGELOG.md).
 
 The port work was done with the help of an AI assistant (Claude, by Anthropic), under human
-direction and in-game testing.
+direction and in-game testing. The preview image and the mod icon were made with DALL-E (OpenAI).

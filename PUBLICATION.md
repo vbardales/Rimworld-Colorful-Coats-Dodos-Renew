@@ -12,8 +12,7 @@ Steam BBCode and the plain-text `<description>` of `About.xml` from this block. 
 `--about-from-description` and read the diff before the first CI publish. `SetItemDescription` only ran at
 creation, so the Steam page takes this text by hand or by the CI (`update_description`).
 
-Not recorded anywhere in the repository: which tool made `Preview.png` and `ModIcon.png`. The AI-generated
-paragraph below therefore names only the code and docs; add the image tool before publishing.
+`Preview.png` and `ModIcon.png` were made with DALL-E (Virginie, 2026-11-13); the AI-generated paragraph below names it.
 
 ```markdown
 UNOFFICIAL. This mod is published without the original author's explicit consent.
@@ -45,7 +44,7 @@ If I do not answer within a reasonable time after being contacted, anyone may fr
 
 ## AI-generated
 
-Code, XML patches, tests and documentation were written with Claude (Anthropic) under my direction and review.
+Code, XML patches, tests and documentation were written with Claude (Anthropic) under my direction and review. The preview image and the mod icon were made with DALL-E (OpenAI).
 
 ## Thanks
 
