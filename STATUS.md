@@ -267,3 +267,5 @@ Ticket 2f59 (2026-11-09, evidence Tests/Pickle/Inbox/gallery-h-7, scenes 1, 3, 4
 ## Ecosystem (scan 2026-11-12, docs/inventory/ecosystem.tsv)
 
 One row: `Mlie.NoVersionWarning` (2599504692), type link, matched on original-id (1.5/ModIdsToFix.xml). It is a version-warning utility, not a patch or retexture: nothing to play, no action. Not one of the 20 worklist mods.
+
+Review-translation 2026-11-13: seven ChatGPT passes read, 4 corrections applied (PUBLICATION.md, CHANGELOG.md), rest rejected or no-op; no game text, no name to decide. Validated by Virginie 2026-11-13. translation_fr stays not_applicable. Image tool recorded: DALL-E (Preview.png, ModIcon.png).
