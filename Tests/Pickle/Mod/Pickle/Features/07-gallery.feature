@@ -33,6 +33,7 @@
 #        EggBox, DR_StickLantern lit at (135, 217), TorchLamp lit at (135, 211), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
 #        Says: A quiet afternoon, one egg.
 #        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
+# SIXTH PASS 2026-11-13 (captures of 93eb): 5 REDO, a stray Heart fleck floats over a dodo (the anomaly scene 3 already suppresses), the same flecks step added; 4 candidate.
 # FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
 # FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 215); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
 #   5. workshop-5-golden-hour; enclosure-south, west gate (138, 217); 18h; root 3.2
@@ -302,7 +303,8 @@ Feature: Workshop gallery captures
   # Image 5: golden hour, Shogun turned back to a straggler.
   @review @gallery
   Scenario: workshop-5-golden-hour
-    Given I set the hour to 18
+    Given Nelim's Pickle Tools: the flecks of def "Heart" are not thrown
+    And I set the hour to 18
     And Nelim's Sanctuary: I am at the sanctuary "enclosure-south"
     And Nelim's Pickle Tools: the animals are removed from the area from (126, 208) to (150, 226)
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
