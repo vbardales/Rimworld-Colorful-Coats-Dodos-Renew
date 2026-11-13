@@ -19,7 +19,7 @@ paragraph below therefore names only the code and docs; add the image tool befor
 UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight dodos out of ten hatch in a colour of their own, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs.
+Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight dodos out of ten hatch in one of those colours, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs.
 
 Texture patch only: a single XML patch and 21 textures. No DLC, no Harmony, no assembly, and no Defs of its own.
 
