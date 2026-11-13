@@ -41,7 +41,7 @@ The textures and the whole idea are purpleyam's. They declared no licence, so th
 
 ## If I go quiet
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other mod of mine, including publishing a continuation of it. All credit must be preserved.
 
 ## AI-generated
 
