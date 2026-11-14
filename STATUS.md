@@ -74,7 +74,7 @@ updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retir
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 9fe3593d4a35957cc626ebee3f5d488d30296f49
+protocols_read_sha: 845ca18096ed60bda50efc193aeb83f9ea7cda49
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -300,3 +300,5 @@ Result 2026-11-13 22:34, ticket ea0a (scene 5 alone, evidence moved to Tests/Pic
 Score-gallery 2026-11-13 22:50 (scene 5, capture of ea0a opened, shrunk to 268 px, dodos and coats still read): plan 5, image 4, adequacy 4, understanding 4, decoration 3.5 -> REDO (decoration under 4). Seen: Nelim, Shogun and the cream straggler left, six more dodos in two rows right, torch, lantern, brazier at the edges, no Heart fleck; but soil bare across the middle and bottom, 18h light only faintly golden, dodos in side view, flock reads spaced not running. Not verified: whether more plants or a stronger light step exist. Capture deleted. Next: sixth director pass on 5 (plants and hay in the bare middle, stronger low light), refile.
 
 Seventh director pass 2026-11-13 (commit 0ee726f, Check-Steps and Check-ShotlistVsScenario OK) on the ea0a capture of scene 5 (decoration 3.5): eight more plants over the bare soil, sun glow held at 0.55, same frame (hay as decor dropped, it is placed by carry, not StageDecor). Ticket 20261113-230804-894-7f15 (scene 5, map wsl-deps.galerie.map, evidence Tests/Pickle/Inbox/gallery-l-7) filed; result awaited. Unverified: the 0.55 glow gives a golden tint, new plant cells free.
+
+Result 2026-11-14, ticket 7f15 (scene 5, evidence gallery-l-7): FAILED, exit 1 "scenarios failed", 16 s on hetzner, no report, no log kept (infra fault, nothing played, not a mod fault). Refiled as 20261114-232049-077-498a (scene 5 only, map wsl-deps.galerie.map, evidence Tests/Pickle/Inbox/gallery-m-7, tree 29dcbad); result awaited. Resumed 2026-11-14 (protocols_read_sha 845ca180). Steps read still 2026-11-13: NPT changed 2026-11-14, sync-nsb-npt due.
