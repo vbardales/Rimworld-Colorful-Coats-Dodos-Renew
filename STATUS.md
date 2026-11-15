@@ -196,7 +196,7 @@ Story: "Feeding day at the dodo pen", one day, Nelim in a straw hat and mustard 
 | 3 | workshop-3-seven-coats | enclosure-south, east | 12 | 3.5 | all seven coats pecking berries | 4.5 | overlap hides a coat | |
 | 4 | workshop-4-the-nest | enclosure-south, nesting boxes | 15 | 3 | hen asleep on a nest, Nelim takes the egg | 4 | dodo egg def, low angle | |
 | 5 | workshop-5-golden-hour | enclosure-south, west gate | 17 | 4 | Shogun herds a straggler home | 4 | Shogun placement, pose | |
-| 6 | workshop-6-roost | barn, east extension | 19 | 4 | sleeping birds on hay, last armful | 4 | lying birds hide coats | |
+| 6 | workshop-6-roost | enclosure-south, east side (155, 216) (moved from the barn 2026-11-15) | 19 | 2.2 | sleeping birds on hay, last armful | 4 | lying birds hide coats, dusk light | |
 
 ## NSB (sync-nsb 2026-11-07)
 
