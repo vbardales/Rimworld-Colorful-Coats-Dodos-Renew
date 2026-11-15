@@ -34,6 +34,7 @@
 #        Says: A quiet afternoon, one egg.
 #        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
 # SEVENTH PASS 2026-11-13 (capture of ea0a: image 4, adequacy 4, understanding 4, decoration 3.5, REDO): 5 eight more plants (Plant_Daylily at (141, 221), (145, 216), (137, 222), (139, 214); Plant_YellowTallGrass at (140, 222), (137, 219), (141, 214), (145, 219)) over the bare soil, sun glow held at 0.55 for a golden 18h light; same frame.
+# EIGHTH PASS 2026-11-15 (captures of 2f59, scenes 3 and 6 REDO on bare soil and loose hay): 3 twelve more plants (six Plant_Daylily, six Plant_YellowTallGrass) east, north and south of the ring, outside the cleared ring cells and the logo zones; 6 six more hay cells between and beside the four sleepers (200, 238), (202, 238), (202, 239), (199, 239), (203, 239), (204, 238) so the bedding reads as one bed; frames unchanged.
 # SIXTH PASS 2026-11-13 (captures of 93eb): 5 REDO, a stray Heart fleck floats over a dodo (the anomaly scene 3 already suppresses), the same flecks step added; 4 candidate.
 # FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
 # FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 215); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
@@ -218,6 +219,18 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (152, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (157, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (153, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (160, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (161, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (156, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (160, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (161, 215) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (155, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (155, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (153, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (162, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (161, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (156, 219) fully grown
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (154, 217)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo1" is spawned at (154, 215)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (155, 215)
@@ -409,6 +422,24 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (203, 238)
     And Nelim's Pickle Tools: the thing "Hay" at (203, 238) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (200, 238)
+    And Nelim's Pickle Tools: the thing "Hay" at (200, 238) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (202, 238)
+    And Nelim's Pickle Tools: the thing "Hay" at (202, 238) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (202, 239)
+    And Nelim's Pickle Tools: the thing "Hay" at (202, 239) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (199, 239)
+    And Nelim's Pickle Tools: the thing "Hay" at (199, 239) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (203, 239)
+    And Nelim's Pickle Tools: the thing "Hay" at (203, 239) is not forbidden
+    And Nelim's Pickle Tools: "Nelim" carries 6 of the item "Hay"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (204, 238)
+    And Nelim's Pickle Tools: the thing "Hay" at (204, 238) is not forbidden
     And Nelim's Pickle Tools: "Nelim" stands at (198, 238) facing East
     And Nelim's Sanctuary: the "PokerTable" near (196, 238) is hidden
     And Nelim's Sanctuary: the "DiningChair" near (196, 238) is hidden
