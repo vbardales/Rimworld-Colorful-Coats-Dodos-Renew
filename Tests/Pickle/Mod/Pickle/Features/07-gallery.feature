@@ -41,6 +41,7 @@
 # TWELFTH PASS 2026-11-15 (aaae failed: [decor-skipped] DR_StickLantern asked (203, 240): no cell within 4 cells takes it, the area south of the bed is beds or wall): the two added lanterns dropped, scene 6 is the d0a1 composition again (2x2 bed, root 2.2 centred (200, 238)) refiled once to get a capture to keep.
 # FOURTEENTH PASS 2026-11-15 (owner rule 12b: no mid-gallery question; scene 6 REDO on decoration 3.5 in the barn after 13 passes, no free decor cell there): scene 6 moved from the barn to the dense planted ring of scene 3 in enclosure-south at 19h, same bed of four, sun glow held at 0.55; plants, torch and lantern copied from scene 3 (green in d3f9).
 # FIFTEENTH PASS 2026-11-15 (capture of e52f/c3a6: 6 candidate in the planted ring; 2 shows two Heart flecks over the dodos): 2 the Heart flecks suppressed like scenes 3 to 6, nothing else changed.
+# SIXTEENTH PASS 2026-11-16 (owner refused all six: Nelim without trousers, without hair under the hat, smile in profile): settings seeds of NSB in Tests/Pickle/config/galerie (visible pants, hat hair with TSFApparel_StrawHat); profile mouth fix of SanctuaryBacklot (Beauty2Mouth) D 0.035 and DY 0.015 as validated for Nelim on ACG, mouth stays MouthLipsSimpleSmile.
 # THIRTEENTH PASS 2026-11-15 (NPT answer: no new step, 75 of the item "Hay" are spawned at (x, z) piles the interior cells; decor on a taken cell is skipped): 6 four hay piles of 75 at (203, 237), (203, 239), (204, 238), (197, 239) around the bed, root 2.2 centred (200, 238) as in d0a1.
 # SIXTH PASS 2026-11-13 (captures of 93eb): 5 REDO, a stray Heart fleck floats over a dodo (the anomaly scene 3 already suppresses), the same flecks step added; 4 candidate.
 # FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
@@ -64,6 +65,8 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (205, 150, 40)
     And Nelim's Pickle Tools: "Nelim" also wears "TSFApparel_StrawHat"
+    And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.035
+    And Nelim's Pickle Tools: the Beauty2 mouth vertical offset is 0.015
 
   # Image 1: the flock leaves the night shelter, Nelim opens the south gate.
   @review @gallery
