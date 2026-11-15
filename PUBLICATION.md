@@ -76,8 +76,12 @@ change. Steam shows the first image large. `Art/Gallery/0-preview.png` is byte-i
 | # | File | Shows | Status |
 |---|---|---|---|
 | 0 | `Art/Gallery/0-preview.png` | The Preview itself | in place |
-| 1 | `gallery-1-flock` | The whole flock of 12 in the Sanctuary dodo pen at midday, fence and nesting boxes around, at least four coats in one frame | played 2026-10-13 (gallery6), not accepted: dodos too small |
-| 2 | `gallery-2-group` | Nelim and five dodos facing the camera, each coat readable | played 2026-10-14 (gallery9), refused: dodos about 40 px, coats unreadable, Nelim not staged |
+| 1 | `Art/Gallery/1-dawn.jpg` | Dawn at the south gate of the Sanctuary dodo pen: the seven coats of the flock packed in front of the gate, Nelim beside it | candidate, subtitled 2026-11-15 |
+| 2 | `Art/Gallery/2-breakfast.jpg` | Mid-morning: five dodos around a pile of hay, Nelim smiling beside it | candidate, subtitled 2026-11-15 |
+| 3 | `Art/Gallery/3-seven-coats.jpg` | Noon: all seven coats in a ring around a pile of berries, plants and lamps round them | candidate, subtitled 2026-11-15 |
+| 4 | `Art/Gallery/4-the-nest.jpg` | Afternoon: a hen on her hay nest, an egg beside her, Nelim and the nesting box | candidate, subtitled 2026-11-15 |
+| 5 | `Art/Gallery/5-golden-hour.jpg` | Golden hour: Nelim and Shogun bring a straggler home, seven dodos with seven coats in the frame | candidate, subtitled 2026-11-15 |
+| 6 | `Art/Gallery/6-roost.jpg` | Dusk: four dodos asleep on hay in the planted ring, Nelim in her hat, lanterns and plants round | candidate, subtitled 2026-11-15 |
 
 ### Gallery subtitles
 
@@ -86,8 +90,12 @@ One line of English written at the bottom of each scene without an interface win
 
 | Index | File | Line |
 |---|---|---|
-| 1 | `1-flock` | A pen of many colours: the keeper lets the flock in at noon. |
-| 2 | `2-group` | Seven coats, one species: Nelim counts them one by one. |
+| 1 | `1-dawn` | The pen wakes up in many colours. |
+| 2 | `2-breakfast` | Breakfast is served. |
+| 3 | `3-seven-coats` | Seven coats, one flock. |
+| 4 | `4-the-nest` | A quiet afternoon, one egg. |
+| 5 | `5-golden-hour` | The last bird comes home. |
+| 6 | `6-roost` | Everyone is home. |
 
 The only capture so far (`04-coats-on-spawn`, 2026-09-28) was judged small and dim under a mountain roof, not
 gallery quality. The gallery scenarios do not fix that: the scene is whatever tile the test colony sits on. If the
