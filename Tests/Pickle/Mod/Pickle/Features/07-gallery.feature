@@ -37,6 +37,7 @@
 # EIGHTH PASS 2026-11-15 (captures of 2f59, scenes 3 and 6 REDO on bare soil and loose hay): 3 twelve more plants (six Plant_Daylily, six Plant_YellowTallGrass) east, north and south of the ring, outside the cleared ring cells and the logo zones; 6 tried six more hay cells (capture of 382f: bales read as a checkerboard, three braziers clutter), reverted; frame tightened from root 2.8 to 2.2 on (201, 238) to hide the edge braziers.
 # NINTH PASS 2026-11-15 (capture of d3f9: 3 candidate, 6 REDO: birds far apart on an empty floor, one Z, a lone bale): 6 the four sleepers packed in a 2x2 bed at (200, 238), (201, 238), (200, 239), (201, 239) with hay under each, the lone bale dropped, frame centred (200, 238) at root 2.2.
 # TENTH PASS 2026-11-15 (capture of d0a1: bed of four coats reads, image 4, adequacy 4, understanding 4, decoration 3.5: empty straw floor right and below, braziers cropped): 6 frame tightened to root 1.7 centred (199, 238), Nelim and the bed fill it; scene unchanged.
+# ELEVENTH PASS 2026-11-15 (capture of 7231, root 1.7: braziers cropped out, empty floor left, worse than d0a1): 6 back to root 2.2 centred (200, 238), two lit DR_StickLantern added at (203, 240) and (197, 240) to warm the empty straw below the bed.
 # SIXTH PASS 2026-11-13 (captures of 93eb): 5 REDO, a stray Heart fleck floats over a dodo (the anomaly scene 3 already suppresses), the same flecks step added; 4 candidate.
 # FIFTH PASS 2026-11-13 (captures of 1edf, 1 OK, 4 and 5 REDO): 4 the EggBox moves from "near (133, 216)" (landed two cells north, cut by the frame) to exactly (133, 215), directly behind the hen inside the cleared area; 5 frame centred (138, 217) at root 3.4 (was (136, 217) at 3: seven dodos from 136 to 142 plus Nelim at 134 need about 12 cells, two dodos were cut at the right edge).
 # FOURTH PASS 2026-11-13 (captures of 2f59, all five REDO): the Stool is dropped from 1 and 4 (it reads as a table); 4 the EggBox moves beside the hen as her nesting box at (133, 215); 5 seven dodos in the drive (coats 0 and 4 and 6 added at (141, 216), (142, 217), (141, 218)), frame centred (136, 217) at root 3 so Nelim is not cut; 2 and 3 and 6 untouched.
@@ -45,10 +46,10 @@
 #        low sun; TorchLamp lit at (134, 217), DR_StickLantern lit at (135, 220), Plant_Daylily, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just caught up and Shogun nudges it home. Says: The last bird comes home.
 #        Frame: medium, root 3.4 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
-#   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 1.7
+#   6. workshop-6-roost; barn, east extension (201, 238); 19h; root 2.2
 #        Four dodos (coats 0, 2, 4, 6) asleep on hay laid under each of them at (200, 238), (201, 239), (201, 238), (200, 239) (a packed 2x2 bed, ninth pass 2026-11-15), all inside z 238 to 239, one lit Brazier at (201, 236); Nelim at (198, 238) facing East toward the birds, hat off indoors, poker table and dining chairs hidden, smiling, the last
-#        DR_StickLantern lit at (204, 236) and (197, 236), no Stool (it read as a table, third pass). Instant: the last bird has just settled. Says: Everyone is home.
-#        Frame: tight, root 1.7 centred (199, 238); four sleeping dodos on hay in the foreground, Nelim at the left edge, lit Brazier, DR_StickLantern and Stool behind; warm firelight at 19h.
+#        DR_StickLantern lit at (204, 236), (197, 236), (203, 240) and (197, 240), no Stool (it read as a table, third pass). Instant: the last bird has just settled. Says: Everyone is home.
+#        Frame: tight, root 2.2 centred (200, 238); four sleeping dodos on hay in the foreground, Nelim at the left edge, lit Brazier, DR_StickLantern and Stool behind; warm firelight at 19h.
 # Interface windows: none (the mod has no settings, no menu).
 Feature: Workshop gallery captures
 
@@ -395,6 +396,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (204, 236) is lit
     And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (197, 236)
     And Nelim's Pickle Tools: the decor "DR_StickLantern" at (197, 236) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (203, 240)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (203, 240) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (197, 240)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (197, 240) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (200, 238)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (201, 239)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (201, 238)
@@ -427,6 +432,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (199, 238) at root size 1.7
+    And Nelim's Pickle Tools: I frame the area centred on (200, 238) at root size 2.2
     And I take a screenshot "gallery-6-roost"
     And Nelim's Pickle Tools: the decor is removed
