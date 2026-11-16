@@ -28,6 +28,7 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-07, minimal pass 2026-11-06 (29/29, features 01-05, ticket cf88), F (06) 4/4 (73d0), E (removal) 2/2 (9187, 2026-11-07, Docs/runs/2026-11-07-removal.txt); D, G, H not applicable; gallery (07) stays with shootGallery
 workshop:     3806766249, prepublished 0.1.0 (2026-09-23), item private, not yet tested/public
 remaining:
+  - open 9.a to 9.f (replay 2026-11-17): six gallery images refused 2026-11-16, trousers not drawn in the 5f1e capture (hair fixed), profile smile weak; then 9.b to 9.f. Advisories: TESTING.md and Tests/Pickle/README.md still cite the removed scripts/Check-Mod.ps1 and say D/E not automatable; two OptionalCompat entries lack workshopId; features 01 and 06 lack @requires:nelim.pickletools.coatsteps
   - verified: Preview re-rendered 2026-11-06 (migrated config, titleSize 54, 3 lines, suffix below), echo clear of title and description, no clipping; committed; validated by Virginie 2026-11-06
   - ticket 268e (2026-11-03) was not a pass (no -DepMap); superseded by cf88 above.
   - defect: RUN_DONE 20261106-003950-422-fadc FAILED (0 passed, 1 failed, 0 extra coats on 30 RG_Dodo). Probable cause, inferred and not yet proven: staged pack 3602926791 is named "[1.6] ReGrowth: Extinct Animals (Continued)", absent from the PatchOperationFindMod list. Name added in 96a060e (not pushed). Not counted as a pass. Needs a refile with -DepMap wsl-deps.sans-facultatifs.map; if it fails again, check the RG_Dodo xpath against the staged pack's defs
@@ -62,7 +63,7 @@ remaining:
   - decided 2026-09-28 (Virginie): About and README keep "safe to add to a save in progress and safe to remove": existing birds recolour on adding and revert on removing, which is not a risk to the save. No wording change.
   - defect: none found this pass beyond the above
 session:      local_ed9c3e2d-7d1a-4fb8-b837-a905d235ab81 (2026-10-10 audit pass), registered with the Ticket Manager
-updated:      2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retired, workflow_stage done -> playTests[1.0.0]
+updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-20261117.tsv, 83 rows, sections 1 to 8 fulfilled, first open 9.a: six images refused 2026-11-16, redo pending, stage unchanged). Earlier: 2026-10-10, AUDIT.md re-applied at HEAD 5364411: stage field retired, workflow_stage done -> playTests[1.0.0]
               (AUDIT.md section 16 table); ModIcon.png/.ico and the Preview chain regenerated from the changed
               ModIcon-source.png (closing pass 2). See section "Audit 2026-10-10" at the end.
               Earlier: 2026-10-02, AUDIT.md re-applied at HEAD 160ae02 (no stage change, workflow_stage field added,
