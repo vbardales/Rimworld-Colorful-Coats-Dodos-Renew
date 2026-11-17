@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   silent
 github_visibility: public
 detached:     yes
-workflow_stage: mountPreview[1.0.0]
+workflow_stage: writeReleaseDocs[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -75,7 +75,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 58735a1243547fea62b257b4fe2aed571e5b5bec
+protocols_read_sha: c63607048e8bbc06d1f32a25f64361f2cddfc9e7
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
@@ -361,3 +361,6 @@ Gallery verdict 2026-11-17 (Virginie: "Toutes acceptées"): six images accepted,
 mountPreview 2026-11-17 (10.a, 10.a bis): proposed decision KEEP for Art/Preview-source.png, the echo (Art/echo-concept.png, conceptual) and Preview.config.json: Preview validated by Virginie 2026-11-06 and committed, not reopened for taste (AUDIT 10.a). Mod/About/Preview.png is byte-identical to Art/Gallery/0-preview.png. Waiting for her confirmation before writing echo_review_sha. 10.f: the GitHub social preview uploaded 2026-10-25 (sha adf5f0ce...) is older than the Preview rendered 2026-11-06 (sha256 now e319feb1...): upload to redo by Virginie (Settings, Social preview).
 
 Decision 2026-11-17 (Virginie: "Oui, garder"): KEEP Art/Preview-source.png, echo (Art/echo-concept.png) and Preview.config.json; echo_review_sha written (07bc36a). 10.d checked: Preview 896x504, 415 KB, byte-identical to Art/Gallery/0-preview.png, validated 2026-11-06. 10.e: Art/ holds only the allowed set. 10.f pending: GitHub social preview to re-upload by Virginie (sha256 now e319feb138d13b340f7710ac10eec89d5630d02c412bfb8b8ffd515f8fe0f2f7).
+
+Social preview re-uploaded 2026-11-17 through Chrome (GitHub Settings, Social preview) from Mod/About/Preview.png; the setting page shows the current Preview after a reload. The og:image tag was not checked (the DOM of the repo page carries no meta tag in this browser). social_preview_sha256: e319feb138d13b340f7710ac10eec89d5630d02c412bfb8b8ffd515f8fe0f2f7
+10.f done, 10.g: workflow_stage writeReleaseDocs[1.0.0].
