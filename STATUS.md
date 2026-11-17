@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: postOnSteam[1.0.0]
+workflow_stage: runNoRegression[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -44,7 +44,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 1e7080d0742c4f6411f38c8350606baa18950ad9
+protocols_read_sha: c8c636c889762223c3ff94644005d4401ad45dd4
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
@@ -193,3 +193,5 @@ Journal move 2026-11-17 (12.c): closed remaining entries and dated sections fold
 13.c 2026-11-17: Virginie switched the item public ("public ok"); Steam API GetPublishedFileDetails now returns the title "Colorful Coats - Dodos! Renew (unofficial)" (was unreadable while private). workflow_stage startWatch[1.0.0] (14.f): GitHub watch, Workshop comment notifications, collection RimWorld through Nelim's eyes (3815982565, by Virginie only; list in PUBLICATION.md), subscription test done (13.b). Then postOnSteam[1.0.0] (14.g): thank-you comments x4 and Use This Instead comment (plain panel), row to posted.
 
 14.f/14.g 2026-11-17: Virginie added the item to the collection RimWorld through Nelim's eyes ("Collection faite"); watch (GitHub repository, Workshop comment notifications) and subscription test covered by her ("abonnement ok"). workflow_stage postOnSteam[1.0.0]: open, the four thank-you comments and the Use This Instead comment, posted by Virginie in the plain panel (rows then posted in WORKSHOP_COMMENTS.md and USE_THIS_INSTEAD.md, 14.h: no exit from postOnSteam while the row is drafted).
+
+14.h/14.i 2026-11-17: Virginie posted the four thank-you comments (purpleyam 2388053651, Mlie 3602926791, lordfelix 3760821540, Trickity 2559958496) and the Use This Instead comment, in the plain panel ("Commentaires postes"); registers WORKSHOP_COMMENTS.md and USE_THIS_INSTEAD.md rows now posted (c8c636c). workflow_stage runNoRegression[1.0.0] (14.a): replay the suite on the published build (v1.0.0, cbf6f95), then cleanUp (14.c, 14.d).
