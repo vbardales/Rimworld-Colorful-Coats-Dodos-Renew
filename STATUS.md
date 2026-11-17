@@ -31,7 +31,7 @@ remaining:
   - 14.c and 14.d closed 2026-11-17 (Evidence emptied, no WSL mod of this mod left on disk, only branch main): next 14.e dormant[1.0.0].
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: 59afd1773e16fbda46e54e6072f43e3521a7b92d
+protocols_read_sha: 0509913ba4d296ddd1a901afac255ac4c7221c8e
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
