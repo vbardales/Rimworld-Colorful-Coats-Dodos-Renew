@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: startWatch[1.0.0]
+workflow_stage: postOnSteam[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -191,3 +191,5 @@ Journal move 2026-11-17 (12.c): closed remaining entries and dated sections fold
 13.b 2026-11-17: Virginie reports "required ok, gallery ok, abonnement ok" (subscribe test, item subscribed from her account) and "subscribe ok". workshop_required_items: done, 2026-11-17 (ReGrowth: Extinct Animals (Continued) 3602926791 set as Required item by hand). Gallery of 7 images (0 to 6) uploaded by hand. PiI SUBSCRIBE-TEST? message still queued: its answer, if it comes, only confirms. Owner nota (about the comments, not the gallery): when posting a comment on a Steam page, switch the comment box to the plain panel (plain text, so the BBCode links go through). Open: switch to public by Virginie (13.c), collection, Use This Instead and thank-you comments posted by her, then startWatch[1.0.0].
 
 13.c 2026-11-17: Virginie switched the item public ("public ok"); Steam API GetPublishedFileDetails now returns the title "Colorful Coats - Dodos! Renew (unofficial)" (was unreadable while private). workflow_stage startWatch[1.0.0] (14.f): GitHub watch, Workshop comment notifications, collection RimWorld through Nelim's eyes (3815982565, by Virginie only; list in PUBLICATION.md), subscription test done (13.b). Then postOnSteam[1.0.0] (14.g): thank-you comments x4 and Use This Instead comment (plain panel), row to posted.
+
+14.f/14.g 2026-11-17: Virginie added the item to the collection RimWorld through Nelim's eyes ("Collection faite"); watch (GitHub repository, Workshop comment notifications) and subscription test covered by her ("abonnement ok"). workflow_stage postOnSteam[1.0.0]: open, the four thank-you comments and the Use This Instead comment, posted by Virginie in the plain panel (rows then posted in WORKSHOP_COMMENTS.md and USE_THIS_INSTEAD.md, 14.h: no exit from postOnSteam while the row is drafted).
