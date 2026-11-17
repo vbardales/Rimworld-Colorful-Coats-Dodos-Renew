@@ -75,7 +75,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: c63607048e8bbc06d1f32a25f64361f2cddfc9e7
+protocols_read_sha: bcd13d616a9af97e28b1435a8379af73c6107ce1
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
@@ -373,3 +373,5 @@ CI refresh 2026-11-17 (CI/CD via TM, template stamp d20db370c66b): .github and T
 11.j 2026-11-17 (Virginie: "je valide"): PUBLICATION.md and CHANGELOG.md reread and validated at fc3c332; publication_changelog_review_sha written. 11.k left: GALLERY-PROPS.md entries, no gameplay Pickle step identified. Next: 12.a to 12.h.
 
 11.k 2026-11-17: GALLERY-PROPS.md updated in the protocols repo (bcd13d6): row for this mod, Hat Hair Control (lordfelix.HatHairControl, seed needed), T's Samurai Faction (TSFApparel_StrawHat). No gameplay Pickle step: the mod is a texture patch covered by features 01 to 07. 11 closed. Open for 12.a: code_review_sha stale (About.xml description sync since 3e6fc642); STATUS.md 70 KB (journal move to docs/runs/); protocols changed since c6360704 (AUDIT.md, USE_THIS_INSTEAD.md), to reread before Mark-ProtocolsRead.
+
+Protocols reread 2026-11-17 (AUDIT 14.h and USE_THIS_INSTEAD.md changed since c6360704): as a Renew mod this one needs a `drafted` row in docs/USE_THIS_INSTEAD.md and a BBCode comment in PUBLICATION.md right after the first public upload (13.b); the owner posts it, the row turns `posted` before leaving postOnSteam (14.h). Old data: Colorful Coats - Dodos! 2388053651, purpleyam, purpleyam.colorfulcoats.hlxdodo, versions from the original About.xml.
