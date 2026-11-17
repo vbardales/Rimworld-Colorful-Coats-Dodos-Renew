@@ -105,7 +105,7 @@ anything. Disqualified: dev tools or the Pickle panel visible, another mod's ove
 
 ## Thank-you comments
 
-Posted by Virginie after the item is public (a link to a private item opens for nobody), one per recipient, under
+Posted by Virginie in the plain panel of the comment box (owner nota 2026-11-17) after the item is public (a link to a private item opens for nobody), one per recipient, under
 1000 characters, BBCode links as `[url=...]name[/url]`, never a bare URL. Drafted 2026-11-17 for the `1.0` line
 (`thanks_drafted_line`); read the last comments of each page before posting. See `WORKSHOP_COMMENTS.md`, "Writing a comment".
 
@@ -156,7 +156,7 @@ The CI reads the block under the `### <version>` heading of the version it uploa
 
 ## Use This Instead
 
-One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), posted by Virginie after the item is public, so players of the original are told about this port (`docs/USE_THIS_INSTEAD.md`, row `drafted`):
+One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), posted by Virginie in the plain panel after the item is public, so players of the original are told about this port (`docs/USE_THIS_INSTEAD.md`, row `drafted`):
 
 ```text
 Colorful Coats - Dodos! by purpleyam (2388053651, package purpleyam.colorfulcoats.hlxdodo, RimWorld 1.2 to 1.4) can be replaced by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] (3806766249, package nelim.colorfulcoats.dodos, RimWorld 1.6), by Nelim. Same seven coats and 21 textures for the dodos of ReGrowth: Extinct Animals (Continued), with the patch guard fixed so the coats actually appear. The two cannot be loaded together. Original: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]. Thank you for the mod xD

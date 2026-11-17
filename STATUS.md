@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: publish[1.0.0]
+workflow_stage: startWatch[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -44,7 +44,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: bcd13d616a9af97e28b1435a8379af73c6107ce1
+protocols_read_sha: 1e7080d0742c4f6411f38c8350606baa18950ad9
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
@@ -188,4 +188,6 @@ Journal move 2026-11-17 (12.c): closed remaining entries and dated sections fold
 
 13.a/13.b 2026-11-17: PUBLISHED to Workshop item 3806766249 (private): publish run 44132008799 of cbf6f953096cefaad863968d308828d991504ad7, version 1.0.0, update_preview/description/title on, approved by Virginie; steamcmd upload Success; tags set and read back from Steam: Mod, 1.6; tag v1.0.0 and release created by the CI on cbf6f95 (jobs publish and tag-and-release green). An earlier stray publish run (44130172450, 16:49) was cancelled at Virginie's word before any approval. PublishedFileId.txt already committed (3806766249). Open: subscribe test by PiI (SUBSCRIBE-TEST), Required items on the Steam page by hand (3602926791) then workshop_required_items: done, gallery upload by hand, Use This Instead row drafted (docs/USE_THIS_INSTEAD.md) and comment drafted in PUBLICATION.md, collection list in PUBLICATION.md, switch to public by Virginie (13.c), thank-you comments after.
 
-13.b 2026-11-17: Virginie reports "required ok, gallery ok, abonnement ok" (subscribe test, item subscribed from her account) and "subscribe ok". workshop_required_items: done, 2026-11-17 (ReGrowth: Extinct Animals (Continued) 3602926791 set as Required item by hand). Gallery of 7 images (0 to 6) uploaded by hand. PiI SUBSCRIBE-TEST? message still queued: its answer, if it comes, only confirms. Owner nota for next time: switch the Steam upload to the plain panel for the gallery. Open: switch to public by Virginie (13.c), collection, Use This Instead and thank-you comments posted by her, then startWatch[1.0.0].
+13.b 2026-11-17: Virginie reports "required ok, gallery ok, abonnement ok" (subscribe test, item subscribed from her account) and "subscribe ok". workshop_required_items: done, 2026-11-17 (ReGrowth: Extinct Animals (Continued) 3602926791 set as Required item by hand). Gallery of 7 images (0 to 6) uploaded by hand. PiI SUBSCRIBE-TEST? message still queued: its answer, if it comes, only confirms. Owner nota (about the comments, not the gallery): when posting a comment on a Steam page, switch the comment box to the plain panel (plain text, so the BBCode links go through). Open: switch to public by Virginie (13.c), collection, Use This Instead and thank-you comments posted by her, then startWatch[1.0.0].
+
+13.c 2026-11-17: Virginie switched the item public ("public ok"); Steam API GetPublishedFileDetails now returns the title "Colorful Coats - Dodos! Renew (unofficial)" (was unreadable while private). workflow_stage startWatch[1.0.0] (14.f): GitHub watch, Workshop comment notifications, collection RimWorld through Nelim's eyes (3815982565, by Virginie only; list in PUBLICATION.md), subscription test done (13.b). Then postOnSteam[1.0.0] (14.g): thank-you comments x4 and Use This Instead comment (plain panel), row to posted.
