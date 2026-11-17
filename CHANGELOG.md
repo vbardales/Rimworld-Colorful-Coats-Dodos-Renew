@@ -2,11 +2,9 @@
 
 All notable changes to this mod are documented here.
 
-## [Unreleased]
+## [1.0.0] - 2026-11-17
 
-Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6. The `1.0.0` tag and GitHub
-release arrive together with the `published` state, the Workshop item going public, not with
-this file alone; until then this section holds what a `1.0.0` will contain.
+First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.
 
 ### Added
 
