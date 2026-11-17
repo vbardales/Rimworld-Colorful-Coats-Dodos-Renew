@@ -22,7 +22,7 @@ upstream_mod_remotes: N/A
 title_suffix: (unofficial), already present
 github_description: present
 dependencies: declared
-workshop_required_items: n/a, not released yet
+workshop_required_items: done, 2026-11-17
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
 tested_on:    2026-11-07, minimal pass 2026-11-06 (29/29, features 01-05, ticket cf88), F (06) 4/4 (73d0), E (removal) 2/2 (9187, 2026-11-07, Docs/runs/2026-11-07-removal.txt); D, G, H not applicable; gallery (07) stays with shootGallery
@@ -187,3 +187,5 @@ Journal move 2026-11-17 (12.c): closed remaining entries and dated sections fold
 12.h final dry-run 2026-11-17: run 44129580982 on cbf6f953096cefaad863968d308828d991504ad7 (the commit that sets publish[1.0.0]), green, same note as run 44129302103. Publish with ref = that full SHA, version 1.0.0, update_preview, update_description, update_title true. Open for Virginie: STEAM_REFRESH_TOKEN on steam-production, approve the run, then (after the first upload) Required items on the Steam page by hand (ReGrowth: Extinct Animals (Continued) 3602926791), then workshop_required_items: done, <date>; gallery upload by hand (Art/Gallery, 0 to 6); 13.b subscribe test, then public.
 
 13.a/13.b 2026-11-17: PUBLISHED to Workshop item 3806766249 (private): publish run 44132008799 of cbf6f953096cefaad863968d308828d991504ad7, version 1.0.0, update_preview/description/title on, approved by Virginie; steamcmd upload Success; tags set and read back from Steam: Mod, 1.6; tag v1.0.0 and release created by the CI on cbf6f95 (jobs publish and tag-and-release green). An earlier stray publish run (44130172450, 16:49) was cancelled at Virginie's word before any approval. PublishedFileId.txt already committed (3806766249). Open: subscribe test by PiI (SUBSCRIBE-TEST), Required items on the Steam page by hand (3602926791) then workshop_required_items: done, gallery upload by hand, Use This Instead row drafted (docs/USE_THIS_INSTEAD.md) and comment drafted in PUBLICATION.md, collection list in PUBLICATION.md, switch to public by Virginie (13.c), thank-you comments after.
+
+13.b 2026-11-17: Virginie reports "required ok, gallery ok, abonnement ok" (subscribe test, item subscribed from her account) and "subscribe ok". workshop_required_items: done, 2026-11-17 (ReGrowth: Extinct Animals (Continued) 3602926791 set as Required item by hand). Gallery of 7 images (0 to 6) uploaded by hand. PiI SUBSCRIBE-TEST? message still queued: its answer, if it comes, only confirms. Owner nota for next time: switch the Steam upload to the plain panel for the gallery. Open: switch to public by Virginie (13.c), collection, Use This Instead and thank-you comments posted by her, then startWatch[1.0.0].
