@@ -77,6 +77,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               at done, tested still unreached
 protocols_read_sha: 58735a1243547fea62b257b4fe2aed571e5b5bec
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
+echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
 # Colorful Coats - Dodos! Renew: status
@@ -358,3 +359,5 @@ Score-gallery 2026-11-17 (captures of 7565 gallery-aa-7 for 1, 3, 4, 5, 6 and bf
 Gallery verdict 2026-11-17 (Virginie: "Toutes acceptées"): six images accepted, subtitled, contiguous indexes 0 to 6, order 1 dawn, 2 breakfast, 3 seven-coats, 4 the-nest, 5 golden-hour, 6 roost (story order of one day, opening and closing set; table in PUBLICATION.md "Gallery"). 9.a to 9.f done, workflow_stage mountPreview[1.0.0]. Evidence gallery-* kept until deleted by the cleanup (RELEASE.md conditions to write). Next: Preview and echo from the accepted gallery (10.a bis), echo_review_sha invalidated.
 
 mountPreview 2026-11-17 (10.a, 10.a bis): proposed decision KEEP for Art/Preview-source.png, the echo (Art/echo-concept.png, conceptual) and Preview.config.json: Preview validated by Virginie 2026-11-06 and committed, not reopened for taste (AUDIT 10.a). Mod/About/Preview.png is byte-identical to Art/Gallery/0-preview.png. Waiting for her confirmation before writing echo_review_sha. 10.f: the GitHub social preview uploaded 2026-10-25 (sha adf5f0ce...) is older than the Preview rendered 2026-11-06 (sha256 now e319feb1...): upload to redo by Virginie (Settings, Social preview).
+
+Decision 2026-11-17 (Virginie: "Oui, garder"): KEEP Art/Preview-source.png, echo (Art/echo-concept.png) and Preview.config.json; echo_review_sha written (07bc36a). 10.d checked: Preview 896x504, 415 KB, byte-identical to Art/Gallery/0-preview.png, validated 2026-11-06. 10.e: Art/ holds only the allowed set. 10.f pending: GitHub social preview to re-upload by Virginie (sha256 now e319feb138d13b340f7710ac10eec89d5630d02c412bfb8b8ffd515f8fe0f2f7).
