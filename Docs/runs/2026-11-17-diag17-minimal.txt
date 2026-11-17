@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 33e9, 2026-11-17, 1.7 diagnostic (RimWorld 1.7.4976 rev1043, hetzner), tree 935f960, features 01-05, map wsl-deps.sans-facultatifs.map, English.
+29 scenarios: 29 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree).
+Evidence: Tests/Pickle/Evidence/diag17-minimal.
