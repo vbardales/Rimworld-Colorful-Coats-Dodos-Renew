@@ -44,7 +44,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: c8c636c889762223c3ff94644005d4401ad45dd4
+protocols_read_sha: 161d23ea994de6aab35c3cabe5af940316d80e1b
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
@@ -203,3 +203,5 @@ Journal move 2026-11-17 (12.c): closed remaining entries and dated sections fold
 14.a 2026-11-17: RUN_DONE 553d (noreg minimal 01-05): exit 0, exitReason passed, 29 of 29 passed, 0 failed, 0 skipped; summary.json and junit.xml read. Docs/runs/2026-11-17-noreg-minimal.txt. Waiting for 457f (06) and 5714 (08).
 
 Inbox triage 2026-11-17: Prune-Evidence -Apply: noreg-minimal (553d, green) minified and moved to Tests/Pickle/Evidence; gallery-u-7, gallery-m-7, gallery-o-7, gallery-j-7 deleted (superseded). Inbox 0, Parked 0. Still in Evidence without RELEASE.md condition, to settle at cleanUp (14.c): gallery-aa-7, gallery-z-7, gallery-s-7, gallery-t-7, gallery-i-7, 2026-11-06-minimal (covered 29/29 by noreg-minimal), 2026-11-06-incompat (to replace by noreg-incompat once 457f is back), 2026-11-07-removal-wsl.
+
+14.a 2026-11-17 (resume): RUN_DONE 457f (noreg incompat 06): exit 0, exitReason passed, 4 of 4 passed; summary.json read. Docs/runs/2026-11-17-noreg-incompat.txt; evidence moved to Tests/Pickle/Evidence/noreg-incompat, Inbox 0. protocols_read_sha 161d23ea. Waiting for 5714 (08 removal chain), then cleanUp[1.0.0] (14.c, 14.d); 2026-11-06-incompat can then be deleted (replaced by noreg-incompat).

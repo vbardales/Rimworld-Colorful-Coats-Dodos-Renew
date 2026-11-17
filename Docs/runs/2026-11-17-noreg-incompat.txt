@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 457f, 2026-11-17, runNoRegression on the published build (v1.0.0, cbf6f95), local lane, game 1.6, feature 06 (incompatibility), map wsl-deps.incompat-hlxdodo.map.
+4 scenarios: 4 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree).
+Evidence: Tests/Pickle/Evidence/noreg-incompat.
