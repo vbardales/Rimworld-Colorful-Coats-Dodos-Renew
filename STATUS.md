@@ -75,7 +75,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 3e1f8dff18f7e4658931e5ad0ff66f0bc8eed6bb
+protocols_read_sha: 9ebf2b1b4d24bcaff85d6df40ffc4df751b24a48
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -350,3 +350,5 @@ Result 2026-11-17, ticket bf5c (scene 2 alone, trousers step f37bd58, evidence T
 Sync 2026-11-17 (sync-nsb-npt, ninth run): NSB since 2026-11-14: only other pawns and docs (Celeste, Miel, Soren, Ada, Lyra validated, neutral heads, VTW body types); no Nelim, Shogun, roster, appearances, animal catalogue, enclosure-south or barn change. NPT since 2026-11-13: steps for other mods (BetweenSus orders, StageDecor style fixes, catalogues Nautian and Greekcore, colonist naming); none renamed or removed, none used here changed. Nothing updated in the mod. Rules said back: 1 NSB free, 2 outside NSB needs express validation (animals of the mod authorised), 3 colonist properties only with express validation (Nelim mouth MouthLipsSimpleSmile validated 2026-11-07), 4 outfits free, 5 every included animal shown (RG_Dodo coats A to G, scene 3). Places, Tribe, Steps read: 2026-11-17 (diffs only). Tables above stand.
 
 Ticket 20261117-121859-389-7565 (scenes 1, 3, 4, 5, 6 on the trousers fix, label "gallery scenes 1 3 4 5 6 trousers 902d34b", map wsl-deps.galerie.map, evidence Tests/Pickle/Inbox/gallery-aa-7) filed 2026-11-17; result awaited. Then open every capture, score, one review message to Virginie with all six.
+
+Resumed 2026-11-17 (protocols_read_sha 9ebf2b1b, diffs of AUDIT 11.h/11.j, PUBLISHING-CI, USE_THIS_INSTEAD, STATUS template skimmed: none touches shootGallery). Ticket 7565 result already in Inbox (gallery-aa-7): 5 of 5 passed, exit 0 (scenes 1, 3, 4, 5, 6). Captures opened at full size: hair under straw hat, mustard shirt, lower body in light trousers (drawn, colour varies with light), mouth as a small mark in profile where visible; 1 six coats plus a hen, 3 seven coats round the crate, 4 hen, egg and nesting box, 5 seven dodos with Shogun and the straggler, 6 four sleepers on hay with one Z. Not yet scored (score-gallery) nor rebuilt in Art/Gallery. Next: score-gallery on the five captures plus scene 2 (gallery-z-7 bf5c), rebuild Art/Gallery and Art/Gallery-clean, one review message to Virginie.
