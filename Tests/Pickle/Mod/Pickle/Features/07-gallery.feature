@@ -64,6 +64,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_Royal_LongHD"
     And Nelim's Pickle Tools: "Nelim" hair colour is rgb (56, 36, 18)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (205, 150, 40)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" also wears "TSFApparel_StrawHat"
     And Nelim's Pickle Tools: the Beauty2 mouth offset is 0.035
     And Nelim's Pickle Tools: the Beauty2 mouth vertical offset is 0.015
