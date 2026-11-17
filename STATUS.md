@@ -76,7 +76,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
 protocols_read_sha: bcd13d616a9af97e28b1435a8379af73c6107ce1
-code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
+code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
 thanks_drafted_line: 1.0
@@ -375,3 +375,5 @@ CI refresh 2026-11-17 (CI/CD via TM, template stamp d20db370c66b): .github and T
 11.k 2026-11-17: GALLERY-PROPS.md updated in the protocols repo (bcd13d6): row for this mod, Hat Hair Control (lordfelix.HatHairControl, seed needed), T's Samurai Faction (TSFApparel_StrawHat). No gameplay Pickle step: the mod is a texture patch covered by features 01 to 07. 11 closed. Open for 12.a: code_review_sha stale (About.xml description sync since 3e6fc642); STATUS.md 70 KB (journal move to docs/runs/); protocols changed since c6360704 (AUDIT.md, USE_THIS_INSTEAD.md), to reread before Mark-ProtocolsRead.
 
 Protocols reread 2026-11-17 (AUDIT 14.h and USE_THIS_INSTEAD.md changed since c6360704): as a Renew mod this one needs a `drafted` row in docs/USE_THIS_INSTEAD.md and a BBCode comment in PUBLICATION.md right after the first public upload (13.b); the owner posts it, the row turns `posted` before leaving postOnSteam (14.h). Old data: Colorful Coats - Dodos! 2388053651, purpleyam, purpleyam.colorfulcoats.hlxdodo, versions from the original About.xml.
+
+12.a 2026-11-17: code review of 3e6fc642..c8f060cb (Mod/ only, no Source/): Patches/ and Textures/ unchanged since the reviewed commit; About.xml diff is the description wording (synced from PUBLICATION.md) and OptionalCompat.xml (85c25c6, 2026-11-07, three ReGrowth package ids, same as loadAfter, Check-OptionalCompat OK); Mod/ATTRIBUTION.md is documentation. No defect, no behaviour change, so no playTests replay. code_review_sha set. 12.b: modDependencies, incompatibleWith and loadAfter unchanged since the declaration; OptionalCompat.xml included, no new DLC.
