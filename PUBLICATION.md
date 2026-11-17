@@ -154,9 +154,24 @@ The CI reads the block under the `### <version>` heading of the version it uploa
 [url=https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
 ```
 
+## Use This Instead
+
+One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), posted by Virginie after the item is public, so players of the original are told about this port (`docs/USE_THIS_INSTEAD.md`, row `drafted`):
+
+```text
+Colorful Coats - Dodos! by purpleyam (2388053651, package purpleyam.colorfulcoats.hlxdodo, RimWorld 1.2 to 1.4) can be replaced by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] (3806766249, package nelim.colorfulcoats.dodos, RimWorld 1.6), by Nelim. Same seven coats and 21 textures for the dodos of ReGrowth: Extinct Animals (Continued), with the patch guard fixed so the coats actually appear. The two cannot be loaded together. Original: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]. Thank you for the mod xD
+```
+
+## Collection
+
+For Virginie, who alone adds to [RimWorld through Nelim's eyes](https://steamcommunity.com/sharedfiles/filedetails/?id=3815982565) (AUDIT 13.c), once the item is public:
+
+- The item: [Colorful Coats - Dodos! Renew (unofficial)](https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249).
+- Dependencies that are mods of Nelim: none (ReGrowth: Extinct Animals (Continued) is Mlie's and stays out).
+- DLC required: none.
+- Workshop tags of the item: Mod, 1.6.
+
 ## Release path (CI)
 
-`Mod/About/PublishedFileId.txt` is already committed. `.github/` does not exist yet: generate it with
-`scripts/generate-publish-workflow.sh --workshop-id 3806766249 --package-id nelim.colorfulcoats.dodos` (not hand-copied). Dry-run of the exact commit first, `publish` with the full 40-character SHA, `steam-production`
-approved by Virginie alone, tag and release created by the CI. Rollback target: chosen before publishing, the last
-good commit. `Rimworld-Release-Admin/docs/OPERATIONS.md` before touching any of it.
+Done 2026-11-17: dry-run without `--tags` on `cbf6f953096cefaad863968d308828d991504ad7` (run 44129580982), `publish` of that SHA as `1.0.0` (run 44132008799, approved by Virginie), tags `Mod, 1.6` set and read back, tag `v1.0.0` and its GitHub release created by the CI. The item is still private until Virginie switches it public after the subscription test.
+Rollback target: none for a first release; a later fix publishes a higher version from the last good commit. `Rimworld-Release-Admin/docs/OPERATIONS.md` before touching any of it.
