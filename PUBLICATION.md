@@ -71,17 +71,17 @@ None expected: dodo textures only. Confirm by opening every gallery image before
 ## Gallery
 
 Produced by `Tests/Pickle/Mod/Pickle/Features/07-gallery.feature` (`@gallery @review`), reproducible after any
-change. Steam shows the first image large. `Art/Gallery/0-preview.png` is byte-identical to `Mod/About/Preview.png`.
+change. Steam shows the first image large: 1-dawn opens the story and sets the place (the pen, the flock in six coats), 3-seven-coats is the most demonstrative of the coats and stays third as the noon episode of one day. `Art/Gallery/0-preview.png` is byte-identical to `Mod/About/Preview.png`.
 
 | # | File | Shows | Status |
 |---|---|---|---|
 | 0 | `Art/Gallery/0-preview.png` | The Preview itself | in place |
-| 1 | `Art/Gallery/1-dawn.jpg` | Dawn at the south gate of the Sanctuary dodo pen: the seven coats of the flock packed in front of the gate, Nelim beside it | candidate, subtitled 2026-11-15 |
-| 2 | `Art/Gallery/2-breakfast.jpg` | Mid-morning: five dodos around a pile of hay, Nelim smiling beside it | candidate, subtitled 2026-11-15 |
-| 3 | `Art/Gallery/3-seven-coats.jpg` | Noon: all seven coats in a ring around a pile of berries, plants and lamps round them | candidate, subtitled 2026-11-15 |
-| 4 | `Art/Gallery/4-the-nest.jpg` | Afternoon: a hen on her hay nest, an egg beside her, Nelim and the nesting box | candidate, subtitled 2026-11-15 |
-| 5 | `Art/Gallery/5-golden-hour.jpg` | Golden hour: Nelim and Shogun bring a straggler home, seven dodos with seven coats in the frame | candidate, subtitled 2026-11-15 |
-| 6 | `Art/Gallery/6-roost.jpg` | Dusk: four dodos asleep on hay in the planted ring, Nelim in her hat, lanterns and plants round | candidate, subtitled 2026-11-15 |
+| 1 | `Art/Gallery/1-dawn.jpg` | Dawn at the south gate of the Sanctuary dodo pen: six coats of the flock and a hen in the pen, Nelim at the gate | accepted by Virginie 2026-11-17, subtitled |
+| 2 | `Art/Gallery/2-breakfast.jpg` | Mid-morning: five dodos around a pile of hay, Nelim smiling beside it | accepted by Virginie 2026-11-17, subtitled |
+| 3 | `Art/Gallery/3-seven-coats.jpg` | Noon: all seven coats in a ring around a pile of berries, plants and lamps round them | accepted by Virginie 2026-11-17, subtitled |
+| 4 | `Art/Gallery/4-the-nest.jpg` | Afternoon: a hen on her hay nest, an egg beside her, Nelim and the nesting box | accepted by Virginie 2026-11-17, subtitled |
+| 5 | `Art/Gallery/5-golden-hour.jpg` | Golden hour: Nelim and Shogun bring a straggler home, seven dodos with seven coats in the frame | accepted by Virginie 2026-11-17, subtitled |
+| 6 | `Art/Gallery/6-roost.jpg` | Dusk: four dodos asleep on hay in the planted ring, Nelim in her hat, lanterns and plants round | accepted by Virginie 2026-11-17, subtitled |
 
 ### Gallery subtitles
 

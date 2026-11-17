@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   silent
 github_visibility: public
 detached:     yes
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: mountPreview[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -75,7 +75,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 9ebf2b1b4d24bcaff85d6df40ffc4df751b24a48
+protocols_read_sha: 58735a1243547fea62b257b4fe2aed571e5b5bec
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
 ---
@@ -354,3 +354,5 @@ Ticket 20261117-121859-389-7565 (scenes 1, 3, 4, 5, 6 on the trousers fix, label
 Resumed 2026-11-17 (protocols_read_sha 9ebf2b1b, diffs of AUDIT 11.h/11.j, PUBLISHING-CI, USE_THIS_INSTEAD, STATUS template skimmed: none touches shootGallery). Ticket 7565 result already in Inbox (gallery-aa-7): 5 of 5 passed, exit 0 (scenes 1, 3, 4, 5, 6). Captures opened at full size: hair under straw hat, mustard shirt, lower body in light trousers (drawn, colour varies with light), mouth as a small mark in profile where visible; 1 six coats plus a hen, 3 seven coats round the crate, 4 hen, egg and nesting box, 5 seven dodos with Shogun and the straggler, 6 four sleepers on hay with one Z. Not yet scored (score-gallery) nor rebuilt in Art/Gallery. Next: score-gallery on the five captures plus scene 2 (gallery-z-7 bf5c), rebuild Art/Gallery and Art/Gallery-clean, one review message to Virginie.
 
 Score-gallery 2026-11-17 (captures of 7565 gallery-aa-7 for 1, 3, 4, 5, 6 and bf5c gallery-z-7 for 2, all opened, shrunk to 268 px on a contact sheet): all six candidate, image/adequacy/understanding/decoration about 4/4/4/4 (1 dawn 4.5 image but dodos small at 268, still colours readable; 3 seven coats clearest; 4 nest egg and box read; 5 seven dodos plus Shogun; 6 four sleepers one Z; 2 breakfast five dodos around the hay). All show hat, hair under it, mustard shirt, light trousers; mouth visible only in 3. Art/Gallery-clean and Art/Gallery rebuilt (six originals 1280x720, six subtitled copies, lines unchanged in PUBLICATION.md), all opened on a contact sheet, lines legible on one line. One review message sent to Virginie with the six. Evidence gallery-i-7 to gallery-aa-7 kept until her verdict (RELEASE.md).
+
+Gallery verdict 2026-11-17 (Virginie: "Toutes acceptées"): six images accepted, subtitled, contiguous indexes 0 to 6, order 1 dawn, 2 breakfast, 3 seven-coats, 4 the-nest, 5 golden-hour, 6 roost (story order of one day, opening and closing set; table in PUBLICATION.md "Gallery"). 9.a to 9.f done, workflow_stage mountPreview[1.0.0]. Evidence gallery-* kept until deleted by the cleanup (RELEASE.md conditions to write). Next: Preview and echo from the accepted gallery (10.a bis), echo_review_sha invalidated.
