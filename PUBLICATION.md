@@ -2,7 +2,7 @@
 
 What the Workshop page asks for and the repository holds nowhere else. Drafted 2026-10-02 for the `1.0.0`
 (item `3806766249`, created private by the `0.1.0` pre-publication). Read by the next session picking the mod up.
-Nothing here is posted or sent: the gallery, the thank-you comments and the public switch are Virginie's.
+Published 2026-11-17 as 1.0.0; the gallery upload, the comments and the public switch were Virginie's, all done.
 
 ## Steam description
 
@@ -97,45 +97,7 @@ One line of English written at the bottom of each scene without an interface win
 | 5 | `5-golden-hour` | The last bird comes home. |
 | 6 | `6-roost` | Everyone is home. |
 
-The only capture so far (`04-coats-on-spawn`, 2026-09-28) was judged small and dim under a mountain roof, not
-gallery quality. The gallery scenarios do not fix that: the scene is whatever tile the test colony sits on. If the
-first run is still dim, a step that moves the camera to an open, lit cell has to be added to PickleTools. Every image
-must be opened and looked at before it goes up; a green scenario proves the path ran, not that the picture shows
-anything. Disqualified: dev tools or the Pickle panel visible, another mod's overlay.
-
-## Thank-you comments
-
-Posted by Virginie in the plain panel of the comment box (owner nota 2026-11-17) after the item is public (a link to a private item opens for nobody), one per recipient, under
-1000 characters, BBCode links as `[url=...]name[/url]`, never a bare URL. Drafted 2026-11-17 for the `1.0` line
-(`thanks_drafted_line`); read the last comments of each page before posting. See `WORKSHOP_COMMENTS.md`, "Writing a comment".
-
-Four new recipients (registry rows `drafted`). Every other mod the gallery uses already has a `posted` row, and this
-mod is added to its `Covers` (no second comment): Stick Lantern, Roo's HD Hairstyles, AB's Visible Pants, the body and
-facial animation stack. Show Hair Under Stuff and Cuter Kids for Facial Animation are only staged by the shared map,
-not used by a scene: no comment.
-
-**purpleyam**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]
-(original author; the textures and the idea are theirs):
-```text
-Eight dodos out of ten in a pen, seven coats between them: I could not let that die on the 1.4 page :) All I did in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] was make the patch find the Extinct Animals pack again under its new name. The coats and the 21 textures are yours. Thank you purpleyam, and I will take mine down the day you ask xD
-```
-
-**Mlie**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791]ReGrowth: Extinct Animals (Continued)[/url]
-(maintainer; Helixien made the pack):
-```text
-My dodos hatch in seven colours only because your ReGrowth: Extinct Animals (Continued) is still there to patch, and its guard had to learn your page's name the hard way lol. Thank you Mlie for keeping the pack alive, and Helixien for the dodo itself! It is in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] :)
-```
-
-**lordfelix**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3760821540]Hat Hair Control[/url]:
-```text
-Nelim wears a straw hat all day in the pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url], and thanks to Hat Hair Control her long hair stays under it instead of vanishing. Thank you lordfelix :)
-```
-
-**Trickity**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2559958496]T's Samurai Faction[/url]
-(read the author's name on the page before posting; the packageId says Trickity):
-```text
-The yellow straw hat on Nelim in the pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] is yours (TSFApparel_StrawHat), and it sets the dodo coats off nicely xD Thank you Trickity!
-```
+Thank-you comments and the Use This Instead comment: posted 2026-11-17, texts in `Docs/runs/posted-comments-2026-11-17.md`.
 
 ## Steam change notes
 
@@ -152,14 +114,6 @@ The CI reads the block under the `### <version>` heading of the version it uploa
 [*] The two patch operations on the same def are merged, so the coats cannot be applied twice. Stats, meat and eggs are unchanged.
 [/list]
 [url=https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
-```
-
-## Use This Instead
-
-One comment on the [Use This Instead](https://steamcommunity.com/sharedfiles/filedetails/?id=3396308787) page (Mlie), posted by Virginie in the plain panel after the item is public, so players of the original are told about this port (`docs/USE_THIS_INSTEAD.md`, row `drafted`):
-
-```text
-Colorful Coats - Dodos! by purpleyam (2388053651, package purpleyam.colorfulcoats.hlxdodo, RimWorld 1.2 to 1.4) can be replaced by [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] (3806766249, package nelim.colorfulcoats.dodos, RimWorld 1.6), by Nelim. Same seven coats and 21 textures for the dodos of ReGrowth: Extinct Animals (Continued), with the patch guard fixed so the coats actually appear. The two cannot be loaded together. Original: [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]. Thank you for the mod xD
 ```
 
 ## Collection

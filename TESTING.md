@@ -86,8 +86,8 @@ Rewritten 2026-09-28. Coat computed from id, not stored, so dodo generated befor
 **Applicable, played by Pickle** (2026-10-11; Virginie, 2026-10-12: playing test = playing its base scenario).
 `Tests/Pickle/Mod/Pickle/Features/08-removal-write.feature` and `Tests/Pickle/Removal/Mod/Pickle/Features/removal-check.feature`, one request, two launches: E1 saves colony with
 20 coloured dodos (≥3 coats), hands to test mod; E2 loads with `nelim.colorfulcoats.dodos` removed
-from mod list, asserts no dodo has coat, no error logged. Played 2026-10-11, ticket 162e, both
-passed (`Tests/Pickle/Evidence/2026-10-11-removal`; second launch active list = test mod only). Brown
+from mod list, asserts no dodo has coat, no error logged. Current revision (v1.0.0, cbf6f95): ticket c000, 2026-11-17, both
+passed (`Tests/Pickle/Evidence/noreg-removal`, `Docs/runs/2026-11-17-noreg-removal.txt`; `-ThenWithout` must be an array of the two ids, a comma string loads nothing). Brown
 look on map not asserted, only coat absence.
 
 Nothing saved, so removal leaves nothing pointing into list def no longer has.
