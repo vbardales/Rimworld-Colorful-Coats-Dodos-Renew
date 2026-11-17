@@ -139,7 +139,9 @@ The yellow straw hat on Nelim in the pictures of [url=https://steamcommunity.com
 
 ## Steam change notes
 
-For the `1.0.0` upload. The first line must carry the exact version in BBCode or the dry-run stops.
+The CI reads the block under the `### <version>` heading of the version it uploads. The first line must carry the exact version in BBCode or the dry-run stops.
+
+### 1.0.0
 
 ```
 [b]1.0.0[/b]
