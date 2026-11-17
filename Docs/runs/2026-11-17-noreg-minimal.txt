@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 553d, 2026-11-17, runNoRegression on the published build (v1.0.0, cbf6f95), local lane, game 1.6, English, features 01 to 05, -DepMap wsl-deps.sans-facultatifs.map.
+29 scenarios: 29 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree).
+Evidence: Tests/Pickle/Inbox/noreg-minimal (to triage with Prune-Evidence once 457f and 5714 are back).
