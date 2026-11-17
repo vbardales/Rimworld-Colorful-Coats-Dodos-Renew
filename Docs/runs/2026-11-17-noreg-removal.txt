@@ -1,0 +1,6 @@
+# Pickle Run Summary
+
+Ticket c000, 2026-11-17, runNoRegression on the published build (v1.0.0, cbf6f95), local lane (wsl), game 1.6, feature 08 removal chain, -Then removal-check, -ThenWithout nelim.colorfulcoats.dodos and nelim.colorfulcoats.dodos.pickletests (array), map wsl-deps.removal.map, -NoBatch.
+2 scenarios: 2 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree, both launches).
+Evidence: Tests/Pickle/Evidence/noreg-removal-2 (seq1 E1 35.8 s, seq2 E2 9.6 s).
+Earlier attempt, not counted: 5714 (seq2 0 scenarios, removal companion not loaded, -ThenWithout passed as one comma string).

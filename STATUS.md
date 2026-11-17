@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: runNoRegression[1.0.0]
+workflow_stage: cleanUp[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -44,7 +44,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
               gitignored, 0.1.0 pre-publication (workshop item 3806766249) committed with its
               CHANGELOG entry, doc-read log started at docs/PROTOCOLS-READ.md; stage retained
               at done, tested still unreached
-protocols_read_sha: 161d23ea994de6aab35c3cabe5af940316d80e1b
+protocols_read_sha: d65924b73972927fb6722555747f29c544b22264
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
@@ -207,3 +207,5 @@ Inbox triage 2026-11-17: Prune-Evidence -Apply: noreg-minimal (553d, green) mini
 14.a 2026-11-17 (resume): RUN_DONE 457f (noreg incompat 06): exit 0, exitReason passed, 4 of 4 passed; summary.json read. Docs/runs/2026-11-17-noreg-incompat.txt; evidence moved to Tests/Pickle/Evidence/noreg-incompat, Inbox 0. protocols_read_sha 161d23ea. Waiting for 5714 (08 removal chain), then cleanUp[1.0.0] (14.c, 14.d); 2026-11-06-incompat can then be deleted (replaced by noreg-incompat).
 
 14.a 2026-11-17: RUN_DONE 5714 (noreg removal chain): exit 8. seq1 E1 passed 1/1; seq2 0 scenarios, "filter 'removal-check' matched no scenarios": the removal companion suite was not loaded in seq2 (suites listed: Pickle, CoatSteps, SaveSteps, Dodos tests), cause: -ThenWithout passed as one comma string. Refiled as c000 (20261117-200414-184-c000) with -ThenWithout as a real array, same filter/map, -NoBatch, evidence Tests/Pickle/Inbox/noreg-removal-2. Old Inbox/noreg-removal to delete at triage (superseded).
+
+14.a/14.j 2026-11-17: RUN_DONE c000 (noreg removal chain 08): exit 0, exitReason passed, 2 of 2 passed (seq1 E1, seq2 E2), summary.json and junit.xml read, both launches. Docs/runs/2026-11-17-noreg-removal.txt; evidence minified to Tests/Pickle/Evidence/noreg-removal, Inbox 0. runNoRegression green on v1.0.0 (cbf6f95): minimal 29/29 (553d), incompat 4/4 (457f), removal 2/2 (c000); 07 gallery not replayed (verdict given). workflow_stage cleanUp[1.0.0]: 14.c (STATUS, docs, Evidence without RELEASE.md condition, WSL mods) and 14.d (branches), then dormant (14.e).
