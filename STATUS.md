@@ -28,7 +28,7 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - 14.c (2026-11-17): evidence folders of Tests/Pickle/Evidence to delete (no RELEASE.md condition; sums are in Docs/runs), WSL mods of the removal and gallery maps to remove, then 14.d branches, 14.e dormant.
+  - 14.c and 14.d closed 2026-11-17 (Evidence emptied, no WSL mod of this mod left on disk, only branch main): next 14.e dormant[1.0.0].
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
 protocols_read_sha: 59afd1773e16fbda46e54e6072f43e3521a7b92d
@@ -52,3 +52,5 @@ Current state only. Dated history: `Docs/runs/status-journal-2026-10-16.md` and 
 - **Ecosystem** (PiI 2026-11-13): no other dodo recolour; DodoRex 3828845619 and Saroodles Additions hold other dodos, not supported (`Docs/BACKLOG.md`).
 - **Review shas**: code_review_sha, echo_review_sha, publication_changelog_review_sha in the front matter.
 - **Register rows**: WORKSHOP_COMMENTS.md (4 thank-yous) and USE_THIS_INSTEAD.md (this mod) `posted`; texts in `Docs/runs/posted-comments-2026-11-17.md`.
+
+14.c/14.d 2026-11-17: Tests/Pickle/Evidence emptied (11 folders, no RELEASE.md condition; summaries in Docs/runs), Inbox 0, Parked 0. WSL checked: ids 2388053651 (original purpleyam) and 3602926791 (ReGrowth Continued), the only ids no other mod's map names, are not in ~/workshop-cache nor ~/rimworld/Mods: nothing to remove. Owner may unsubscribe from the original 2388053651 (this port replaces it); ReGrowth stays (required item). 14.d: only branch is main, origin/main = HEAD, Mod/ unchanged since v1.0.0 (cbf6f95).
