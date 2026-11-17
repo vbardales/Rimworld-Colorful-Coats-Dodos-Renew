@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: writeReleaseDocs[1.0.0]
+workflow_stage: publish[1.0.0]
 licence:      silent
 licence_port: MIT, port additions only
 licence_original: no declared licence found in installed original or live Steam description
@@ -179,3 +179,7 @@ Protocols reread 2026-11-17 (AUDIT 14.h and USE_THIS_INSTEAD.md changed since c6
 Journal move 2026-11-17 (12.c): closed remaining entries and dated sections folded verbatim into docs/runs/status-journal-2026-11-17.md; STATUS.md back under 40 KB. visibility corrected from `silent` to `public` (licence keeps `silent`).
 
 12.c bis 2026-11-17: caveman compression of TESTING.md, Docs/BACKLOG.md, Tests/Pickle/README.md (prose only; identifiers, paths, numbers, dates, inline code checked identical; backups kept outside the repository). Skipped: Docs/PROTOCOLS-READ.md (SHA log, backup name collision), Docs/review-refusals.md (read by the review-translation plugin), STATUS.md body (already terse, SHAs and dates). Not touched: README, PUBLICATION, CHANGELOG, ATTRIBUTION, TRANSLATION_REVIEW.
+
+12.e 2026-11-17: CHANGELOG [Unreleased] became [1.0.0] - 2026-11-17 (3ae7273). First dry-run (run 44129105574, update_preview/description/title on) failed: no "### 1.0.0" heading in PUBLICATION.md; fixed (b296849). Dry-run without --tags, run 44129302103, SHA b296849723ef8b49a907f3c4a5e9adf2604faf30, version 1.0.0, green.
+12.f 2026-11-17: dry-run note READ, not only the green tick: SHA and version printed; About.xml description = plain text of PUBLICATION.md; staged 29 files 0.64 MB (About 5, ATTRIBUTION.md, LICENSE, Patches 1, Textures 21; no Art/, no Assemblies); change note [b]1.0.0[/b] with a [list] and the CHANGELOG link; preview sha256 e319feb1... = Mod/About/Preview.png; description 2932 chars sha256 70815a8f...; title "Colorful Coats - Dodos! Renew (unofficial)"; tags to send (the whole set) Mod, 1.6; "public page not readable (no public details for item 3806766249): comparisons skipped" because the item is still private, so the tag set could not be read next to the page's; gallery 7 files in Art/Gallery uploaded by hand by Virginie (the workflow does not send it); "DRY RUN: nothing was sent to Steam". Options planned for the publish: update_preview, update_description, update_title all true (first public upload; the page still holds the 0.1.0 text). Rollback target: none, first release (a later fix publishes a higher version from the last good SHA). Real publish needs STEAM_REFRESH_TOKEN on steam-production (Virginie); the Steam item stays private until she switches it public after subscribing to it (13.b).
+12.h 2026-11-17: workflow_stage publish[1.0.0], Mark-ProtocolsRead run, session renamed. The dry-run is redone on this final commit, since any commit changes the SHA.
