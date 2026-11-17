@@ -78,7 +78,7 @@ updated:      2026-11-17, replay-audit (ledger .replays/ColorfulCoatsDodosRenew-
 protocols_read_sha: c63607048e8bbc06d1f32a25f64361f2cddfc9e7
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
-publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
+publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
 thanks_drafted_line: 1.0
 ---
 # Colorful Coats - Dodos! Renew: status
@@ -369,3 +369,5 @@ Social preview re-uploaded 2026-11-17 through Chrome (GitHub Settings, Social pr
 writeReleaseDocs 2026-11-17 (11.a to 11.k): 11.a/b description unchanged (structure, Thanks, GitHub link checked); 11.c About.xml description rewritten from PUBLICATION.md with sync-about-description.mjs --write (wording sync only), still ends with the plain "Source code on GitHub (url)" line, so Check-ModBasics warns about the BBCode form (same on Megafauna, the template copy in .github is not mine); 11.d every named mod linked; 11.e PUBLICATION.md gallery table and order aligned; 11.f CHANGELOG [Unreleased] kept until the dry-run; 11.g adult boxes: none, all six gallery images opened; 11.h thanks drafted for the 1.0 line (thanks_drafted_line: 1.0): purpleyam 2388053651, Mlie 3602926791 (with Helixien), lordfelix 3760821540, Trickity 2559958496 (check the author's name on the page), registry rows drafted, 18 posted rows now cover this mod (WORKSHOP_COMMENTS.md, 6c71ac3); ATTRIBUTION.md gained the gallery mods table with every Workshop id of the gallery map (copied to Mod/ATTRIBUTION.md); 11.i Steam note rewritten as a real BBCode list with a CHANGELOG link, no version number in it. 11.j owner reread of PUBLICATION.md and CHANGELOG.md pending. Not done: GALLERY-PROPS.md entries (11.k), left for the closing pass.
 
 CI refresh 2026-11-17 (CI/CD via TM, template stamp d20db370c66b): .github and Tests/Test-Mod.ps1 committed by path and pushed; Tests/Test-Mod.ps1 run: 5 passed, 0 failed, 0 skipped. Any earlier dry-run is void: the 12.e dry-run is redone without --tags, and its tag set is read next to the page's. A real publish needs STEAM_REFRESH_TOKEN on steam-production (Virginie's secret).
+
+11.j 2026-11-17 (Virginie: "je valide"): PUBLICATION.md and CHANGELOG.md reread and validated at fc3c332; publication_changelog_review_sha written. 11.k left: GALLERY-PROPS.md entries, no gameplay Pickle step identified. Next: 12.a to 12.h.
