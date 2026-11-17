@@ -79,6 +79,7 @@ protocols_read_sha: c63607048e8bbc06d1f32a25f64361f2cddfc9e7
 code_review_sha: 3e6fc642139290b54473e8f3e0deb3951c863b47
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: 23b42dfe17d3765b34598bb0602dbc99d16817d6
+thanks_drafted_line: 1.0
 ---
 # Colorful Coats - Dodos! Renew: status
 
@@ -364,3 +365,5 @@ Decision 2026-11-17 (Virginie: "Oui, garder"): KEEP Art/Preview-source.png, echo
 
 Social preview re-uploaded 2026-11-17 through Chrome (GitHub Settings, Social preview) from Mod/About/Preview.png; the setting page shows the current Preview after a reload. The og:image tag was not checked (the DOM of the repo page carries no meta tag in this browser). social_preview_sha256: e319feb138d13b340f7710ac10eec89d5630d02c412bfb8b8ffd515f8fe0f2f7
 10.f done, 10.g: workflow_stage writeReleaseDocs[1.0.0].
+
+writeReleaseDocs 2026-11-17 (11.a to 11.k): 11.a/b description unchanged (structure, Thanks, GitHub link checked); 11.c About.xml description rewritten from PUBLICATION.md with sync-about-description.mjs --write (wording sync only), still ends with the plain "Source code on GitHub (url)" line, so Check-ModBasics warns about the BBCode form (same on Megafauna, the template copy in .github is not mine); 11.d every named mod linked; 11.e PUBLICATION.md gallery table and order aligned; 11.f CHANGELOG [Unreleased] kept until the dry-run; 11.g adult boxes: none, all six gallery images opened; 11.h thanks drafted for the 1.0 line (thanks_drafted_line: 1.0): purpleyam 2388053651, Mlie 3602926791 (with Helixien), lordfelix 3760821540, Trickity 2559958496 (check the author's name on the page), registry rows drafted, 18 posted rows now cover this mod (WORKSHOP_COMMENTS.md, 6c71ac3); ATTRIBUTION.md gained the gallery mods table with every Workshop id of the gallery map (copied to Mod/ATTRIBUTION.md); 11.i Steam note rewritten as a real BBCode list with a CHANGELOG link, no version number in it. 11.j owner reread of PUBLICATION.md and CHANGELOG.md pending. Not done: GALLERY-PROPS.md entries (11.k), left for the closing pass.

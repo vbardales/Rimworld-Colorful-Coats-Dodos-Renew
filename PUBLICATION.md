@@ -105,18 +105,37 @@ anything. Disqualified: dev tools or the Pickle panel visible, another mod's ove
 
 ## Thank-you comments
 
-Posted after the item is public (a link to a private item opens for nobody), one per recipient, under 1000
-characters, BBCode links as `[url=...]name[/url]`, never a bare URL. Voice and true detail are Virginie's: these are
-skeletons to rewrite, not text to paste. See `WORKSHOP_COMMENTS.md`, "Writing a comment".
+Posted by Virginie after the item is public (a link to a private item opens for nobody), one per recipient, under
+1000 characters, BBCode links as `[url=...]name[/url]`, never a bare URL. Drafted 2026-11-17 for the `1.0` line
+(`thanks_drafted_line`); read the last comments of each page before posting. See `WORKSHOP_COMMENTS.md`, "Writing a comment".
 
-- **purpleyam**, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]:
-  seven coats, 0.8 chance, 21 textures are theirs; the port only made the patch find its target again on 1.6
-  (the guard matches a display name, and the pack changed names a fourth time). Offer removal on request.
-- **Mlie**, [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791]ReGrowth: Extinct Animals (Continued)[/url]:
-  thanks for keeping the dodo alive; also credit Helixien, who made the pack the dodo comes from.
+Four new recipients (registry rows `drafted`). Every other mod the gallery uses already has a `posted` row, and this
+mod is added to its `Covers` (no second comment): Stick Lantern, Roo's HD Hairstyles, AB's Visible Pants, the body and
+facial animation stack. Show Hair Under Stuff and Cuter Kids for Facial Animation are only staged by the shared map,
+not used by a scene: no comment.
 
-Check the recipient rows in `WORKSHOP_COMMENTS.md` first: a row already `posted` takes this mod in its `Covers`
-instead of a second comment.
+**purpleyam**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2388053651]Colorful Coats - Dodos![/url]
+(original author; the textures and the idea are theirs):
+```text
+Eight dodos out of ten in a pen, seven coats between them: I could not let that die on the 1.4 page :) All I did in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] was make the patch find the Extinct Animals pack again under its new name. The coats and the 21 textures are yours. Thank you purpleyam, and I will take mine down the day you ask xD
+```
+
+**Mlie**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3602926791]ReGrowth: Extinct Animals (Continued)[/url]
+(maintainer; Helixien made the pack):
+```text
+My dodos hatch in seven colours only because your ReGrowth: Extinct Animals (Continued) is still there to patch, and its guard had to learn your page's name the hard way lol. Thank you Mlie for keeping the pack alive, and Helixien for the dodo itself! It is in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] :)
+```
+
+**lordfelix**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3760821540]Hat Hair Control[/url]:
+```text
+Nelim wears a straw hat all day in the pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url], and thanks to Hat Hair Control her long hair stays under it instead of vanishing. Thank you lordfelix :)
+```
+
+**Trickity**, page [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2559958496]T's Samurai Faction[/url]
+(read the author's name on the page before posting; the packageId says Trickity):
+```text
+The yellow straw hat on Nelim in the pictures of [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249]Colorful Coats - Dodos! Renew (unofficial)[/url] is yours (TSFApparel_StrawHat), and it sets the dodo coats off nicely xD Thank you Trickity!
+```
 
 ## Steam change notes
 
@@ -124,8 +143,13 @@ For the `1.0.0` upload. The first line must carry the exact version in BBCode or
 
 ```
 [b]1.0.0[/b]
-First public release of the 1.6 port. Seven coats for the dodos of ReGrowth: Extinct Animals (Continued),
-restored by a patch guard that now matches the mod's current name. No change to stats, meat or eggs.
+[list]
+[*] First release: a port of Colorful Coats - Dodos! by purpleyam to the latest RimWorld version.
+[*] Seven coats for the dodos of ReGrowth: Extinct Animals (Continued), the same 21 textures and the same 0.8 chance as the original.
+[*] The patch guard now matches the pack's current name, so the coats actually appear; the original would have loaded without a sign and left every dodo brown.
+[*] The two patch operations on the same def are merged, so the coats cannot be applied twice. Stats, meat and eggs are unchanged.
+[/list]
+[url=https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
 ```
 
 ## Release path (CI)

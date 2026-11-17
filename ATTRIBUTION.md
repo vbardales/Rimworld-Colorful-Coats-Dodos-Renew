@@ -126,3 +126,32 @@ Its own target, `VanillaExpanded.VAECD`, stops at 1.3.
 
 - **purpleyam**, for the coats.
 - **Helixien**, for the dodo, and **Mlie**, for keeping it running.
+
+## Mods used by the Workshop gallery (development only, never dependencies)
+
+The gallery is played in Nelim's Sanctuary (SanctuaryBacklot, a test-only mod of the same author) with the mods its save was made with. None is needed to play this mod. Used on screen: the hat and hair, the lantern, the trousers, the body and the face of Nelim.
+
+| Mod | Workshop id | What the gallery uses it for |
+|---|---|---|
+| Hat Hair Control (lordfelix) | 3760821540 | long hair kept under the hat |
+| Show Hair Under Stuff (RaccoonCuddler) | 3255379190 | staged by the shared map, not used by a scene |
+| T's Samurai Faction (Trickity) | 2559958496 | the straw hat `TSFApparel_StrawHat` |
+| Roo's HD Hairstyles (continued) | 3559870636 | Nelim's hairstyle |
+| Stick Lantern (Continued) | 2024351846 | the lanterns in the pen |
+| AB's Visible Pants | 2986402536 | Nelim's trousers |
+| Female Body Variants Continued | 3798082132 | Nelim's body |
+| Female Apparel Variants Continued | 3799726535 | worn with the body above |
+| WDI's Realistic Bodies | 3527486510 | Nelim's body |
+| Vanilla Expanded Framework | 2023507013 | required by the Sanctuary |
+| [NL] Facial Animation - WIP | 1635901197 | Nelim's face |
+| [NL] Facial Animation - Experimentals | 2581693737 | Nelim's face |
+| Vanilla Textures Expanded - Facial Animation | 2816938779 | Nelim's face |
+| Akeron Extras - Facial Animations | 2889716301 | Nelim's face |
+| EyeGenes3 | 3745223213 | Nelim's eyes |
+| Facial Animation Performance Patch | 3790129900 | Nelim's face |
+| [VK] FacialAnimation add closed eyes | 3694711465 | Nelim's eyes |
+| Vanilla Experimentals for Facial Animation | 3753978140 | Nelim's eyes |
+| Visual beauty for Facial Animation | 3685072616 | Nelim's face |
+| Cuter Kids for Facial Animation | 3807706870 | staged by the shared map, not used by a scene |
+| NL Facial Animation - Init Fix | 3609895011 | Nelim's face |
+| NL Facial Animation - Load Fix | 3721489042 | Nelim's face |

@@ -26,9 +26,9 @@
   <description>UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight birds in ten come out of the egg in a colour of their own, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs.
+Seven coats for the dodos of ReGrowth's Extinct Animals, instead of the one they hatch with. Eight dodos out of ten hatch in one of those colours, so a dodo pen stops being a row of identical brown birds. Nothing else changes: same stats, same meat, same eggs.
 
-Texture patch only: a single XML patch and 21 textures. No DLC, no Harmony, no assembly, no def of its own.
+Texture patch only: a single XML patch and 21 textures. No DLC, no Harmony, no assembly, and no Defs of its own.
 
 Needs
 
@@ -48,15 +48,15 @@ The textures and the whole idea are purpleyam's. They declared no licence, so th
 
 If I go quiet
 
-If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other of my mods, including publishing a continuation of it. All credit must be preserved.
+If I do not answer within a reasonable time after being contacted, anyone may freely update this or any other mod of mine, including publishing a continuation of it. All credit must be preserved.
 
 AI-generated
 
-Code, XML patches, tests and documentation were written with Claude (Anthropic) under my direction and review.
+Code, XML patches, tests and documentation were written with Claude (Anthropic) under my direction and review. The preview image and the mod icon were made with DALL-E (OpenAI).
 
 Thanks
 
-purpleyam, for the coats; Helixien, for the dodo; Mlie, for keeping it alive. Harmony, and the development-only test tools Pickle and RimLogging, never a dependency of this mod.
+purpleyam, for the coats; Helixien, for the dodo; Mlie, for keeping it alive. Harmony and the development-only test tools Pickle and RimLogging are never dependencies of this mod.
 
 Credits, licence scope and the source-by-source assessment are in ATTRIBUTION.md and LICENSE (MIT for the port's additions only).
 
