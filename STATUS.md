@@ -32,7 +32,7 @@ remaining:
   - startWatch[1.1.0]: SUBSCRIBE-TEST? answer from PiI (item 3806766249, folder 1.1.0, Workshop tags Mod, 1.6, 1.7 read back); then postOnSteam: Virginie updates the Steam gallery image 0 (Art/Gallery/0-preview.png is the new Preview, 735092 bytes), then runNoRegression on v1.1.0 (the 1.7 diagnostic already green, replay on the published revision per 14.a).
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: 6ffe26641372a55fb2f825b5324dfe8fcd9632fb
+protocols_read_sha: 3af323f80304f930d38d8845d021494122abc0b9
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
