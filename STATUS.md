@@ -32,7 +32,7 @@ remaining:
   - 1.1.0 (1.7 pass, owner 2026-11-17): 1.7 diagnostic green, tested_1_7 recorded. Next, in order: code[1.1.0] gesture: `<li>1.7</li>` in supportedVersions, version 1.1.0, CHANGELOG, Preview badge (Render-Preview.cjs), then publish with update_tags (stage chain per AUDIT.md).
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: ba5bc2537242b9d2c7d46e7dd6db6046f7c1387b
+protocols_read_sha: 92a681dcd1f94dbf91341382f486dd23ed4ef44d
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
