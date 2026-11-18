@@ -32,7 +32,7 @@ remaining:
   - runNoRegression[1.1.0] (14.a): three small tickets on the published build (v1.1.0, 08c2611, Mod/ frozen), game 1.6: minimal 01-05, 06 incompat, 08 removal chain; read summary.json and junit.xml at each RUN_DONE; then cleanUp optional if a new version follows, else dormant.
 session:      local_418e2661-d248-401b-98eb-e2e22fff9dd0, registered with the Ticket Manager (2026-11-18)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: 9338d8dcb0ab58bd06f914cc97073e4eb6c611c9
+protocols_read_sha: 113f53ea8c2130a1425348e87f66394898f2e328
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
@@ -101,3 +101,5 @@ Preview 2026-11-18, new Preview-source.png (1672x941, from Docs/PROMPT_ColorfulC
 14.g/14.h 2026-11-18: Virginie replaced gallery image 0 on the Steam page with Art/Gallery/0-preview.png ("fait"); no thank-you or republication message for 1.1.0. Stage runNoRegression[1.1.0] (14.i).
 
 14.a 2026-11-18 runNoRegression: three small tickets filed on the published build (v1.1.0, Mod/ and Tests/ identical to 08c2611, tree f59254f, game 1.6, English): 9afb (minimal 01-05, wsl-deps.sans-facultatifs.map, Inbox/noreg17-minimal), f4ca (06 incompat, wsl-deps.incompat-hlxdodo.map, noreg17-incompat), 1f26 (08 removal chain, -Then E2, -ThenWithout passed as a real array through powershell -Command, wsl-deps.removal.map, -NoBatch, noreg17-removal). 07 gallery not replayed. At each RUN_DONE: summary.json, junit.xml, then verdict. Mod/ stays frozen until the three are back.
+
+14.a 2026-11-18 resume: RUN_DONE 1f26 (noreg17-removal, 08) found in Inbox: E1 and E2 passed, exit 0, summary.json and junit.xml read. Docs/runs/2026-11-18-noreg17-removal.txt, evidence moved to Tests/Pickle/Evidence/noreg17-removal, Inbox 0. Still waiting: 9afb (minimal 01-05) and f4ca (06 incompat). Protocols read again (sha 113f53ea).

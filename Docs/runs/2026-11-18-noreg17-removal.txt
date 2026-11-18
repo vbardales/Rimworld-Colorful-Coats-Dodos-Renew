@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 1f26, non-regression on the published build v1.1.0 (08c2611), RimWorld 1.6, feature 08 removal chain, -ThenWithout array, map wsl-deps.removal.map, English.
+2 scenarios in 2 launches: 2 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree, seq1 E1 58.5 s, seq2 E2 13.9 s).
+Evidence: Tests/Pickle/Evidence/noreg17-removal (seq1, seq2).
