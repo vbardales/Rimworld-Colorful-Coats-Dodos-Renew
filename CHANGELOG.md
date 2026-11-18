@@ -2,6 +2,19 @@
 
 All notable changes to this mod are documented here.
 
+## [Unreleased]
+
+### Added
+
+- RimWorld 1.7 declared in `supportedVersions`, after a green diagnostic on 1.7.4976: five
+  feature files in the minimal suite (29 scenarios), the declared incompatibility with the
+  original (4 scenarios) and the removal chain (a save with coats loads without the mod, no dodo
+  keeps a coat). No code or texture change.
+
+### Changed
+
+- `About/Preview.png` redrawn with the 1.7 corner badge.
+
 ## [1.0.0] - 2026-11-17
 
 First release. Port of purpleyam's **Colorful Coats - Dodos!** to RimWorld 1.6.

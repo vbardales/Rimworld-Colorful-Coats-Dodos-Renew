@@ -29,7 +29,7 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - 1.1.0 (1.7 pass, owner 2026-11-17): 1.7 diagnostic green, tested_1_7 recorded. Next, in order: code[1.1.0] gesture: `<li>1.7</li>` in supportedVersions, version 1.1.0, CHANGELOG, Preview badge (Render-Preview.cjs), then publish with update_tags (stage chain per AUDIT.md).
+  - 1.1.0 (1.7 pass, owner 2026-11-17): `<li>1.7</li>` declared, CHANGELOG `[Unreleased]` entry, Preview badge 1.7 redone (2026-11-18). Left: number and date the CHANGELOG section 1.1.0 at the dry-run (12.e), PUBLICATION.md steam note for 1.1.0, then publish with update_tags (tag v1.1.0).
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
 protocols_read_sha: 92a681dcd1f94dbf91341382f486dd23ed4ef44d
@@ -65,3 +65,5 @@ Current state only. Dated history: `Docs/runs/status-journal-2026-10-16.md` and 
 1.7 pass 2026-11-17: RUN_DONE 33e9 (diag17-minimal, 01-05): exit 0, exitReason passed, 29 of 29 passed, game RimWorld 1.7.4976, summary.json and junit.xml read. Docs/runs/2026-11-17-diag17-minimal.txt, evidence moved to Tests/Pickle/Evidence/diag17-minimal. Waiting for 77f7 (06) and 4798 (08).
 
 1.7 pass 2026-11-18 (tested_1_7 yes; 2026-11-18, game 1.7.4976, tree 935f960: minimal 01-05 29/29 (33e9), 06 incompat 4/4 (77f7), 08 removal 2/2 (4798); Docs/runs/2026-11-17-diag17-minimal.txt, 2026-11-18-diag17-incompat.txt, 2026-11-18-diag17-removal.txt): RUN_DONE 77f7 (diag17-incompat, 06): 4 of 4 passed, exit 0. RUN_DONE 4798 (diag17-removal, 08): E1 and E2 passed, exit 0, both launches. summary.json and junit.xml read for each. Docs/runs/2026-11-18-diag17-*.txt, evidence moved to Tests/Pickle/Evidence, Inbox 0. tested_1_7: yes. Mod/ still unchanged since v1.0.0 (cbf6f95), supportedVersions still 1.6.
+
+1.7 declared 2026-11-18 (Virginie: go): supportedVersions 1.6 + 1.7, CHANGELOG [Unreleased] Added/Changed, Preview and Art/Gallery/0-preview.png rendered with the 1.7 badge (config unchanged, badge top right read, echo and title unclipped).
