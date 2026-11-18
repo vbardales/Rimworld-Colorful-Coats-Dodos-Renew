@@ -32,12 +32,12 @@ remaining:
   - 1.1.0 (1.7 pass): dry-run on the commit that sets publish[1.1.0] (options: update_preview only), read the note (12.f), then dispatch-publish.sh with that full SHA, Virginie approves steam-production; after: PublishedFileId check, SUBSCRIBE-TEST? to PiI, tag v1.1.0, collection untouched (item already in), Workshop tag 1.7 read back.
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: f8fee9ce3e84db4584ec0256dddb91ff50a3b435
+protocols_read_sha: ab437501baa79c4bfbd996f1f2b61bc89ab0bf7a
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
 thanks_drafted_line: none
-social_preview_sha256: 8e5d526993def5a29615463d245c39e51dffb6580e581a166824d6e6f9c7129e
+social_preview_sha256: 6d0bd069c32bca1f378d4145d771c042d1458fa39c8f6ff26c34d6f5ad773fc8
 ---
 # Colorful Coats - Dodos! Renew: status
 
@@ -87,3 +87,5 @@ Preview 2026-11-18 (Virginie: ModIcon to the left): Art/Preview.config.json icon
 Preview 2026-11-18 (Virginie: new Preview-source): prompt written with New-PreviewPrompt.mjs in Docs/PROMPT_ColorfulCoatsDodosRenew.md (main palette reference 3-seven-coats; references 5-golden-hour, 1-dawn, panel zone left 58 percent by 78 percent, seven coats on the right 40 percent). Waiting for her image. After it: Art/Preview-source.png replaced, palette redone (a bis), echo review redone (echo_review_sha ERROR until then), render, social preview re-upload, new dry-run, publish. Protocols diffs read 2026-11-18 (rate-gallery is typed by Virginie, bare negative block, cleanUp optional between versions), Mark-ProtocolsRead run.
 
 Preview 2026-11-18, new Preview-source.png (1672x941, from Docs/PROMPT_ColorfulCoatsDodosRenew.md): seven dodos in seven coats on the right 40 percent, left zone calm and even. Palette redone (a bis) from it: dominant family red-orange (0: 85 percent), zone mean oklch L 0.40 C 0.09 H 50, veil #663B22, inkPrimary #F7ECE6, inkSecondary #FFBB93, badgeInk #190F0A, accent #5B9DDF (the blue dodo, hue 250, detaches from the orange). panelBare kept, icon.corner bottom-left kept. Contrast of inkPrimary on the source under the text: title median 8.71 (p99 7.39), description median 8.66 (p99 5.80), above the 5:1 margin everywhere. Echo kept (echo-concept, three dodos line-art, clear of the birds), echo_review_sha set to 1f531ffe. Title auto-fit chose 36 px on 3 lines (suffix inline). social_preview_sha256 stale until Virginie validates and the share image is re-uploaded.
+
+2026-11-18: Virginie validated the new Preview (panelBare, ModIcon bottom-left, palette from the new source). Social preview re-uploaded through Chrome (new image shown on the settings page), social_preview_sha256 recorded.
