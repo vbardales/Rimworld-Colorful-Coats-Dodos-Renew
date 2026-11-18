@@ -24,10 +24,10 @@
     "corner": "bottom-left"
   },
   "palette": {
-    "veil": "#5C4315",
-    "inkPrimary": "#F4EEE4",
-    "inkSecondary": "#F1C681",
-    "accent": "#639DEB",
-    "badgeInk": "#161107"
+    "veil": "#663B22",
+    "inkPrimary": "#F7ECE6",
+    "inkSecondary": "#FFBB93",
+    "accent": "#5B9DDF",
+    "badgeInk": "#190F0A"
   }
 }
