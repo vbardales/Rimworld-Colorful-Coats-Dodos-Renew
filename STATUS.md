@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: publish[1.1.0]
+workflow_stage: startWatch[1.1.0]
 tested_1_7: yes
 licence:      silent
 licence_port: MIT, port additions only
@@ -29,7 +29,7 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - 1.1.0 (1.7 pass): dry-run on the commit that sets publish[1.1.0] (options: update_preview only), read the note (12.f), then dispatch-publish.sh with that full SHA, Virginie approves steam-production; after: PublishedFileId check, SUBSCRIBE-TEST? to PiI, tag v1.1.0, collection untouched (item already in), Workshop tag 1.7 read back.
+  - startWatch[1.1.0]: SUBSCRIBE-TEST? answer from PiI (item 3806766249, folder 1.1.0, Workshop tags Mod, 1.6, 1.7 read back); then postOnSteam: Virginie updates the Steam gallery image 0 (Art/Gallery/0-preview.png is the new Preview, 735092 bytes), then runNoRegression on v1.1.0 (the 1.7 diagnostic already green, replay on the published revision per 14.a).
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
 protocols_read_sha: 6ffe26641372a55fb2f825b5324dfe8fcd9632fb
@@ -93,3 +93,5 @@ Preview 2026-11-18, new Preview-source.png (1672x941, from Docs/PROMPT_ColorfulC
 12.e/12.f 2026-11-18 (redo after the new Preview): dry-run run 44304780523 on 08c261146555b03fa44553c600ee395601689655, version 1.1.0, update_preview only, green, "DRY RUN: nothing was sent to Steam". Note READ in the log: change note 1.1.0 as written; staged 29 files 0.96 MB (About 5 files 0.78 MB, ATTRIBUTION.md, LICENSE, Patches 1, Textures 21; no Art/, no Assemblies); preview 6d0bd069 735092 bytes (under 1 MB) would replace the page image (page: e319feb1 415308 bytes); description and title not sent; tags to send Mod, 1.6, 1.7 (page Mod, 1.6; added 1.7). Gallery 0-preview.png (735092 bytes) changed: manual page gallery update at postOnSteam (14.h). Replaces the void dry-run 44299711718.
 
 13.a 2026-11-18: dispatch-publish.sh sent publish run 44304959256 (ref 08c261146555b03fa44553c600ee395601689655, version 1.1.0, update_preview), waiting for Virginie to approve steam-production.
+
+13.a/13.b 2026-11-18: PUBLISHED 1.1.0 to Workshop item 3806766249: publish run 44304959256 of 08c261146555b03fa44553c600ee395601689655, update_preview, approved by Virginie; steamcmd "Uploaded new content (ManifestID 7247628067435943570)" and "Uploaded new workshop preview file"; tag-and-release job success, tag v1.1.0 on 08c2611 and release https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/releases/tag/v1.1.0. PublishedFileId.txt unchanged (3806766249). SUBSCRIBE-TEST? sent to PiI. Stage startWatch[1.1.0] (13.f).
