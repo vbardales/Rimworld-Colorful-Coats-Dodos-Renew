@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 9afb, non-regression on the published build v1.1.0 (08c2611), RimWorld 1.6, features 01-05 minimal, map wsl-deps.sans-facultatifs.map, English.
+29 scenarios: 29 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree).
+Evidence: Tests/Pickle/Evidence/noreg17-minimal.
