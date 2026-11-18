@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 77f7, 1.7 diagnostic (RimWorld 1.7.4976), tree 935f960, feature 06 incompat, map wsl-deps.incompat-hlxdodo.map, English.
+4 scenarios: 4 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree).
+Evidence: Tests/Pickle/Evidence/diag17-incompat.

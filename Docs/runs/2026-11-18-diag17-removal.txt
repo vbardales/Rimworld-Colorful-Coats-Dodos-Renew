@@ -1,0 +1,5 @@
+# Pickle Run Summary
+
+Ticket 4798, 1.7 diagnostic (RimWorld 1.7.4976), tree 935f960, feature 08 removal chain, -ThenWithout array, map wsl-deps.removal.map, English.
+2 scenarios in 2 launches: 2 passed, 0 failed, 0 skipped, exit 0, exitReason passed (summary.json and junit.xml agree, seq1 E1 27.1 s, seq2 E2 19.8 s).
+Evidence: Tests/Pickle/Evidence/diag17-removal (seq1, seq2).
