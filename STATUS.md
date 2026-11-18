@@ -32,7 +32,7 @@ remaining:
   - 1.1.0 (1.7 pass): dry-run on the commit that sets publish[1.1.0] (options: update_preview only), read the note (12.f), then dispatch-publish.sh with that full SHA, Virginie approves steam-production; after: PublishedFileId check, SUBSCRIBE-TEST? to PiI, tag v1.1.0, collection untouched (item already in), Workshop tag 1.7 read back.
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: ab437501baa79c4bfbd996f1f2b61bc89ab0bf7a
+protocols_read_sha: 6ffe26641372a55fb2f825b5324dfe8fcd9632fb
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
