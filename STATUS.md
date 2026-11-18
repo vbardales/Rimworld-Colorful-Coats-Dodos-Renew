@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: writeReleaseDocs[1.1.0]
+workflow_stage: publish[1.1.0]
 tested_1_7: yes
 licence:      silent
 licence_port: MIT, port additions only
@@ -29,7 +29,7 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - 1.1.0 (1.7 pass, owner 2026-11-17): `<li>1.7</li>` declared, CHANGELOG `[Unreleased]` entry, Preview badge 1.7 redone (2026-11-18). Left: 12.c bis docs minify, 12.e dry-run, number and date the CHANGELOG section 1.1.0 at the dry-run (12.e), PUBLICATION.md steam note for 1.1.0, then publish with update_tags (tag v1.1.0).
+  - 1.1.0 (1.7 pass): dry-run on the commit that sets publish[1.1.0] (options: update_preview only), read the note (12.f), then dispatch-publish.sh with that full SHA, Virginie approves steam-production; after: PublishedFileId check, SUBSCRIBE-TEST? to PiI, tag v1.1.0, collection untouched (item already in), Workshop tag 1.7 read back.
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
 protocols_read_sha: 92a681dcd1f94dbf91341382f486dd23ed4ef44d
@@ -73,3 +73,5 @@ Current state only. Dated history: `Docs/runs/status-journal-2026-10-16.md` and 
 2026-11-18 reviews: code review of c8f060cb..e0d7d4b8: Mod/ diff is one line, `<li>1.7</li>` in About.xml (plus the Preview PNG, not code); backed by the green 1.7 diagnostic on 1.7.4976, no defect, code_review_sha set. Echo: kept, only the corner badge changed (rendered Preview opened, echo and title unclipped), echo_review_sha set.
 
 2026-11-18 11.j: Virginie read PUBLICATION.md and CHANGELOG.md for line 1.1 ("OK, relu"), publication_changelog_review_sha set to 7c32007d.
+
+12.e/12.h 2026-11-18: CHANGELOG [Unreleased] became [1.1.0] - 2026-11-18; 12.c bis docs minify skipped (every target already caveman-compressed and unchanged since v1.0.0 except a 2-line TESTING.md edit); workflow_stage publish[1.1.0], Mark-ProtocolsRead run.
