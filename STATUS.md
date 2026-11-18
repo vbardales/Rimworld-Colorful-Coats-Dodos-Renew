@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: postOnSteam[1.1.0]
+workflow_stage: runNoRegression[1.1.0]
 tested_1_7: yes
 licence:      silent
 licence_port: MIT, port additions only
@@ -29,10 +29,10 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - postOnSteam[1.1.0]: Virginie replaces gallery image 0 on the Steam page with Art/Gallery/0-preview.png (new Preview, 735092 bytes; images 1 to 6 unchanged); then runNoRegression on v1.1.0 (14.a), cleanUp optional if a new version follows, else dormant.
+  - runNoRegression[1.1.0] (14.a): three small tickets on the published build (v1.1.0, 08c2611, Mod/ frozen), game 1.6: minimal 01-05, 06 incompat, 08 removal chain; read summary.json and junit.xml at each RUN_DONE; then cleanUp optional if a new version follows, else dormant.
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: 3af323f80304f930d38d8845d021494122abc0b9
+protocols_read_sha: 3a13bf8803f4c25b30574a1eae94f1b50f21ad9a
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
@@ -97,3 +97,5 @@ Preview 2026-11-18, new Preview-source.png (1672x941, from Docs/PROMPT_ColorfulC
 13.a/13.b 2026-11-18: PUBLISHED 1.1.0 to Workshop item 3806766249: publish run 44304959256 of 08c261146555b03fa44553c600ee395601689655, update_preview, approved by Virginie; steamcmd "Uploaded new content (ManifestID 7247628067435943570)" and "Uploaded new workshop preview file"; tag-and-release job success, tag v1.1.0 on 08c2611 and release https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/releases/tag/v1.1.0. PublishedFileId.txt unchanged (3806766249). SUBSCRIBE-TEST? sent to PiI. Stage startWatch[1.1.0] (13.f).
 
 13.b/14.f 2026-11-18: SUBSCRIBE-TEST OK from PiI: item 3806766249 v1.1.0, local copy refreshed by unsubscribe and resubscribe (it was still 1.0.0), diff -rq --strip-trailing-cr against git archive v1.1.0 (08c2611) Mod empty, 29 files, supportedVersions 1.6 and 1.7, Preview 735092 bytes, no Art/, Workshop tags (API) Mod, 1.6, 1.7, item updated 2026-11-18 12:45 UTC, still subscribed. Stage postOnSteam[1.1.0] (14.g): no thank-you or republication message for this version (thanks_drafted_line none); gallery image 0 to replace by hand.
+
+14.g/14.h 2026-11-18: Virginie replaced gallery image 0 on the Steam page with Art/Gallery/0-preview.png ("fait"); no thank-you or republication message for 1.1.0. Stage runNoRegression[1.1.0] (14.i).
