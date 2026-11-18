@@ -30,9 +30,9 @@ tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
   - runNoRegression[1.1.0] (14.a): three small tickets on the published build (v1.1.0, 08c2611, Mod/ frozen), game 1.6: minimal 01-05, 06 incompat, 08 removal chain; read summary.json and junit.xml at each RUN_DONE; then cleanUp optional if a new version follows, else dormant.
-session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
+session:      local_418e2661-d248-401b-98eb-e2e22fff9dd0, registered with the Ticket Manager (2026-11-18)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
-protocols_read_sha: 3a13bf8803f4c25b30574a1eae94f1b50f21ad9a
+protocols_read_sha: 9338d8dcb0ab58bd06f914cc97073e4eb6c611c9
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
