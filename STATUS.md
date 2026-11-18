@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: runNoRegression[1.1.0]
+workflow_stage: dormant[1.1.0]
 tested_1_7: yes
 licence:      silent
 licence_port: MIT, port additions only
@@ -26,12 +26,11 @@ dependencies: declared
 workshop_required_items: done, 2026-11-17
 showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
-tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
-workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
+tested_on:    2026-11-18, runNoRegression on v1.1.0 (08c2611), game 1.6: minimal 01-05 29/29 (9afb), 06 incompat 4/4 (f4ca), 08 removal 2/2 (1f26); Docs/runs/2026-11-18-noreg17-*.txt. 07 gallery not replayed. D, G, H not applicable
+workshop:     3806766249, published 1.1.0 (2026-11-18, run 44304959256; 1.0.0 2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - runNoRegression[1.1.0] (14.a): three small tickets on the published build (v1.1.0, 08c2611, Mod/ frozen), game 1.6: minimal 01-05, 06 incompat, 08 removal chain; read summary.json and junit.xml at each RUN_DONE; then cleanUp optional if a new version follows, else dormant.
 session:      local_418e2661-d248-401b-98eb-e2e22fff9dd0, registered with the Ticket Manager (2026-11-18)
-updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
+updated:      2026-11-18, runNoRegression[1.1.0] green, dormant[1.1.0]
 protocols_read_sha: c75e709ad14b7a6f8640d3660311fbd18e5242b0
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
@@ -105,3 +104,5 @@ Preview 2026-11-18, new Preview-source.png (1672x941, from Docs/PROMPT_ColorfulC
 14.a 2026-11-18 resume: RUN_DONE 1f26 (noreg17-removal, 08) found in Inbox: E1 and E2 passed, exit 0, summary.json and junit.xml read. Docs/runs/2026-11-18-noreg17-removal.txt, evidence moved to Tests/Pickle/Evidence/noreg17-removal, Inbox 0. Still waiting: 9afb (minimal 01-05) and f4ca (06 incompat). Protocols read again (sha 113f53ea).
 
 14.a 2026-11-18 resume: RUN_DONE 9afb (noreg17-minimal, 01-05): 29 of 29 passed, exit 0, exitReason passed, summary.json and junit.xml read. Docs/runs/2026-11-18-noreg17-minimal.txt, evidence moved to Tests/Pickle/Evidence/noreg17-minimal, Inbox 0. Still waiting: f4ca (06 incompat). Protocols read (sha c75e709a).
+
+14.a/14.e 2026-11-18: RUN_DONE f4ca (noreg17-incompat, 06): 4 of 4 passed, exit 0, summary.json and junit.xml read; Docs/runs/2026-11-18-noreg17-incompat.txt, evidence moved to Tests/Pickle/Evidence/noreg17-incompat, Inbox 0. All three noreg tickets green on v1.1.0 (9afb 29/29, f4ca 4/4, 1f26 2/2). Stage dormant[1.1.0]: published version 1.1.0 kept; a fix or a new game version reopens the chain at code[x.y.z]. Evidence folders stay (git-ignored); cleanUp (14.c) only if a new version follows.
