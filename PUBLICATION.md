@@ -103,6 +103,17 @@ Thank-you comments and the Use This Instead comment: posted 2026-11-17, texts in
 
 The CI reads the block under the `### <version>` heading of the version it uploads. The first line must carry the exact version in BBCode or the dry-run stops.
 
+### 1.1.0
+
+```
+[b]1.1.0[/b]
+[list]
+[*] The mod now declares support for the latest RimWorld version, after a clean run of every check: the coats appear, the original stays incompatible, and a save loads without the mod.
+[*] No change to the coats, the textures or the patch.
+[/list]
+[url=https://github.com/vbardales/Rimworld-Colorful-Coats-Dodos-Renew/blob/main/CHANGELOG.md]Full changelog on GitHub[/url]
+```
+
 ### 1.0.0
 
 ```
@@ -123,7 +134,7 @@ For Virginie, who alone adds to [RimWorld through Nelim's eyes](https://steamcom
 - The item: [Colorful Coats - Dodos! Renew (unofficial)](https://steamcommunity.com/sharedfiles/filedetails/?id=3806766249).
 - Dependencies that are mods of Nelim: none (ReGrowth: Extinct Animals (Continued) is Mlie's and stays out).
 - DLC required: none.
-- Workshop tags of the item: Mod, 1.6.
+- Workshop tags of the item: Mod, 1.6, 1.7 (1.7 added with update_tags at 1.1.0).
 
 ## Release path (CI)
 

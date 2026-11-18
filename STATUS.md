@@ -29,14 +29,14 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-17, runNoRegression on v1.0.0 (cbf6f95): minimal 01-05 29/29 (553d), 06 incompat 4/4 (457f), 08 removal 2/2 (c000); Docs/runs/2026-11-17-noreg-*.txt. 07 gallery not replayed (verdict given). D, G, H not applicable
 workshop:     3806766249, published 1.0.0 (2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-  - 1.1.0 (1.7 pass, owner 2026-11-17): `<li>1.7</li>` declared, CHANGELOG `[Unreleased]` entry, Preview badge 1.7 redone (2026-11-18). Left: number and date the CHANGELOG section 1.1.0 at the dry-run (12.e), PUBLICATION.md steam note for 1.1.0, then publish with update_tags (tag v1.1.0).
+  - 1.1.0 (1.7 pass, owner 2026-11-17): `<li>1.7</li>` declared, CHANGELOG `[Unreleased]` entry, Preview badge 1.7 redone (2026-11-18). Left: 10.f social preview re-upload by Virginie (sha256 then recorded), stage to writeReleaseDocs[1.1.0] (10.g), 11.j review of PUBLICATION.md and CHANGELOG.md (line 1.1), number and date the CHANGELOG section 1.1.0 at the dry-run (12.e), PUBLICATION.md steam note for 1.1.0, then publish with update_tags (tag v1.1.0).
 session:      local_32d9446b-5748-439e-ba33-43f48c0f4da4, registered with the Ticket Manager (2026-11-17)
 updated:      2026-11-17, cleanUp (14.c): STATUS body, PUBLICATION.md posted texts, TESTING.md E folded; journal in docs/runs/status-journal-2026-11-17.md
 protocols_read_sha: 92a681dcd1f94dbf91341382f486dd23ed4ef44d
 code_review_sha: c8f060cb365a32d3cd138a66b67d9730441746a2
 echo_review_sha: 07bc36ab056ee29c09608d81ce878b3f0405224a
 publication_changelog_review_sha: fc3c332b5c868c1080f1e7f914f209f5383c43eb
-thanks_drafted_line: 1.0
+thanks_drafted_line: none
 social_preview_sha256: e319feb138d13b340f7710ac10eec89d5630d02c412bfb8b8ffd515f8fe0f2f7
 ---
 # Colorful Coats - Dodos! Renew: status
