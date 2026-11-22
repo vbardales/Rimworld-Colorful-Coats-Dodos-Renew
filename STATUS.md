@@ -29,9 +29,9 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-18, runNoRegression on v1.1.0 (08c2611), game 1.6: minimal 01-05 29/29 (9afb), 06 incompat 4/4 (f4ca), 08 removal 2/2 (1f26); Docs/runs/2026-11-18-noreg17-*.txt. 07 gallery not replayed. D, G, H not applicable
 workshop:     3806766249, published 1.1.0 (2026-11-18, run 44304959256; 1.0.0 2026-11-17, run 44132008799), public, collection and comments done
 ecosystem_line: 1.1
-remaining: 9.f gallery_validated_sha (her oui on the 6 images, hash 0a1d3cf4), then 10.a bis preview_source_decision (her answer)
+remaining: 9.a scenes 4 and 6 REDO ticket a696 (gallery-4-6, 508c8ae), then score-gallery, resubtitle (9.e bis), 9.f gallery_validated_sha (her oui), 10.a bis preview_source_decision and Preview redo (gallery changed)
 session:      local_db2bdaaf-4b49-46c5-8600-4783d199ef88, registered with the Ticket Manager (2026-11-22)
-updated:     2026-11-23, replay-audit ecosystem..: shootGallery[1.1.0]
+updated:     2026-11-23, scenes 4 and 6 REDO filed (a696)
 protocols_read_sha: 0b9f353e62d5e6a9ca9a232adda9eef6bb573622
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
