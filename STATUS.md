@@ -29,9 +29,9 @@ static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6
 tested_on:    2026-11-18, runNoRegression on v1.1.0 (08c2611), game 1.6: minimal 01-05 29/29 (9afb), 06 incompat 4/4 (f4ca), 08 removal 2/2 (1f26); Docs/runs/2026-11-18-noreg17-*.txt. 07 gallery not replayed. D, G, H not applicable
 workshop:     3806766249, published 1.1.0 (2026-11-18, run 44304959256; 1.0.0 2026-11-17, run 44132008799), public, collection and comments done
 remaining:
-session:      local_418e2661-d248-401b-98eb-e2e22fff9dd0, registered with the Ticket Manager (2026-11-18)
+session:      local_db2bdaaf-4b49-46c5-8600-4783d199ef88, registered with the Ticket Manager (2026-11-22)
 updated:      2026-11-18, runNoRegression[1.1.0] green, dormant[1.1.0]
-protocols_read_sha: c75e709ad14b7a6f8640d3660311fbd18e5242b0
+protocols_read_sha: e79686c28ff9d1220f987640e54125cea3382e72
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
@@ -40,7 +40,7 @@ social_preview_sha256: 6d0bd069c32bca1f378d4145d771c042d1458fa39c8f6ff26c34d6f5a
 ---
 # Colorful Coats - Dodos! Renew: status
 
-Current state only. Dated history: `Docs/runs/status-journal-2026-10-16.md` and `Docs/runs/status-journal-2026-11-17.md` (the latter holds the previous body of this file, verbatim).
+Current state only. History: git log.
 
 - **Published**: 1.0.0, 2026-11-17, Workshop item 3806766249 (public, tags Mod, 1.6), tag v1.0.0 (cbf6f95). Subscribe test OK (PiI). Required item ReGrowth: Extinct Animals (Continued) 3602926791 set by hand. Collection and the five Steam comments done by Virginie.
 - **What it is**: texture patch, seven coats for `RG_Dodo`, no assembly, no own def. Settings, localization, translations: not_applicable.
