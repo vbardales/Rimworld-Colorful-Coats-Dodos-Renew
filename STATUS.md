@@ -28,9 +28,10 @@ showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
 tested_on:    2026-11-18, runNoRegression on v1.1.0 (08c2611), game 1.6: minimal 01-05 29/29 (9afb), 06 incompat 4/4 (f4ca), 08 removal 2/2 (1f26); Docs/runs/2026-11-18-noreg17-*.txt. 07 gallery not replayed. D, G, H not applicable
 workshop:     3806766249, published 1.1.0 (2026-11-18, run 44304959256; 1.0.0 2026-11-17, run 44132008799), public, collection and comments done
-remaining: 2.h ecosystem_line missing (DELTA search via PiI, then write x.y); then 9.f gallery_validated_sha (her oui), 10.a bis preview_source_decision (her answer)
+ecosystem_line: 1.1
+remaining: 9.f gallery_validated_sha (her oui), 10.a bis preview_source_decision (her answer)
 session:      local_db2bdaaf-4b49-46c5-8600-4783d199ef88, registered with the Ticket Manager (2026-11-22)
-updated:     2026-11-22, replay-audit: ecosystem[1.1.0]
+updated:     2026-11-23, ecosystem delta done
 protocols_read_sha: 7cd408c66934f496431c2be19030d9b1c41868e4
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
@@ -49,7 +50,7 @@ Current state only. History: git log.
 - **Tests**: see `tested_on`; `TESTING.md` holds the scenarios, A, B, C, F played, D, G, H not applicable, E (removal) played with `-ThenWithout` as an array of two ids.
 - **Gallery**: six accepted images, subtitled, `Art/Gallery/` 0 to 6 (table in `PUBLICATION.md`), unsubtitled in `Art/Gallery-clean/`. Preview and echo kept (echo_review_sha), social preview re-uploaded 2026-11-17.
 - **NSB**: Nelim mouth `MouthLipsSimpleSmile` validated 2026-11-07; enclosure-south and barn validated; rules said back 2026-11-13. Places and tribe read 2026-11-17, steps read 2026-11-17.
-- **Ecosystem** (PiI 2026-11-13): no other dodo recolour; DodoRex 3828845619 and Saroodles Additions hold other dodos, not supported (`Docs/BACKLOG.md`).
+- **Ecosystem** (Steam, 2026-11-22, delta by PiI; full study 2026-11-13): parent ReGrowth: Extinct Animals (Continued) 3602926791; no new dodo recolour, fork or patch; five ReGrowth translations (RU x3, JA, DE) marked red, not used; DodoRex 3828845619 and Saroodles Additions hold other dodos, not supported (`Docs/BACKLOG.md`); gate ReGrowth2.ExtinctAnimals has no Workshop item (unpublished, renamed or removed).
 - **Review shas**: code_review_sha, echo_review_sha, publication_changelog_review_sha in the front matter.
 - **Register rows**: WORKSHOP_COMMENTS.md (4 thank-yous) and USE_THIS_INSTEAD.md (this mod) `posted`; texts in `Docs/runs/posted-comments-2026-11-17.md`.
 
