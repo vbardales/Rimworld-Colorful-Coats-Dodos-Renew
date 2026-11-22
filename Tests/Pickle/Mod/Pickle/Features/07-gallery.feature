@@ -28,11 +28,11 @@
 #        Plant_Daylily, Plant_YellowTallGrass, TorchLamp lit at (159, 217), DR_StickLantern lit at (154, 214), the map's plants kept (only the ring cells cleared). Instant: the berries have just landed.
 #        Says: Seven coats, one flock.
 #        Frame: medium, root 2.6 centred (155, 216); berries in the foreground centre, the seven coats in a tight ring behind, Nelim left, torch and lantern lit at the back; noon light.
-#   4. workshop-4-the-nest; enclosure-south, nesting boxes, west of the logo (133, 214); 15h; root 2.4
+#   4. workshop-4-the-nest; enclosure-south, nesting boxes, west of the logo (133, 214); 15h; root 2.8
 #        A hen (coat 4) lies asleep on a hay nest at (133, 214), the cells cleared first (a daylily stood there), with one egg beside her at (134, 214) on the cell between her and Nelim, hay widened to (132, 214); Nelim stands at (135, 214) facing West toward the hen, hands empty (no carried item), smiling;
-#        EggBox, DR_StickLantern lit at (135, 217), TorchLamp lit at (135, 211), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
+#        EggBox, DR_StickLantern lit at (136, 216), TorchLamp lit at (131, 212), Stool, Plant_Daylily at (131, 215) and (132, 212), Plant_YellowTallGrass. Instant: she has just set the egg down beside the hen.
 #        Says: A quiet afternoon, one egg.
-#        Frame: tight, root 2.4 centred (134, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox and lanterns at the back; soft 15h light.
+#        Frame: medium, root 2.8 centred (135, 214); the hen low centre on her nest, the egg between, Nelim right facing the hen, EggBox, lit lantern and lit torch inside the frame, plants all round; soft 15h light.
 # SEVENTH PASS 2026-11-13 (capture of ea0a: image 4, adequacy 4, understanding 4, decoration 3.5, REDO): 5 eight more plants (Plant_Daylily at (141, 221), (145, 216), (137, 222), (139, 214); Plant_YellowTallGrass at (140, 222), (137, 219), (141, 214), (145, 219)) over the bare soil, sun glow held at 0.55 for a golden 18h light; same frame.
 # EIGHTH PASS 2026-11-15 (captures of 2f59, scenes 3 and 6 REDO on bare soil and loose hay): 3 twelve more plants (six Plant_Daylily, six Plant_YellowTallGrass) east, north and south of the ring, outside the cleared ring cells and the logo zones; 6 tried six more hay cells (capture of 382f: bales read as a checkerboard, three braziers clutter), reverted; frame tightened from root 2.8 to 2.2 on (201, 238) to hide the edge braziers.
 # NINTH PASS 2026-11-15 (capture of d3f9: 3 candidate, 6 REDO: birds far apart on an empty floor, one Z, a lone bale): 6 the four sleepers packed in a 2x2 bed at (200, 238), (201, 238), (200, 239), (201, 239) with hay under each, the lone bale dropped, frame centred (200, 238) at root 2.2.
@@ -51,10 +51,11 @@
 #        low sun; TorchLamp lit at (134, 217), DR_StickLantern lit at (135, 220), Plant_Daylily, Plant_YellowTallGrass; the pen emptied of other animals.
 #        Instant: the straggler has just caught up and Shogun nudges it home. Says: The last bird comes home.
 #        Frame: medium, root 3.4 centred (138, 217); the line Nelim, Shogun, straggler, flock running into the frame, low golden 18h light, lanterns lit.
-#   6. workshop-6-roost; enclosure-south, east side (155, 216); 19h; root 2.2
+#   6. workshop-6-roost; enclosure-south, east side (155, 216); 19h; root 2.8
 #        Four dodos (coats 0, 2, 4, 6) asleep on hay laid under each of them at (155, 215), (156, 215), (155, 216), (156, 216), a packed 2x2 bed in the ring cells of scene 3; Nelim at (153, 216) facing East toward the birds, straw hat on (outdoors), smiling, the last armful of hay just laid.
-#        TorchLamp lit at (159, 217), DR_StickLantern lit at (154, 214), Plant_Daylily, Plant_YellowTallGrass, the same dense planting as scene 3, sun glow held at 0.55 for the 19h light. Instant: the last bird has just settled. Says: Everyone is home.
-#        Frame: medium, root 2.2 centred (155, 216); the sleeping bed in the foreground centre, Nelim left, torch and lantern lit at the back, plants all round; dusk light.
+#        TorchLamp lit at (159, 217) and (157, 218), DR_StickLantern lit at (154, 214), Plant_Daylily, Plant_YellowTallGrass, the same dense planting as scene 3, sun glow held at 0.55 for the 19h light. Instant: the last bird has just settled. Says: Everyone is home.
+#        Frame: medium, root 2.8 centred (155, 216); the sleeping bed in the foreground centre, Nelim left, torch and lantern lit at the back, plants all round; dusk light.
+# EIGHTEENTH PASS 2026-11-23 (director review of the published captures, owner: refaire 4 and 6; decoration 3 and adequacy 3.5, the frames of root 2.4 and 2.2 showed only 4.8 and 4.4 cells of height and cropped the lanterns, torches and plants out): 4 root 2.8 centred (135, 214), lantern moved to (136, 216), torch to (131, 212), four more daylilies inside the frame; 6 root 2.8, second torch lit at (157, 218), three more daylilies inside the frame.
 # Interface windows: none (the mod has no settings, no menu).
 Feature: Workshop gallery captures
 
@@ -285,17 +286,16 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the area from (132, 213) to (135, 215) is cleared
     And Nelim's Pickle Tools: a decor that finds no cell is skipped and logged
     And Nelim's Pickle Tools: the cells of the growing zones in the area from (130, 204) to (168, 223) are kept free of decor
-    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (135, 217)
-    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (135, 217) is lit
+    And Nelim's Pickle Tools: I place the decor "DR_StickLantern" exactly at (136, 216)
+    And Nelim's Pickle Tools: the decor "DR_StickLantern" at (136, 216) is lit
     And Nelim's Pickle Tools: I place the decor "EggBox" exactly at (133, 215)
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (135, 212) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (143, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (142, 216) fully grown
-    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (136, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (144, 214) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (143, 212) fully grown
-    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (135, 211)
-    And Nelim's Pickle Tools: the decor "TorchLamp" at (135, 211) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (131, 212)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (131, 212) is lit
     And Nelim's Pickle Tools: "Nelim" carries 8 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (132, 214)
     And Nelim's Pickle Tools: the thing "Hay" at (132, 214) is not forbidden
@@ -306,6 +306,10 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (134, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (132, 216) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (135, 216) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (138, 215) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (137, 212) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (138, 213) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (131, 213) fully grown
     And Nelim's Pickle Tools: "Nelim" carries 15 of the item "Hay"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (133, 214)
     And Nelim's Pickle Tools: the thing "Hay" at (133, 214) is not forbidden
@@ -321,7 +325,7 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: "Nelim" mouth is "MouthLipsSimpleSmile"
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (134, 214) at root size 2.4
+    And Nelim's Pickle Tools: I frame the area centred on (135, 214) at root size 2.8
     And I take a screenshot "gallery-4-the-nest"
     And Nelim's Pickle Tools: the decor is removed
 
@@ -432,6 +436,11 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (162, 217) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (161, 213) fully grown
     And Nelim's Pickle Tools: I place the decor "Plant_YellowTallGrass" at (156, 219) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 217) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (157, 214) fully grown
+    And Nelim's Pickle Tools: I place the decor "Plant_Daylily" at (154, 218) fully grown
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" exactly at (157, 218)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (157, 218) is lit
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo0" is spawned at (155, 215)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo2" is spawned at (156, 215)
     And Nelim's Pickle Tools: an adult animal of kind "RG_Dodo" named "Dodo4" is spawned at (155, 216)
@@ -463,6 +472,6 @@ Feature: Workshop gallery captures
     And Nelim's Pickle Tools: the sun glow of the map is held at 0.55
     And game speed is paused
     And Nelim's Pickle Tools: studio presentation mode is enabled
-    And Nelim's Pickle Tools: I frame the area centred on (155, 216) at root size 2.2
+    And Nelim's Pickle Tools: I frame the area centred on (155, 216) at root size 2.8
     And I take a screenshot "gallery-6-roost"
     And Nelim's Pickle Tools: the decor is removed
