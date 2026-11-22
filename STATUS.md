@@ -12,7 +12,7 @@ maintainer:   Claude (Sonnet 5), current repository task
 visibility:   public
 github_visibility: public
 detached:     yes
-workflow_stage: dormant[1.1.0]
+workflow_stage: ecosystem[1.1.0]
 tested_1_7: yes
 licence:      silent
 licence_port: MIT, port additions only
@@ -28,10 +28,10 @@ showcase:     complete
 static_checks: passed, 2026-09-13, Check-Mod.ps1 against installed Continued 1.6 target
 tested_on:    2026-11-18, runNoRegression on v1.1.0 (08c2611), game 1.6: minimal 01-05 29/29 (9afb), 06 incompat 4/4 (f4ca), 08 removal 2/2 (1f26); Docs/runs/2026-11-18-noreg17-*.txt. 07 gallery not replayed. D, G, H not applicable
 workshop:     3806766249, published 1.1.0 (2026-11-18, run 44304959256; 1.0.0 2026-11-17, run 44132008799), public, collection and comments done
-remaining:
+remaining: 2.h ecosystem_line missing (DELTA search via PiI, then write x.y); then 9.f gallery_validated_sha (her oui), 10.a bis preview_source_decision (her answer)
 session:      local_db2bdaaf-4b49-46c5-8600-4783d199ef88, registered with the Ticket Manager (2026-11-22)
-updated:      2026-11-18, runNoRegression[1.1.0] green, dormant[1.1.0]
-protocols_read_sha: e79686c28ff9d1220f987640e54125cea3382e72
+updated:     2026-11-22, replay-audit: ecosystem[1.1.0]
+protocols_read_sha: 45fe675796d2688b18b086e6d64b337ad98a648e
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
