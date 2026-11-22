@@ -32,7 +32,7 @@ ecosystem_line: 1.1
 remaining: 9.f gallery_validated_sha (her oui), 10.a bis preview_source_decision (her answer)
 session:      local_db2bdaaf-4b49-46c5-8600-4783d199ef88, registered with the Ticket Manager (2026-11-22)
 updated:     2026-11-23, ecosystem delta done
-protocols_read_sha: 7cd408c66934f496431c2be19030d9b1c41868e4
+protocols_read_sha: 0b9f353e62d5e6a9ca9a232adda9eef6bb573622
 code_review_sha: e0d7d4b8e1f2d1e138c3524fb2ea3f0fac496675
 echo_review_sha: 1f531ffe65a61834e573f28988bc70a90b023e1f
 publication_changelog_review_sha: 7c32007d450f9a84857b91c4fb1a76627f6b5c67
